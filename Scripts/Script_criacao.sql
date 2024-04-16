@@ -1,5 +1,5 @@
 CREATE DATABASE IF NOT EXISTS TFG;
-
+	
 CREATE TABLE IF NOT EXISTS Cidade (
   id_cidade INT NOT NULL,
   nome VARCHAR(100) NULL,
@@ -350,6 +350,26 @@ CREATE TABLE IF NOT EXISTS Requisicoes (
   FOREIGN KEY (fk_nIvel_urgencia) REFERENCES NIvelUrgencia(id_nIvel_urgencia),
   FOREIGN KEY (fk_assunto_requisicao) REFERENCES AssuntoRequisicao(id_assunto_requisicao),
   FOREIGN KEY (fk_situacao) REFERENCES Situacao(id_situacao)
+);
+
+CREATE TABLE IF NOT EXISTS Usuario (
+  id_usuario INT NOT NULL,
+  nome VARCHAR(150) NULL,
+  email VARCHAR(150) NULL,
+  senha VARBINARY(255) NULL,
+  fk_informacoes_adicionais INT NOT NULL,
+  fk_situacao INT NOT NULL,
+  fk_nivel_acesso INT NOT NULL,
+  PRIMARY KEY (id_usuario),
+  CONSTRAINT fk_Usuario_InformacoesAdicionais1
+    FOREIGN KEY (fk_informacoes_adicionais)
+    REFERENCES InformacoesAdicionais (id_informacoes_adicionais),
+  CONSTRAINT fk_Usuario_Situacao1
+    FOREIGN KEY (fk_situacao)
+    REFERENCES Situacao (id_situacao),
+  CONSTRAINT fk_Usuario_NivelAcesso1
+    FOREIGN KEY (fk_nivel_acesso)
+    REFERENCES NivelAcesso (id_nivel_acesso)
 );
 
 CREATE TABLE IF NOT EXISTS Ano (
