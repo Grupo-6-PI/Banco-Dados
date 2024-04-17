@@ -1,5 +1,10 @@
+
+DROP DATABASE IF EXISTS TFG;
+
 CREATE DATABASE IF NOT EXISTS TFG;
 	
+USE TFG;
+    
 CREATE TABLE IF NOT EXISTS Cidade (
   id_cidade INT NOT NULL,
   nome VARCHAR(100) NULL,
@@ -314,6 +319,35 @@ CREATE TABLE IF NOT EXISTS Atividade (
   FOREIGN KEY (fk_tipo_atividade) REFERENCES TipoAtividade(id_tipo_atividade)
 );
 
+CREATE TABLE IF NOT EXISTS Usuario (
+  id_usuario INT NOT NULL,
+  nome VARCHAR(150) NULL,
+  email VARCHAR(150) NULL,
+  senha VARBINARY(255) NULL,
+  fk_informacoes_adicionais INT NOT NULL,
+  fk_situacao INT NOT NULL,
+  fk_nivel_acesso INT NOT NULL,
+  PRIMARY KEY (id_usuario),
+  CONSTRAINT fk_Usuario_InformacoesAdicionais1
+    FOREIGN KEY (fk_informacoes_adicionais)
+    REFERENCES InformacoesAdicionais (id_informacoes_adicionais),
+  CONSTRAINT fk_Usuario_Situacao1
+    FOREIGN KEY (fk_situacao)
+    REFERENCES Situacao (id_situacao),
+  CONSTRAINT fk_Usuario_NivelAcesso1
+    FOREIGN KEY (fk_nivel_acesso)
+    REFERENCES NivelAcesso (id_nivel_acesso)
+);
+
+CREATE TABLE IF NOT EXISTS Acesso(
+	id_acesso INT PRIMARY KEY AUTO_INCREMENT,
+    data_inicio DATETIME DEFAULT CURRENT_TIMESTAMP,
+    logado BOOLEAN,
+    data_fim DATETIME,
+    fk_usuario INT,
+		CONSTRAINT fk_usuario_acesso FOREIGN KEY (fk_usuario) REFERENCES Usuario(id_usuario)
+);
+
 CREATE TABLE IF NOT EXISTS EscalaVoluntario (
   id_escala_voluntario INT PRIMARY KEY,
   fk_usuario INT,
@@ -350,26 +384,6 @@ CREATE TABLE IF NOT EXISTS Requisicoes (
   FOREIGN KEY (fk_nIvel_urgencia) REFERENCES NIvelUrgencia(id_nIvel_urgencia),
   FOREIGN KEY (fk_assunto_requisicao) REFERENCES AssuntoRequisicao(id_assunto_requisicao),
   FOREIGN KEY (fk_situacao) REFERENCES Situacao(id_situacao)
-);
-
-CREATE TABLE IF NOT EXISTS Usuario (
-  id_usuario INT NOT NULL,
-  nome VARCHAR(150) NULL,
-  email VARCHAR(150) NULL,
-  senha VARBINARY(255) NULL,
-  fk_informacoes_adicionais INT NOT NULL,
-  fk_situacao INT NOT NULL,
-  fk_nivel_acesso INT NOT NULL,
-  PRIMARY KEY (id_usuario),
-  CONSTRAINT fk_Usuario_InformacoesAdicionais1
-    FOREIGN KEY (fk_informacoes_adicionais)
-    REFERENCES InformacoesAdicionais (id_informacoes_adicionais),
-  CONSTRAINT fk_Usuario_Situacao1
-    FOREIGN KEY (fk_situacao)
-    REFERENCES Situacao (id_situacao),
-  CONSTRAINT fk_Usuario_NivelAcesso1
-    FOREIGN KEY (fk_nivel_acesso)
-    REFERENCES NivelAcesso (id_nivel_acesso)
 );
 
 CREATE TABLE IF NOT EXISTS Ano (
