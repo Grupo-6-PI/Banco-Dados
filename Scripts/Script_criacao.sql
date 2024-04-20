@@ -161,7 +161,7 @@ CREATE TABLE IF NOT EXISTS contato (
 CREATE TABLE IF NOT EXISTS informacoes_adicionais (
   id_informacoes_adicionais INT NOT NULL,
   cpf CHAR(11) NULL,
-  data_nascimento DATETIME NULL,
+  data_nascimento DATE NULL,
   fk_endereco INT NOT NULL,
   fk_familia INT NOT NULL,
   fk_contato INT NOT NULL,
@@ -226,7 +226,7 @@ CREATE TABLE IF NOT EXISTS tamanho_calcado (
 CREATE TABLE IF NOT EXISTS crianca (
   id_crianca INT NOT NULL,
   genero VARCHAR(60) NULL,
-  data_nascimento DATETIME NULL,
+  data_nascimento DATE NULL,
   fk_quantidade_criancas INT NOT NULL,
   fk_tamanho_roupa INT NOT NULL,
   fk_tamanho_calcado INT NOT NULL,
