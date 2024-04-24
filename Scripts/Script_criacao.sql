@@ -336,9 +336,9 @@ CREATE TABLE IF NOT EXISTS usuario (
 
 CREATE TABLE IF NOT EXISTS acesso(
 	id_acesso INT PRIMARY KEY AUTO_INCREMENT,
-    data_inicio DATETIME DEFAULT CURRENT_TImesTAMP,
-    logado BOOLEAN,
-    data_fim DATETIME,
+    data_acesso DATETIME,
+    fk_situacao INT,
+    CONSTRAINT fk_situacao_acesso FOREIGN KEY (fk_situacao) REFERENCES situacao(id_situacao),
     fk_usuario INT,
 		CONSTRAINT fk_usuario_acesso FOREIGN KEY (fk_usuario) REFERENCES usuario(id_usuario)
 );
