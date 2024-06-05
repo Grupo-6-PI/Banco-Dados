@@ -352,6 +352,20 @@ CREATE TABLE IF NOT EXISTS historico_conversa(
 
 CREATE VIEW login AS SELECT id,nome,email,CAST(AES_DECRYPT(senha,'chave') as CHAR) AS senha FROM usuario;
 
+CREATE VIEW acoes_pendentes AS 
+	SELECT 
+		acao.id,
+        acao.nome,
+        calendario.dia_numeracao,
+        calendario.mes_numeracao,
+        calendario.ano
+        FROM atividade AS acao
+			JOIN reserva_atividade AS reserva 
+				ON acao.id = reserva.atividade_id
+			JOIN calendario 
+				ON reserva.calendario_id = calendario.id;
+
+/*
 CREATE VIEW get_details_requisicao
 	AS 
     SELECT 

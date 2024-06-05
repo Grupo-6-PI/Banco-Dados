@@ -6,7 +6,6 @@ INSERT INTO tipo_situacao (tipo) VALUES ('Estado');
 INSERT INTO tipo_situacao (tipo) VALUES ('Ação');
 
 -- Inserir dados na tabela Situacao
-
 INSERT INTO situacao (situacao, tipo_situacao_id) VALUES ('Logado', 1);
 INSERT INTO situacao (situacao, tipo_situacao_id) VALUES ('Deslogado', 1);
 INSERT INTO situacao (situacao, tipo_situacao_id) VALUES ('Ativo', 1);
