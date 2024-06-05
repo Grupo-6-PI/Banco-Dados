@@ -350,6 +350,8 @@ CREATE TABLE IF NOT EXISTS historico_conversa(
 
 -- SELECT datediff(now(),data_nascimento)/365 AS teste FROM informacoes_adicionais;
 
+CREATE VIEW login AS SELECT id,nome,email,CAST(AES_DECRYPT(senha,'chave') as CHAR) AS senha FROM usuario;
+
 CREATE VIEW get_details_requisicao
 	AS 
     SELECT 

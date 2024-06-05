@@ -13,5 +13,3 @@ INSERT INTO situacao (situacao, tipo_situacao_id) VALUES ('Ativo', 1);
 INSERT INTO situacao (situacao, tipo_situacao_id) VALUES ('Desativo', 1);
 
 INSERT INTO usuario(nome,email,senha) VALUES ('Davi Silva','davirodrigues0506@gmail.com',AES_ENCRYPT('12341234','chave'));
-
-SELECT id,nome,email,CAST(AES_DECRYPT(senha,'chave') as CHAR) AS senha FROM usuario; 
