@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="test_div"></div>
+    <script>
+
+        // Função para gerar os registros em formato HTML
+        function gerarRegistrosHTML() {
+
+            let janeiro = 'Janeiro';
+            let fevereiro = 'Fevereiro';
+            let marco = 'Março';
+            let abril = 'Abril';
+            let maio = 'Maio';
+            let junho = 'Junho';
+            let julho = 'Julho';
+            let agosto = 'Agosto';
+            let setembro = 'Setembro';
+            let outubro = 'Outubro';
+            let novembro = 'Novembro';
+            let dezembro = 'Dezembro';
+
+            let listaSemana = [
+                segunda,terca,quarta,quinta,sexta,sabado,domingo
+            ]
+
+            let segunda = 'Segunda-Feira';
+            let terca = 'Terça-Feira'
+            let quarta = 'Quarta-Feira'
+            let quinta = 'Quinta-Feira'
+            let sexta = 'Sexta-Feira'
+            let sabado = 'Sábado'
+            let domingo = 'Domingo'
+        
+            for (let i = 1; i <= 2; i++) {
+
+                if(i==1){
+                    let ano = 2024
+                }else{
+                    let ano = 2025
+                }
+
+                for(let j = 1;j<= 12;j++){
+
+                    let mes = '';
+                    let UltimoDia = ''
+
+                    switch (j) {
+                        case 1: mes = janeiro
+                        case 2: mes = fevereiro
+                        case 3: mes = marco
+                        case 4: mes = abril
+                        case 5: mes = maio
+                        case 6: mes = junho
+                        case 7: mes = julho
+                        case 8: mes = agosto
+                        case 9: mes = setembro
+                        case 10: mes = outubro
+                        case 11: mes = novembro
+                        case 12: mes = dezembro
+                    }
+
+                    if(j%2==0){
+                        if(j == 2 && i == 1){
+                            for(let h =1;h<=29;h++){
+
+                                
+
+                            }                            
+                        }else if (j==2 && i == 2){
+                            for(let h =1;h<=28;h++){}
+                        }else{
+                            for(let h =1;h<=30;h++){}
+                        }
+                    }else{
+                        for(let h =1;h<=31;h++){}
+                    }
+
+
+                }
+                
+            }
+            
+        }
+        
+    
+        gerarRegistrosHTML();
+
+    </script>
+</body>
+</html>
