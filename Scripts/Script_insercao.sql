@@ -30,1150 +30,6 @@ INSERT INTO estado (nome, uf) VALUES
 ('Sergipe', 'SE'),
 ('Tocantins', 'TO');
 
-
-INSERT INTO cidade (nome, estado_id) VALUES
-('Acrelândia', 1),
-('Assis Brasil', 1),
-('Brasiléia', 1),
-('Bujari', 1),
-('Capixaba', 1),
-('Cruzeiro do Sul', 1),
-('Epitaciolândia', 1),
-('Feijó', 1),
-('Jordão', 1),
-('Mâncio Lima', 1),
-('Manoel Urbano', 1),
-('Marechal Thaumaturgo', 1),
-('Plácido de Castro', 1),
-('Porto Acre', 1),
-('Porto Walter', 1),
-('Rio Branco', 1),
-('Rodrigues Alves', 1),
-('Santa Rosa do Purus', 1),
-('Sena Madureira', 1),
-('Senador Guiomard', 1),
-('Tarauacá', 1),
-('Xapuri', 1);
-
-INSERT INTO cidade (nome, estado_id) VALUES
-('Água Branca', 2),
-('Anadia', 2),
-('Arapiraca', 2),
-('Atalaia', 2),
-('Barra de Santo Antônio', 2),
-('Barra de São Miguel', 2),
-('Batalha', 2),
-('Belém', 2),
-('Belo Monte', 2),
-('Boca da Mata', 2),
-('Branquinha', 2),
-('Cacimbinhas', 2),
-('Cajueiro', 2),
-('Campestre', 2),
-('Campo Alegre', 2),
-('Campo Grande', 2),
-('Canapi', 2),
-('Capela', 2),
-('Carneiros', 2),
-('Chã Preta', 2),
-('Coité do Nóia', 2),
-('Colônia Leopoldina', 2),
-('Coqueiro Seco', 2),
-('Coruripe', 2),
-('Craíbas', 2),
-('Delmiro Gouveia', 2),
-('Dois Riachos', 2),
-('Estrela de Alagoas', 2),
-('Feira Grande', 2),
-('Feliz Deserto', 2),
-('Flexeiras', 2),
-('Girau do Ponciano', 2),
-('Ibateguara', 2),
-('Igaci', 2),
-('Igreja Nova', 2),
-('Inhapi', 2),
-('Jacaré dos Homens', 2),
-('Jacuípe', 2),
-('Japaratinga', 2),
-('Jaramataia', 2),
-('Jequiá da Praia', 2),
-('Joaquim Gomes', 2),
-('Jundiá', 2),
-('Junqueiro', 2),
-('Lagoa da Canoa', 2),
-('Limoeiro de Anadia', 2),
-('Maceió', 2),
-('Major Isidoro', 2),
-('Mar Vermelho', 2),
-('Maragogi', 2),
-('Maravilha', 2),
-('Marechal Deodoro', 2),
-('Maribondo', 2),
-('Mata Grande', 2),
-('Matriz de Camaragibe', 2),
-('Messias', 2),
-('Minador do Negrão', 2),
-('Monteirópolis', 2),
-('Murici', 2),
-('Novo Lino', 2),
-('Olho d\'Água das Flores', 2),
-('Olho d\'Água do Casado', 2),
-('Olho d\'Água Grande', 2),
-('Olivença', 2),
-('Ouro Branco', 2),
-('Palestina', 2),
-('Palmeira dos Índios', 2),
-('Pão de Açúcar', 2),
-('Pariconha', 2),
-('Paripueira', 2),
-('Passo de Camaragibe', 2),
-('Paulo Jacinto', 2),
-('Penedo', 2),
-('Piaçabuçu', 2),
-('Pilar', 2),
-('Pindoba', 2),
-('Piranhas', 2),
-('Poço das Trincheiras', 2),
-('Porto Calvo', 2),
-('Porto de Pedras', 2),
-('Porto Real do Colégio', 2),
-('Quebrangulo', 2),
-('Rio Largo', 2),
-('Roteiro', 2),
-('Santa Luzia do Norte', 2),
-('Santana do Ipanema', 2),
-('Santana do Mundaú', 2),
-('São Brás', 2),
-('São José da Laje', 2),
-('São José da Tapera', 2),
-('São Luís do Quitunde', 2),
-('São Miguel dos Campos', 2),
-('São Miguel dos Milagres', 2),
-('São Sebastião', 2),
-('Satuba', 2),
-('Senador Rui Palmeira', 2),
-('Tanque d\'Arca', 2),
-('Taquarana', 2),
-('Teotônio Vilela', 2),
-('Traipu', 2),
-('União dos Palmares', 2),
-('Viçosa', 2);
-
-INSERT INTO cidade (nome, estado_id) VALUES
-('Amapá', 3),
-('Calçoene', 3),
-('Cutias', 3),
-('Ferreira Gomes', 3),
-('Itaubal', 3),
-('Laranjal do Jari', 3),
-('Macapá', 3),
-('Mazagão', 3),
-('Oiapoque', 3),
-('Pedra Branca do Amapari', 3),
-('Porto Grande', 3),
-('Pracuúba', 3),
-('Santana', 3),
-('Serra do Navio', 3),
-('Tartarugalzinho', 3),
-('Vitória do Jari', 3);
-
-INSERT INTO cidade (nome, estado_id) VALUES
-('Alvarães', 4),
-('Amaturá', 4),
-('Anamã', 4),
-('Anori', 4),
-('Apuí', 4),
-('Atalaia do Norte', 4),
-('Autazes', 4),
-('Barcelos', 4),
-('Barreirinha', 4),
-('Benjamin Constant', 4),
-('Beruri', 4),
-('Boa Vista do Ramos', 4),
-('Boca do Acre', 4),
-('Borba', 4),
-('Caapiranga', 4),
-('Canutama', 4),
-('Carauari', 4),
-('Careiro', 4),
-('Careiro da Várzea', 4),
-('Coari', 4),
-('Codajás', 4),
-('Eirunepé', 4),
-('Envira', 4),
-('Fonte Boa', 4),
-('Guajará', 4),
-('Humaitá', 4),
-('Ipixuna', 4),
-('Iranduba', 4),
-('Itacoatiara', 4),
-('Itamarati', 4),
-('Itapiranga', 4),
-('Japurá', 4),
-('Juruá', 4),
-('Jutaí', 4),
-('Lábrea', 4),
-('Manacapuru', 4),
-('Manaquiri', 4),
-('Manaus', 4),
-('Manicoré', 4),
-('Maraã', 4),
-('Maués', 4),
-('Nhamundá', 4),
-('Nova Olinda do Norte', 4),
-('Novo Airão', 4),
-('Novo Aripuanã', 4),
-('Parintins', 4),
-('Pauini', 4),
-('Presidente Figueiredo', 4),
-('Rio Preto da Eva', 4),
-('Santa Isabel do Rio Negro', 4),
-('Santo Antônio do Içá', 4),
-('São Gabriel da Cachoeira', 4),
-('São Paulo de Olivença', 4),
-('São Sebastião do Uatumã', 4),
-('Silves', 4),
-('Tabatinga', 4),
-('Tapauá', 4),
-('Tefé', 4),
-('Tonantins', 4),
-('Uarini', 4),
-('Urucará', 4),
-('Urucurituba', 4);
-
-INSERT INTO cidade (nome, estado_id) VALUES
-('Abaíra', 5),
-('Abaré', 5),
-('Acajutiba', 5),
-('Adustina', 5),
-('Água Fria', 5),
-('Aiquara', 5),
-('Alagoinhas', 5),
-('Alcobaça', 5),
-('Almadina', 5),
-('Amargosa', 5),
-('Amélia Rodrigues', 5),
-('América Dourada', 5),
-('Anagé', 5),
-('Andaraí', 5),
-('Andorinha', 5),
-('Angical', 5),
-('Anguera', 5),
-('Antas', 5),
-('Antônio Cardoso', 5),
-('Antônio Gonçalves', 5),
-('Aporá', 5),
-('Apuarema', 5),
-('Araças', 5),
-('Aracatu', 5),
-('Araci', 5),
-('Aramari', 5),
-('Arataca', 5),
-('Aratuípe', 5),
-('Aurelino Leal', 5),
-('Baianópolis', 5),
-('Baixa Grande', 5),
-('Banzaê', 5),
-('Barra', 5),
-('Barra da Estiva', 5),
-('Barra do Choça', 5),
-('Barra do Mendes', 5),
-('Barra do Rocha', 5),
-('Barreiras', 5),
-('Barro Alto', 5),
-('Barrocas', 5),
-('Barro Preto', 5),
-('Belmonte', 5),
-('Belo Campo', 5),
-('Biritinga', 5),
-('Boa Nova', 5),
-('Boa Vista do Tupim', 5),
-('Bom Jesus da Lapa', 5),
-('Bom Jesus da Serra', 5),
-('Boninal', 5),
-('Bonito', 5),
-('Boquira', 5),
-('Botuporã', 5),
-('Brejões', 5),
-('Brejolândia', 5),
-('Brotas de Macaúbas', 5),
-('Brumado', 5),
-('Buerarema', 5),
-('Buritirama', 5),
-('Caatiba', 5),
-('Cabaceiras do Paraguaçu', 5),
-('Cachoeira', 5),
-('Caculé', 5),
-('Caém', 5),
-('Caetanos', 5),
-('Caetité', 5),
-('Cafarnaum', 5),
-('Cairu', 5),
-('Caldeirão Grande', 5),
-('Camacan', 5),
-('Camaçari', 5),
-('Camamu', 5),
-('Campo Alegre de Lourdes', 5),
-('Campo Formoso', 5),
-('Canápolis', 5),
-('Canarana', 5),
-('Canavieiras', 5),
-('Candeal', 5),
-('Candeias', 5),
-('Candiba', 5),
-('Cândido Sales', 5),
-('Cansanção', 5),
-('Canudos', 5),
-('Capela do Alto Alegre', 5),
-('Capim Grosso', 5),
-('Caraíbas', 5),
-('Caravelas', 5),
-('Cardeal da Silva', 5),
-('Carinhanha', 5),
-('Casa Nova', 5),
-('Castro Alves', 5),
-('Catolândia', 5),
-('Catu', 5),
-('Caturama', 5),
-('Central', 5),
-('Chorrochó', 5),
-('Cícero Dantas', 5),
-('Cipó', 5),
-('Coaraci', 5),
-('Cocos', 5),
-('Conceição da Feira', 5),
-('Conceição do Almeida', 5),
-('Conceição do Coité', 5),
-('Conceição do Jacuípe', 5),
-('Conde', 5),
-('Condeúba', 5),
-('Contendas do Sincorá', 5),
-('Coração de Maria', 5),
-('Cordeiros', 5),
-('Coribe', 5),
-('Coronel João Sá', 5),
-('Correntina', 5),
-('Cotegipe', 5),
-('Cravolândia', 5),
-('Crisópolis', 5),
-('Cristópolis', 5),
-('Cruz das Almas', 5),
-('Curaçá', 5),
-('Dário Meira', 5),
-('Dias d\'Ávila', 5),
-('Dom Basílio', 5),
-('Dom Macedo Costa', 5),
-('Elísio Medrado', 5),
-('Encruzilhada', 5),
-('Entre Rios', 5),
-('Érico Cardoso', 5),
-('Esplanada', 5),
-('Euclides da Cunha', 5),
-('Eunápolis', 5),
-('Fátima', 5),
-('Feira da Mata', 5),
-('Feira de Santana', 5),
-('Filadélfia', 5),
-('Firmino Alves', 5),
-('Floresta Azul', 5),
-('Formosa do Rio Preto', 5),
-('Gandu', 5),
-('Gavião', 5),
-('Gentio do Ouro', 5),
-('Glória', 5),
-('Gongogi', 5),
-('Governador Mangabeira', 5),
-('Guajeru', 5),
-('Guanambi', 5),
-('Guaratinga', 5),
-('Heliópolis', 5),
-('Iaçu', 5),
-('Ibiassucê', 5),
-('Ibicaraí', 5),
-('Ibicoara', 5),
-('Ibicuí', 5),
-('Ibipeba', 5),
-('Ibipitanga', 5),
-('Ibiquera', 5),
-('Ibirapitanga', 5),
-('Ibirapuã', 5),
-('Ibirataia', 5),
-('Ibitiara', 5),
-('Ibititá', 5),
-('Ibotirama', 5),
-('Ichu', 5),
-('Igaporã', 5),
-('Igrapiúna', 5),
-('Iguaí', 5),
-('Ilhéus', 5),
-('Inhambupe', 5),
-('Ipecaetá', 5),
-('Ipiaú', 5),
-('Ipirá', 5),
-('Ipupiara', 5),
-('Irajuba', 5),
-('Iramaia', 5),
-('Iraquara', 5),
-('Irará', 5),
-('Irecê', 5),
-('Itabela', 5),
-('Itaberaba', 5),
-('Itabuna', 5),
-('Itacaré', 5),
-('Itaeté', 5),
-('Itagi', 5),
-('Itagibá', 5),
-('Itagimirim', 5),
-('Itaguaçu da Bahia', 5),
-('Itaju do Colônia', 5),
-('Itajuípe', 5),
-('Itamaraju', 5),
-('Itamari', 5),
-('Itambé', 5),
-('Itanagra', 5),
-('Itanhém', 5),
-('Itaparica', 5),
-('Itapé', 5),
-('Itapebi', 5),
-('Itapetinga', 5),
-('Itapicuru', 5),
-('Itapitanga', 5),
-('Itaquara', 5),
-('Itarantim', 5),
-('Itatim', 5),
-('Itiruçu', 5),
-('Itiúba', 5),
-('Itororó', 5),
-('Ituaçu', 5),
-('Ituberá', 5),
-('Iuiú', 5),
-('Jaborandi', 5),
-('Jacaraci', 5),
-('Jacobina', 5),
-('Jaguaquara', 5),
-('Jaguarari', 5),
-('Jaguaripe', 5),
-('Jandaíra', 5),
-('Jequié', 5),
-('Jeremoabo', 5),
-('Jiquiriçá', 5),
-('Jitaúna', 5),
-('João Dourado', 5),
-('Juazeiro', 5),
-('Jucuruçu', 5),
-('Jussara', 5),
-('Jussari', 5),
-('Jussiape', 5),
-('Lafaiete Coutinho', 5),
-('Lagoa Real', 5),
-('Laje', 5),
-('Lajedão', 5),
-('Lajedinho', 5),
-('Lajedo do Tabocal', 5),
-('Lamarão', 5),
-('Lapão', 5),
-('Lauro de Freitas', 5),
-('Lençóis', 5),
-('Licínio de Almeida', 5),
-('Livramento de Nossa Senhora', 5),
-('Luís Eduardo Magalhães', 5),
-('Macajuba', 5),
-('Macarani', 5),
-('Macaúbas', 5),
-('Macururé', 5),
-('Madre de Deus', 5),
-('Maetinga', 5),
-('Maiquinique', 5),
-('Mairi', 5),
-('Malhada', 5),
-('Malhada de Pedras', 5),
-('Manoel Vitorino', 5),
-('Mansidão', 5),
-('Maracás', 5),
-('Maragogipe', 5),
-('Maraú', 5),
-('Marcionílio Souza', 5),
-('Mascote', 5),
-('Mata de São João', 5),
-('Matina', 5),
-('Medeiros Neto', 5),
-('Miguel Calmon', 5),
-('Milagres', 5),
-('Mirangaba', 5),
-('Mirante', 5),
-('Monte Santo', 5),
-('Morpará', 5),
-('Morro do Chapéu', 5),
-('Mortugaba', 5),
-('Mucugê', 5),
-('Mucuri', 5),
-('Mulungu do Morro', 5),
-('Mundo Novo', 5),
-('Muniz Ferreira', 5),
-('Muquém de São Francisco', 5),
-('Muritiba', 5),
-('Mutuípe', 5),
-('Nazaré', 5),
-('Nilo Peçanha', 5),
-('Nordestina', 5),
-('Nova Canaã', 5),
-('Nova Fátima', 5),
-('Nova Ibiá', 5),
-('Nova Itarana', 5),
-('Nova Redenção', 5),
-('Nova Soure', 5),
-('Nova Viçosa', 5),
-('Novo Horizonte', 5),
-('Novo Triunfo', 5),
-('Olindina', 5),
-('Oliveira dos Brejinhos', 5),
-('Ouriçangas', 5),
-('Ourolândia', 5),
-('Palmas de Monte Alto', 5),
-('Palmeiras', 5),
-('Paramirim', 5),
-('Paratinga', 5),
-('Paripiranga', 5),
-('Pau Brasil', 5),
-('Paulo Afonso', 5),
-('Pé de Serra', 5),
-('Pedrão', 5),
-('Pedro Alexandre', 5),
-('Piatã', 5),
-('Pilão Arcado', 5),
-('Pindaí', 5),
-('Pindobaçu', 5),
-('Pintadas', 5),
-('Piraí do Norte', 5),
-('Piripá', 5),
-('Piritiba', 5),
-('Planaltino', 5),
-('Planalto', 5),
-('Poções', 5),
-('Pojuca', 5),
-('Ponto Novo', 5),
-('Porto Seguro', 5),
-('Potiraguá', 5),
-('Prado', 5),
-('Presidente Dutra', 5),
-('Presidente Jânio Quadros', 5),
-('Presidente Tancredo Neves', 5),
-('Queimadas', 5),
-('Quijingue', 5),
-('Quixabeira', 5),
-('Rafael Jambeiro', 5),
-('Remanso', 5),
-('Retirolândia', 5),
-('Riachão das Neves', 5),
-('Riachão do Jacuípe', 5),
-('Riacho de Santana', 5),
-('Ribeira do Amparo', 5),
-('Ribeira do Pombal', 5),
-('Ribeirão do Largo', 5),
-('Rio de Contas', 5),
-('Rio do Antônio', 5),
-('Rio do Pires', 5),
-('Rio Real', 5),
-('Rodelas', 5),
-('Ruy Barbosa', 5),
-('Salinas da Margarida', 5),
-('Salvador', 5),
-('Santa Bárbara', 5),
-('Santa Brígida', 5),
-('Santa Cruz Cabrália', 5),
-('Santa Cruz da Vitória', 5),
-('Santa Inês', 5),
-('Santa Luzia', 5),
-('Santa Maria da Vitória', 5),
-('Santa Rita de Cássia', 5),
-('Santa Teresinha', 5),
-('Santaluz', 5),
-('Santana', 5),
-('Santanópolis', 5),
-('Santo Amaro', 5),
-('Santo Antônio de Jesus', 5),
-('Santo Estêvão', 5),
-('São Desidério', 5),
-('São Domingos', 5),
-('São Felipe', 5),
-('São Félix', 5),
-('São Félix do Coribe', 5),
-('São Francisco do Conde', 5),
-('São Gabriel', 5),
-('São Gonçalo dos Campos', 5),
-('São José da Vitória', 5),
-('São José do Jacuípe', 5),
-('São Miguel das Matas', 5),
-('São Sebastião do Passé', 5),
-('Sapeaçu', 5),
-('Sátiro Dias', 5),
-('Saubara', 5),
-('Saúde', 5),
-('Seabra', 5),
-('Sebastião Laranjeiras', 5),
-('Senhor do Bonfim', 5),
-('Sento Sé', 5),
-('Serra do Ramalho', 5),
-('Serra Dourada', 5),
-('Serra Preta', 5),
-('Serrinha', 5),
-('Serrolândia', 5),
-('Simões Filho', 5),
-('Sítio do Mato', 5),
-('Sítio do Quinto', 5),
-('Sobradinho', 5),
-('Souto Soares', 5),
-('Tabocas do Brejo Velho', 5),
-('Tanhaçu', 5),
-('Tanque Novo', 5),
-('Tanquinho', 5),
-('Taperoá', 5),
-('Tapiramutá', 5),
-('Teixeira de Freitas', 5),
-('Teodoro Sampaio', 5),
-('Teofilândia', 5),
-('Teolândia', 5),
-('Terra Nova', 5),
-('Tremedal', 5),
-('Tucano', 5),
-('Uauá', 5),
-('Ubaíra', 5),
-('Ubaitaba', 5),
-('Ubatã', 5),
-('Uibaí', 5),
-('Umburanas', 5),
-('Una', 5),
-('Urandi', 5),
-('Uruçuca', 5),
-('Utinga', 5),
-('Valença', 5),
-('Valente', 5),
-('Várzea da Roça', 5),
-('Várzea do Poço', 5),
-('Várzea Nova', 5),
-('Varzedo', 5),
-('Vera Cruz', 5),
-('Vereda', 5),
-('Vitória da Conquista', 5),
-('Wagner', 5),
-('Wanderley', 5),
-('Wenceslau Guimarães', 5),
-('Xique-Xique', 5);
-
-INSERT INTO cidade (nome, estado_id) VALUES
-('Abaiara', 6),
-('Acarape', 6),
-('Acaraú', 6),
-('Acopiara', 6),
-('Aiuaba', 6),
-('Alcântaras', 6),
-('Altaneira', 6),
-('Alto Santo', 6),
-('Amontada', 6),
-('Antonina do Norte', 6),
-('Apuiarés', 6),
-('Aquiraz', 6),
-('Aracati', 6),
-('Aracoiaba', 6),
-('Ararendá', 6),
-('Araripe', 6),
-('Aratuba', 6),
-('Arneiroz', 6),
-('Assaré', 6),
-('Aurora', 6),
-('Baixio', 6),
-('Banabuiú', 6),
-('Barbalha', 6),
-('Barreira', 6),
-('Barro', 6),
-('Barroquinha', 6),
-('Baturité', 6),
-('Beberibe', 6),
-('Bela Cruz', 6),
-('Boa Viagem', 6),
-('Brejo Santo', 6),
-('Camocim', 6),
-('Campos Sales', 6),
-('Canindé', 6),
-('Capistrano', 6),
-('Caridade', 6),
-('Cariré', 6),
-('Caririaçu', 6),
-('Cariús', 6),
-('Carnaubal', 6),
-('Cascavel', 6),
-('Catarina', 6),
-('Catunda', 6),
-('Caucaia', 6),
-('Cedro', 6),
-('Chaval', 6),
-('Choró', 6),
-('Chorozinho', 6),
-('Coreaú', 6),
-('Crateús', 6),
-('Crato', 6),
-('Croatá', 6),
-('Cruz', 6),
-('Deputado Irapuan Pinheiro', 6),
-('Ereré', 6),
-('Eusébio', 6),
-('Farias Brito', 6),
-('Forquilha', 6),
-('Fortaleza', 6),
-('Fortim', 6),
-('Frecheirinha', 6),
-('General Sampaio', 6),
-('Graça', 6),
-('Granja', 6),
-('Granjeiro', 6),
-('Groaíras', 6),
-('Guaiúba', 6),
-('Guaraciaba do Norte', 6),
-('Guaramiranga', 6),
-('Hidrolândia', 6),
-('Horizonte', 6),
-('Ibaretama', 6),
-('Ibiapina', 6),
-('Ibicuitinga', 6),
-('Icapuí', 6),
-('Icó', 6),
-('Iguatu', 6),
-('Independência', 6),
-('Ipaporanga', 6),
-('Ipaumirim', 6),
-('Ipu', 6),
-('Ipueiras', 6),
-('Iracema', 6),
-('Irauçuba', 6),
-('Itaiçaba', 6),
-('Itaitinga', 6),
-('Itapagé', 6),
-('Itapipoca', 6),
-('Itapiúna', 6),
-('Itarema', 6),
-('Itatira', 6),
-('Jaguaretama', 6),
-('Jaguaribara', 6),
-('Jaguaribe', 6),
-('Jaguaruana', 6),
-('Jardim', 6),
-('Jati', 6),
-('Jijoca de Jericoacoara', 6),
-('Juazeiro do Norte', 6),
-('Jucás', 6),
-('Lavras da Mangabeira', 6),
-('Limoeiro do Norte', 6),
-('Madalena', 6),
-('Maracanaú', 6),
-('Maranguape', 6),
-('Marco', 6),
-('Martinópole', 6),
-('Massapê', 6),
-('Mauriti', 6),
-('Meruoca', 6),
-('Milagres', 6),
-('Milhã', 6),
-('Miraíma', 6),
-('Missão Velha', 6),
-('Mombaça', 6),
-('Monsenhor Tabosa', 6),
-('Morada Nova', 6),
-('Moraújo', 6),
-('Morrinhos', 6),
-('Mucambo', 6),
-('Mulungu', 6),
-('Nova Olinda', 6),
-('Nova Russas', 6),
-('Novo Oriente', 6),
-('Ocara', 6),
-('Orós', 6),
-('Pacajus', 6),
-('Pacatuba', 6),
-('Pacoti', 6),
-('Pacujá', 6),
-('Palhano', 6),
-('Palmácia', 6),
-('Paracuru', 6),
-('Paraipaba', 6),
-('Parambu', 6),
-('Paramoti', 6),
-('Pedra Branca', 6),
-('Penaforte', 6),
-('Pentecoste', 6),
-('Pereiro', 6),
-('Pindoretama', 6),
-('Piquet Carneiro', 6),
-('Pires Ferreira', 6),
-('Poranga', 6),
-('Porteiras', 6),
-('Potengi', 6),
-('Potiretama', 6),
-('Quiterianópolis', 6),
-('Quixadá', 6),
-('Quixelô', 6),
-('Quixeramobim', 6),
-('Quixeré', 6),
-('Redenção', 6),
-('Reriutaba', 6),
-('Russas', 6),
-('Saboeiro', 6),
-('Salitre', 6),
-('Santa Quitéria', 6),
-('Santana do Acaraú', 6),
-('Santana do Cariri', 6),
-('São Benedito', 6),
-('São Gonçalo do Amarante', 6),
-('São João do Jaguaribe', 6),
-('São Luís do Curu', 6),
-('Senador Pompeu', 6),
-('Senador Sá', 6),
-('Sobral', 6),
-('Solonópole', 6),
-('Tabuleiro do Norte', 6),
-('Tamboril', 6),
-('Tarrafas', 6),
-('Tauá', 6),
-('Tejuçuoca', 6),
-('Tianguá', 6),
-('Trairi', 6),
-('Tururu', 6),
-('Ubajara', 6),
-('Umari', 6),
-('Umirim', 6),
-('Uruburetama', 6),
-('Uruoca', 6),
-('Varjota', 6),
-('Várzea Alegre', 6),
-('Viçosa do Ceará', 6);
-
-INSERT INTO cidade (nome, estado_id) VALUES
-('Afonso Cláudio', 7),
-('Água Doce do Norte', 7),
-('Águia Branca', 7),
-('Alegre', 7),
-('Alfredo Chaves', 7),
-('Alto Rio Novo', 7),
-('Anchieta', 7),
-('Apiacá', 7),
-('Aracruz', 7),
-('Atilio Vivacqua', 7),
-('Baixo Guandu', 7),
-('Barra de São Francisco', 7),
-('Boa Esperança', 7),
-('Bom Jesus do Norte', 7),
-('Brejetuba', 7),
-('Cachoeiro de Itapemirim', 7),
-('Cariacica', 7),
-('Castelo', 7),
-('Colatina', 7),
-('Conceição da Barra', 7),
-('Conceição do Castelo', 7),
-('Divino de São Lourenço', 7),
-('Domingos Martins', 7),
-('Dores do Rio Preto', 7),
-('Ecoporanga', 7),
-('Fundão', 7),
-('Governador Lindenberg', 7),
-('Guaçuí', 7),
-('Guarapari', 7),
-('Ibatiba', 7),
-('Ibiraçu', 7),
-('Ibitirama', 7),
-('Iconha', 7),
-('Irupi', 7),
-('Itaguaçu', 7),
-('Itapemirim', 7),
-('Itarana', 7),
-('Iúna', 7),
-('Jaguaré', 7),
-('Jerônimo Monteiro', 7),
-('João Neiva', 7),
-('Laranja da Terra', 7),
-('Linhares', 7),
-('Mantenópolis', 7),
-('Marataízes', 7),
-('Marechal Floriano', 7),
-('Marilândia', 7),
-('Mimoso do Sul', 7),
-('Montanha', 7),
-('Mucurici', 7),
-('Muniz Freire', 7),
-('Muqui', 7),
-('Nova Venécia', 7),
-('Pancas', 7),
-('Pedro Canário', 7),
-('Pinheiros', 7),
-('Piúma', 7),
-('Ponto Belo', 7),
-('Presidente Kennedy', 7),
-('Rio Bananal', 7),
-('Rio Novo do Sul', 7),
-('Santa Leopoldina', 7),
-('Santa Maria de Jetibá', 7),
-('Santa Teresa', 7),
-('São Domingos do Norte', 7),
-('São Gabriel da Palha', 7),
-('São José do Calçado', 7),
-('São Mateus', 7),
-('São Roque do Canaã', 7),
-('Serra', 7),
-('Sooretama', 7),
-('Vargem Alta', 7),
-('Venda Nova do Imigrante', 7),
-('Viana', 7),
-('Vila Pavão', 7),
-('Vila Valério', 7),
-('Vila Velha', 7),
-('Vitória', 7);
-
-INSERT INTO cidade (nome, estado_id) VALUES
-('Abadia de Goiás', 8),
-('Abadiânia', 8),
-('Acreúna', 8),
-('Adelândia', 8),
-('Água Fria de Goiás', 8),
-('Água Limpa', 8),
-('Águas Lindas de Goiás', 8),
-('Alexânia', 8),
-('Aloândia', 8),
-('Alto Horizonte', 8),
-('Alto Paraíso de Goiás', 8),
-('Alvorada do Norte', 8),
-('Amaralina', 8),
-('Americano do Brasil', 8),
-('Amorinópolis', 8),
-('Anápolis', 8),
-('Anhanguera', 8),
-('Anicuns', 8),
-('Aparecida de Goiânia', 8),
-('Aparecida do Rio Doce', 8),
-('Aporé', 8),
-('Araçu', 8),
-('Aragarças', 8),
-('Aragoiânia', 8),
-('Araguapaz', 8),
-('Arenópolis', 8),
-('Aruanã', 8),
-('Aurilândia', 8),
-('Avelinópolis', 8),
-('Baliza', 8),
-('Barro Alto', 8),
-('Bela Vista de Goiás', 8),
-('Bom Jardim de Goiás', 8),
-('Bom Jesus de Goiás', 8),
-('Bonfinópolis', 8),
-('Bonópolis', 8),
-('Brazabrantes', 8),
-('Britânia', 8),
-('Buriti Alegre', 8),
-('Buriti de Goiás', 8),
-('Buritinópolis', 8),
-('Cabeceiras', 8),
-('Cachoeira Alta', 8),
-('Cachoeira de Goiás', 8),
-('Cachoeira Dourada', 8),
-('Caçu', 8),
-('Caiapônia', 8),
-('Caldas Novas', 8),
-('Caldazinha', 8),
-('Campestre de Goiás', 8),
-('Campinaçu', 8),
-('Campinorte', 8),
-('Campo Alegre de Goiás', 8),
-('Campo Limpo de Goiás', 8),
-('Campos Belos', 8),
-('Campos Verdes', 8),
-('Carmo do Rio Verde', 8),
-('Castelândia', 8),
-('Catalão', 8),
-('Caturaí', 8),
-('Cavalcante', 8),
-('Ceres', 8),
-('Cezarina', 8),
-('Chapadão do Céu', 8),
-('Cidade Ocidental', 8),
-('Cocalzinho de Goiás', 8),
-('Colinas do Sul', 8),
-('Córrego do Ouro', 8),
-('Corumbá de Goiás', 8),
-('Corumbaíba', 8),
-('Cristalina', 8),
-('Cristianópolis', 8),
-('Crixás', 8),
-('Cromínia', 8),
-('Cumari', 8),
-('Damianópolis', 8),
-('Damolândia', 8),
-('Davinópolis', 8),
-('Diorama', 8),
-('Divinópolis de Goiás', 8),
-('Doverlândia', 8),
-('Edealina', 8),
-('Edéia', 8),
-('Estrela do Norte', 8),
-('Faina', 8),
-('Fazenda Nova', 8),
-('Firminópolis', 8),
-('Flores de Goiás', 8),
-('Formosa', 8),
-('Formoso', 8),
-('Gameleira de Goiás', 8),
-('Goianápolis', 8),
-('Goiandira', 8),
-('Goianésia', 8),
-('Goiânia', 8),
-('Goianira', 8),
-('Goiás', 8),
-('Goiatuba', 8),
-('Gouvelândia', 8),
-('Guapó', 8),
-('Guaraíta', 8),
-('Guarani de Goiás', 8),
-('Guarinos', 8),
-('Heitoraí', 8),
-('Hidrolândia', 8),
-('Hidrolina', 8),
-('Iaciara', 8),
-('Inaciolândia', 8),
-('Indiara', 8),
-('Inhumas', 8),
-('Ipameri', 8),
-('Ipiranga de Goiás', 8),
-('Iporá', 8),
-('Israelândia', 8),
-('Itaberaí', 8),
-('Itaguari', 8),
-('Itaguaru', 8),
-('Itajá', 8),
-('Itapaci', 8),
-('Itapirapuã', 8),
-('Itapuranga', 8),
-('Itarumã', 8),
-('Itauçu', 8),
-('Itumbiara', 8),
-('Ivolândia', 8),
-('Jandaia', 8),
-('Jaraguá', 8),
-('Jataí', 8),
-('Jaupaci', 8),
-('Jesúpolis', 8),
-('Joviânia', 8),
-('Jussara', 8),
-('Lagoa Santa', 8),
-('Leopoldo de Bulhões', 8),
-('Luziânia', 8),
-('Mairipotaba', 8),
-('Mambaí', 8),
-('Mara Rosa', 8),
-('Marzagão', 8),
-('Matrinchã', 8),
-('Maurilândia', 8),
-('Mimoso de Goiás', 8),
-('Minaçu', 8),
-('Mineiros', 8),
-('Moiporá', 8),
-('Monte Alegre de Goiás', 8),
-('Montes Claros de Goiás', 8),
-('Montividiu', 8),
-('Montividiu do Norte', 8),
-('Morrinhos', 8),
-('Morro Agudo de Goiás', 8),
-('Mossâmedes', 8),
-('Mozarlândia', 8),
-('Mundo Novo', 8),
-('Mutunópolis', 8),
-('Nazário', 8),
-('Nerópolis', 8),
-('Niquelândia', 8),
-('Nova América', 8),
-('Nova Aurora', 8),
-('Nova Crixás', 8),
-('Nova Glória', 8),
-('Nova Iguaçu de Goiás', 8),
-('Nova Roma', 8),
-('Nova Veneza', 8),
-('Novo Brasil', 8),
-('Novo Gama', 8),
-('Novo Planalto', 8),
-('Orizona', 8),
-('Ouro Verde de Goiás', 8),
-('Ouvidor', 8),
-('Padre Bernardo', 8),
-('Palestina de Goiás', 8),
-('Palmeiras de Goiás', 8),
-('Palmelo', 8),
-('Palminópolis', 8),
-('Panamá', 8),
-('Paranaiguara', 8),
-('Paraúna', 8),
-('Perolândia', 8),
-('Petrolina de Goiás', 8),
-('Pilar de Goiás', 8),
-('Piracanjuba', 8),
-('Piranhas', 8),
-('Pirenópolis', 8),
-('Pires do Rio', 8),
-('Planaltina', 8),
-('Pontalina', 8),
-('Porangatu', 8),
-('Porteirão', 8),
-('Portelândia', 8),
-('Posse', 8),
-('Professor Jamil', 8),
-('Quirinópolis', 8),
-('Rialma', 8),
-('Rianápolis', 8),
-('Rio Quente', 8),
-('Rio Verde', 8),
-('Rubiataba', 8),
-('Sanclerlândia', 8),
-('Santa Bárbara de Goiás', 8),
-('Santa Cruz de Goiás', 8),
-('Santa Fé de Goiás', 8),
-('Santa Helena de Goiás', 8),
-('Santa Isabel', 8),
-('Santa Rita do Araguaia', 8),
-('Santa Rita do Novo Destino', 8),
-('Santa Rosa de Goiás', 8),
-('Santa Tereza de Goiás', 8),
-('Santa Terezinha de Goiás', 8),
-('Santo Antônio da Barra', 8),
-('Santo Antônio de Goiás', 8),
-('Santo Antônio do Descoberto', 8),
-('São Domingos', 8),
-('São Francisco de Goiás', 8),
-('São João d\'Aliança', 8),
-('São João da Paraúna', 8),
-('São Luís de Montes Belos', 8),
-('São Luíz do Norte', 8),
-('São Miguel do Araguaia', 8),
-('São Miguel do Passa Quatro', 8),
-('São Patrício', 8),
-('São Simão', 8),
-('Senador Canedo', 8),
-('Serranópolis', 8),
-('Silvânia', 8),
-('Simolândia', 8),
-('Sítio d\'Abadia', 8),
-('Taquaral de Goiás', 8),
-('Teresina de Goiás', 8),
-('Terezópolis de Goiás', 8),
-('Três Ranchos', 8),
-('Trindade', 8),
-('Trombas', 8),
-('Turvânia', 8),
-('Turvelândia', 8),
-('Uirapuru', 8),
-('Uruaçu', 8),
-('Uruana', 8),
-('Urutaí', 8),
-('Valparaíso de Goiás', 8),
-('Varjão', 8),
-('Vianópolis', 8),
-('Vicentinópolis', 8),
-('Vila Boa', 8),
-('Vila Propício', 8);
-
 -- Inserir dados na tabela TipoSituacao
 INSERT INTO tipo_situacao (tipo) VALUES ('Estado');
 INSERT INTO tipo_situacao (tipo) VALUES ('Ação');
@@ -1189,6 +45,20 @@ INSERT INTO situacao (situacao, tipo_situacao_id) VALUES ('Recusada', 1);
 
 INSERT INTO usuario(nome,email,senha) VALUES ('Davi Silva','davirodrigues0506@gmail.com',AES_ENCRYPT('12341234','chave'));
 
+INSERT INTO usuario(nome,email,senha) VALUES ('Julio Dahi','juliocesardahi@gmail.com',AES_ENCRYPT('12341234','chave'));
+
+INSERT INTO informacoes_adicionais(cpf,data_nascimento) VALUES
+('48556583830','2005-01-27');
+
+INSERT INTO tipo_contato (tipo_contato) VALUES
+('Email'),
+('Whatsapp'),
+('Telegram'),
+('Ligação');
+
+INSERT INTO contato(informacoes_contato,tipo_contato_id,informacoes_adicionais_id) VALUES
+('1194066618',3,1);
+
 INSERT INTO tipo_atividade(tipo) VALUES
 ('Multirão de vacina'),
 ('Entrega de alimentos'),
@@ -1203,3 +73,855 @@ INSERT INTO atividade(nome,hora_comeco,hora_final,descricao,tipo_atividade_id) V
 
 INSERT calendario(ano,mes_numeracao,mes_nomeacao,dia_numeracao) VALUES
 (2024,1,'Janeiro',1),(2024,1,'Janeiro',2),(2024,1,'Janeiro',3),(2024,1,'Janeiro',4),(2024,1,'Janeiro',5),(2024,1,'Janeiro',6),(2024,1,'Janeiro',7),(2024,1,'Janeiro',8),(2024,1,'Janeiro',9),(2024,1,'Janeiro',10),(2024,1,'Janeiro',11),(2024,1,'Janeiro',12),(2024,1,'Janeiro',13),(2024,1,'Janeiro',14),(2024,1,'Janeiro',15),(2024,1,'Janeiro',16),(2024,1,'Janeiro',17),(2024,1,'Janeiro',18),(2024,1,'Janeiro',19),(2024,1,'Janeiro',20),(2024,1,'Janeiro',21),(2024,1,'Janeiro',22),(2024,1,'Janeiro',23),(2024,1,'Janeiro',24),(2024,1,'Janeiro',25),(2024,1,'Janeiro',26),(2024,1,'Janeiro',27),(2024,1,'Janeiro',28),(2024,1,'Janeiro',29),(2024,1,'Janeiro',30),(2024,1,'Janeiro',31),(2024,2,'Fevereiro',1),(2024,2,'Fevereiro',2),(2024,2,'Fevereiro',3),(2024,2,'Fevereiro',4),(2024,2,'Fevereiro',5),(2024,2,'Fevereiro',6),(2024,2,'Fevereiro',7),(2024,2,'Fevereiro',8),(2024,2,'Fevereiro',9),(2024,2,'Fevereiro',10),(2024,2,'Fevereiro',11),(2024,2,'Fevereiro',12),(2024,2,'Fevereiro',13),(2024,2,'Fevereiro',14),(2024,2,'Fevereiro',15),(2024,2,'Fevereiro',16),(2024,2,'Fevereiro',17),(2024,2,'Fevereiro',18),(2024,2,'Fevereiro',19),(2024,2,'Fevereiro',20),(2024,2,'Fevereiro',21),(2024,2,'Fevereiro',22),(2024,2,'Fevereiro',23),(2024,2,'Fevereiro',24),(2024,2,'Fevereiro',25),(2024,2,'Fevereiro',26),(2024,2,'Fevereiro',27),(2024,2,'Fevereiro',28),(2024,2,'Fevereiro',29),(2024,3,'Março',1),(2024,3,'Março',2),(2024,3,'Março',3),(2024,3,'Março',4),(2024,3,'Março',5),(2024,3,'Março',6),(2024,3,'Março',7),(2024,3,'Março',8),(2024,3,'Março',9),(2024,3,'Março',10),(2024,3,'Março',11),(2024,3,'Março',12),(2024,3,'Março',13),(2024,3,'Março',14),(2024,3,'Março',15),(2024,3,'Março',16),(2024,3,'Março',17),(2024,3,'Março',18),(2024,3,'Março',19),(2024,3,'Março',20),(2024,3,'Março',21),(2024,3,'Março',22),(2024,3,'Março',23),(2024,3,'Março',24),(2024,3,'Março',25),(2024,3,'Março',26),(2024,3,'Março',27),(2024,3,'Março',28),(2024,3,'Março',29),(2024,3,'Março',30),(2024,3,'Março',31),(2024,4,'Abril',1),(2024,4,'Abril',2),(2024,4,'Abril',3),(2024,4,'Abril',4),(2024,4,'Abril',5),(2024,4,'Abril',6),(2024,4,'Abril',7),(2024,4,'Abril',8),(2024,4,'Abril',9),(2024,4,'Abril',10),(2024,4,'Abril',11),(2024,4,'Abril',12),(2024,4,'Abril',13),(2024,4,'Abril',14),(2024,4,'Abril',15),(2024,4,'Abril',16),(2024,4,'Abril',17),(2024,4,'Abril',18),(2024,4,'Abril',19),(2024,4,'Abril',20),(2024,4,'Abril',21),(2024,4,'Abril',22),(2024,4,'Abril',23),(2024,4,'Abril',24),(2024,4,'Abril',25),(2024,4,'Abril',26),(2024,4,'Abril',27),(2024,4,'Abril',28),(2024,4,'Abril',29),(2024,4,'Abril',30),(2024,5,'Maio',1),(2024,5,'Maio',2),(2024,5,'Maio',3),(2024,5,'Maio',4),(2024,5,'Maio',5),(2024,5,'Maio',6),(2024,5,'Maio',7),(2024,5,'Maio',8),(2024,5,'Maio',9),(2024,5,'Maio',10),(2024,5,'Maio',11),(2024,5,'Maio',12),(2024,5,'Maio',13),(2024,5,'Maio',14),(2024,5,'Maio',15),(2024,5,'Maio',16),(2024,5,'Maio',17),(2024,5,'Maio',18),(2024,5,'Maio',19),(2024,5,'Maio',20),(2024,5,'Maio',21),(2024,5,'Maio',22),(2024,5,'Maio',23),(2024,5,'Maio',24),(2024,5,'Maio',25),(2024,5,'Maio',26),(2024,5,'Maio',27),(2024,5,'Maio',28),(2024,5,'Maio',29),(2024,5,'Maio',30),(2024,5,'Maio',31),(2024,6,'Junho',1),(2024,6,'Junho',2),(2024,6,'Junho',3),(2024,6,'Junho',4),(2024,6,'Junho',5),(2024,6,'Junho',6),(2024,6,'Junho',7),(2024,6,'Junho',8),(2024,6,'Junho',9),(2024,6,'Junho',10),(2024,6,'Junho',11),(2024,6,'Junho',12),(2024,6,'Junho',13),(2024,6,'Junho',14),(2024,6,'Junho',15),(2024,6,'Junho',16),(2024,6,'Junho',17),(2024,6,'Junho',18),(2024,6,'Junho',19),(2024,6,'Junho',20),(2024,6,'Junho',21),(2024,6,'Junho',22),(2024,6,'Junho',23),(2024,6,'Junho',24),(2024,6,'Junho',25),(2024,6,'Junho',26),(2024,6,'Junho',27),(2024,6,'Junho',28),(2024,6,'Junho',29),(2024,6,'Junho',30),(2024,7,'Julho',1),(2024,7,'Julho',2),(2024,7,'Julho',3),(2024,7,'Julho',4),(2024,7,'Julho',5),(2024,7,'Julho',6),(2024,7,'Julho',7),(2024,7,'Julho',8),(2024,7,'Julho',9),(2024,7,'Julho',10),(2024,7,'Julho',11),(2024,7,'Julho',12),(2024,7,'Julho',13),(2024,7,'Julho',14),(2024,7,'Julho',15),(2024,7,'Julho',16),(2024,7,'Julho',17),(2024,7,'Julho',18),(2024,7,'Julho',19),(2024,7,'Julho',20),(2024,7,'Julho',21),(2024,7,'Julho',22),(2024,7,'Julho',23),(2024,7,'Julho',24),(2024,7,'Julho',25),(2024,7,'Julho',26),(2024,7,'Julho',27),(2024,7,'Julho',28),(2024,7,'Julho',29),(2024,7,'Julho',30),(2024,7,'Julho',31),(2024,8,'Agosto',1),(2024,8,'Agosto',2),(2024,8,'Agosto',3),(2024,8,'Agosto',4),(2024,8,'Agosto',5),(2024,8,'Agosto',6),(2024,8,'Agosto',7),(2024,8,'Agosto',8),(2024,8,'Agosto',9),(2024,8,'Agosto',10),(2024,8,'Agosto',11),(2024,8,'Agosto',12),(2024,8,'Agosto',13),(2024,8,'Agosto',14),(2024,8,'Agosto',15),(2024,8,'Agosto',16),(2024,8,'Agosto',17),(2024,8,'Agosto',18),(2024,8,'Agosto',19),(2024,8,'Agosto',20),(2024,8,'Agosto',21),(2024,8,'Agosto',22),(2024,8,'Agosto',23),(2024,8,'Agosto',24),(2024,8,'Agosto',25),(2024,8,'Agosto',26),(2024,8,'Agosto',27),(2024,8,'Agosto',28),(2024,8,'Agosto',29),(2024,8,'Agosto',30),(2024,8,'Agosto',31),(2024,9,'Setembro',1),(2024,9,'Setembro',2),(2024,9,'Setembro',3),(2024,9,'Setembro',4),(2024,9,'Setembro',5),(2024,9,'Setembro',6),(2024,9,'Setembro',7),(2024,9,'Setembro',8),(2024,9,'Setembro',9),(2024,9,'Setembro',10),(2024,9,'Setembro',11),(2024,9,'Setembro',12),(2024,9,'Setembro',13),(2024,9,'Setembro',14),(2024,9,'Setembro',15),(2024,9,'Setembro',16),(2024,9,'Setembro',17),(2024,9,'Setembro',18),(2024,9,'Setembro',19),(2024,9,'Setembro',20),(2024,9,'Setembro',21),(2024,9,'Setembro',22),(2024,9,'Setembro',23),(2024,9,'Setembro',24),(2024,9,'Setembro',25),(2024,9,'Setembro',26),(2024,9,'Setembro',27),(2024,9,'Setembro',28),(2024,9,'Setembro',29),(2024,9,'Setembro',30),(2024,10,'Outubro',1),(2024,10,'Outubro',2),(2024,10,'Outubro',3),(2024,10,'Outubro',4),(2024,10,'Outubro',5),(2024,10,'Outubro',6),(2024,10,'Outubro',7),(2024,10,'Outubro',8),(2024,10,'Outubro',9),(2024,10,'Outubro',10),(2024,10,'Outubro',11),(2024,10,'Outubro',12),(2024,10,'Outubro',13),(2024,10,'Outubro',14),(2024,10,'Outubro',15),(2024,10,'Outubro',16),(2024,10,'Outubro',17),(2024,10,'Outubro',18),(2024,10,'Outubro',19),(2024,10,'Outubro',20),(2024,10,'Outubro',21),(2024,10,'Outubro',22),(2024,10,'Outubro',23),(2024,10,'Outubro',24),(2024,10,'Outubro',25),(2024,10,'Outubro',26),(2024,10,'Outubro',27),(2024,10,'Outubro',28),(2024,10,'Outubro',29),(2024,10,'Outubro',30),(2024,10,'Outubro',31),(2024,11,'Novembro',1),(2024,11,'Novembro',2),(2024,11,'Novembro',3),(2024,11,'Novembro',4),(2024,11,'Novembro',5),(2024,11,'Novembro',6),(2024,11,'Novembro',7),(2024,11,'Novembro',8),(2024,11,'Novembro',9),(2024,11,'Novembro',10),(2024,11,'Novembro',11),(2024,11,'Novembro',12),(2024,11,'Novembro',13),(2024,11,'Novembro',14),(2024,11,'Novembro',15),(2024,11,'Novembro',16),(2024,11,'Novembro',17),(2024,11,'Novembro',18),(2024,11,'Novembro',19),(2024,11,'Novembro',20),(2024,11,'Novembro',21),(2024,11,'Novembro',22),(2024,11,'Novembro',23),(2024,11,'Novembro',24),(2024,11,'Novembro',25),(2024,11,'Novembro',26),(2024,11,'Novembro',27),(2024,11,'Novembro',28),(2024,11,'Novembro',29),(2024,11,'Novembro',30),(2024,12,'Dezembro',1),(2024,12,'Dezembro',2),(2024,12,'Dezembro',3),(2024,12,'Dezembro',4),(2024,12,'Dezembro',5),(2024,12,'Dezembro',6),(2024,12,'Dezembro',7),(2024,12,'Dezembro',8),(2024,12,'Dezembro',9),(2024,12,'Dezembro',10),(2024,12,'Dezembro',11),(2024,12,'Dezembro',12),(2024,12,'Dezembro',13),(2024,12,'Dezembro',14),(2024,12,'Dezembro',15),(2024,12,'Dezembro',16),(2024,12,'Dezembro',17),(2024,12,'Dezembro',18),(2024,12,'Dezembro',19),(2024,12,'Dezembro',20),(2024,12,'Dezembro',21),(2024,12,'Dezembro',22),(2024,12,'Dezembro',23),(2024,12,'Dezembro',24),(2024,12,'Dezembro',25),(2024,12,'Dezembro',26),(2024,12,'Dezembro',27),(2024,12,'Dezembro',28),(2024,12,'Dezembro',29),(2024,12,'Dezembro',30),(2024,12,'Dezembro',31),(2025,1,'Janeiro',1),(2025,1,'Janeiro',2),(2025,1,'Janeiro',3),(2025,1,'Janeiro',4),(2025,1,'Janeiro',5),(2025,1,'Janeiro',6),(2025,1,'Janeiro',7),(2025,1,'Janeiro',8),(2025,1,'Janeiro',9),(2025,1,'Janeiro',10),(2025,1,'Janeiro',11),(2025,1,'Janeiro',12),(2025,1,'Janeiro',13),(2025,1,'Janeiro',14),(2025,1,'Janeiro',15),(2025,1,'Janeiro',16),(2025,1,'Janeiro',17),(2025,1,'Janeiro',18),(2025,1,'Janeiro',19),(2025,1,'Janeiro',20),(2025,1,'Janeiro',21),(2025,1,'Janeiro',22),(2025,1,'Janeiro',23),(2025,1,'Janeiro',24),(2025,1,'Janeiro',25),(2025,1,'Janeiro',26),(2025,1,'Janeiro',27),(2025,1,'Janeiro',28),(2025,1,'Janeiro',29),(2025,1,'Janeiro',30),(2025,1,'Janeiro',31),(2025,2,'Fevereiro',1),(2025,2,'Fevereiro',2),(2025,2,'Fevereiro',3),(2025,2,'Fevereiro',4),(2025,2,'Fevereiro',5),(2025,2,'Fevereiro',6),(2025,2,'Fevereiro',7),(2025,2,'Fevereiro',8),(2025,2,'Fevereiro',9),(2025,2,'Fevereiro',10),(2025,2,'Fevereiro',11),(2025,2,'Fevereiro',12),(2025,2,'Fevereiro',13),(2025,2,'Fevereiro',14),(2025,2,'Fevereiro',15),(2025,2,'Fevereiro',16),(2025,2,'Fevereiro',17),(2025,2,'Fevereiro',18),(2025,2,'Fevereiro',19),(2025,2,'Fevereiro',20),(2025,2,'Fevereiro',21),(2025,2,'Fevereiro',22),(2025,2,'Fevereiro',23),(2025,2,'Fevereiro',24),(2025,2,'Fevereiro',25),(2025,2,'Fevereiro',26),(2025,2,'Fevereiro',27),(2025,2,'Fevereiro',28),(2025,3,'Março',1),(2025,3,'Março',2),(2025,3,'Março',3),(2025,3,'Março',4),(2025,3,'Março',5),(2025,3,'Março',6),(2025,3,'Março',7),(2025,3,'Março',8),(2025,3,'Março',9),(2025,3,'Março',10),(2025,3,'Março',11),(2025,3,'Março',12),(2025,3,'Março',13),(2025,3,'Março',14),(2025,3,'Março',15),(2025,3,'Março',16),(2025,3,'Março',17),(2025,3,'Março',18),(2025,3,'Março',19),(2025,3,'Março',20),(2025,3,'Março',21),(2025,3,'Março',22),(2025,3,'Março',23),(2025,3,'Março',24),(2025,3,'Março',25),(2025,3,'Março',26),(2025,3,'Março',27),(2025,3,'Março',28),(2025,3,'Março',29),(2025,3,'Março',30),(2025,3,'Março',31),(2025,4,'Abril',1),(2025,4,'Abril',2),(2025,4,'Abril',3),(2025,4,'Abril',4),(2025,4,'Abril',5),(2025,4,'Abril',6),(2025,4,'Abril',7),(2025,4,'Abril',8),(2025,4,'Abril',9),(2025,4,'Abril',10),(2025,4,'Abril',11),(2025,4,'Abril',12),(2025,4,'Abril',13),(2025,4,'Abril',14),(2025,4,'Abril',15),(2025,4,'Abril',16),(2025,4,'Abril',17),(2025,4,'Abril',18),(2025,4,'Abril',19),(2025,4,'Abril',20),(2025,4,'Abril',21),(2025,4,'Abril',22),(2025,4,'Abril',23),(2025,4,'Abril',24),(2025,4,'Abril',25),(2025,4,'Abril',26),(2025,4,'Abril',27),(2025,4,'Abril',28),(2025,4,'Abril',29),(2025,4,'Abril',30),(2025,5,'Maio',1),(2025,5,'Maio',2),(2025,5,'Maio',3),(2025,5,'Maio',4),(2025,5,'Maio',5),(2025,5,'Maio',6),(2025,5,'Maio',7),(2025,5,'Maio',8),(2025,5,'Maio',9),(2025,5,'Maio',10),(2025,5,'Maio',11),(2025,5,'Maio',12),(2025,5,'Maio',13),(2025,5,'Maio',14),(2025,5,'Maio',15),(2025,5,'Maio',16),(2025,5,'Maio',17),(2025,5,'Maio',18),(2025,5,'Maio',19),(2025,5,'Maio',20),(2025,5,'Maio',21),(2025,5,'Maio',22),(2025,5,'Maio',23),(2025,5,'Maio',24),(2025,5,'Maio',25),(2025,5,'Maio',26),(2025,5,'Maio',27),(2025,5,'Maio',28),(2025,5,'Maio',29),(2025,5,'Maio',30),(2025,5,'Maio',31),(2025,6,'Junho',1),(2025,6,'Junho',2),(2025,6,'Junho',3),(2025,6,'Junho',4),(2025,6,'Junho',5),(2025,6,'Junho',6),(2025,6,'Junho',7),(2025,6,'Junho',8),(2025,6,'Junho',9),(2025,6,'Junho',10),(2025,6,'Junho',11),(2025,6,'Junho',12),(2025,6,'Junho',13),(2025,6,'Junho',14),(2025,6,'Junho',15),(2025,6,'Junho',16),(2025,6,'Junho',17),(2025,6,'Junho',18),(2025,6,'Junho',19),(2025,6,'Junho',20),(2025,6,'Junho',21),(2025,6,'Junho',22),(2025,6,'Junho',23),(2025,6,'Junho',24),(2025,6,'Junho',25),(2025,6,'Junho',26),(2025,6,'Junho',27),(2025,6,'Junho',28),(2025,6,'Junho',29),(2025,6,'Junho',30),(2025,7,'Julho',1),(2025,7,'Julho',2),(2025,7,'Julho',3),(2025,7,'Julho',4),(2025,7,'Julho',5),(2025,7,'Julho',6),(2025,7,'Julho',7),(2025,7,'Julho',8),(2025,7,'Julho',9),(2025,7,'Julho',10),(2025,7,'Julho',11),(2025,7,'Julho',12),(2025,7,'Julho',13),(2025,7,'Julho',14),(2025,7,'Julho',15),(2025,7,'Julho',16),(2025,7,'Julho',17),(2025,7,'Julho',18),(2025,7,'Julho',19),(2025,7,'Julho',20),(2025,7,'Julho',21),(2025,7,'Julho',22),(2025,7,'Julho',23),(2025,7,'Julho',24),(2025,7,'Julho',25),(2025,7,'Julho',26),(2025,7,'Julho',27),(2025,7,'Julho',28),(2025,7,'Julho',29),(2025,7,'Julho',30),(2025,7,'Julho',31),(2025,8,'Agosto',1),(2025,8,'Agosto',2),(2025,8,'Agosto',3),(2025,8,'Agosto',4),(2025,8,'Agosto',5),(2025,8,'Agosto',6),(2025,8,'Agosto',7),(2025,8,'Agosto',8),(2025,8,'Agosto',9),(2025,8,'Agosto',10),(2025,8,'Agosto',11),(2025,8,'Agosto',12),(2025,8,'Agosto',13),(2025,8,'Agosto',14),(2025,8,'Agosto',15),(2025,8,'Agosto',16),(2025,8,'Agosto',17),(2025,8,'Agosto',18),(2025,8,'Agosto',19),(2025,8,'Agosto',20),(2025,8,'Agosto',21),(2025,8,'Agosto',22),(2025,8,'Agosto',23),(2025,8,'Agosto',24),(2025,8,'Agosto',25),(2025,8,'Agosto',26),(2025,8,'Agosto',27),(2025,8,'Agosto',28),(2025,8,'Agosto',29),(2025,8,'Agosto',30),(2025,8,'Agosto',31),(2025,9,'Setembro',1),(2025,9,'Setembro',2),(2025,9,'Setembro',3),(2025,9,'Setembro',4),(2025,9,'Setembro',5),(2025,9,'Setembro',6),(2025,9,'Setembro',7),(2025,9,'Setembro',8),(2025,9,'Setembro',9),(2025,9,'Setembro',10),(2025,9,'Setembro',11),(2025,9,'Setembro',12),(2025,9,'Setembro',13),(2025,9,'Setembro',14),(2025,9,'Setembro',15),(2025,9,'Setembro',16),(2025,9,'Setembro',17),(2025,9,'Setembro',18),(2025,9,'Setembro',19),(2025,9,'Setembro',20),(2025,9,'Setembro',21),(2025,9,'Setembro',22),(2025,9,'Setembro',23),(2025,9,'Setembro',24),(2025,9,'Setembro',25),(2025,9,'Setembro',26),(2025,9,'Setembro',27),(2025,9,'Setembro',28),(2025,9,'Setembro',29),(2025,9,'Setembro',30),(2025,10,'Outubro',1),(2025,10,'Outubro',2),(2025,10,'Outubro',3),(2025,10,'Outubro',4),(2025,10,'Outubro',5),(2025,10,'Outubro',6),(2025,10,'Outubro',7),(2025,10,'Outubro',8),(2025,10,'Outubro',9),(2025,10,'Outubro',10),(2025,10,'Outubro',11),(2025,10,'Outubro',12),(2025,10,'Outubro',13),(2025,10,'Outubro',14),(2025,10,'Outubro',15),(2025,10,'Outubro',16),(2025,10,'Outubro',17),(2025,10,'Outubro',18),(2025,10,'Outubro',19),(2025,10,'Outubro',20),(2025,10,'Outubro',21),(2025,10,'Outubro',22),(2025,10,'Outubro',23),(2025,10,'Outubro',24),(2025,10,'Outubro',25),(2025,10,'Outubro',26),(2025,10,'Outubro',27),(2025,10,'Outubro',28),(2025,10,'Outubro',29),(2025,10,'Outubro',30),(2025,10,'Outubro',31),(2025,11,'Novembro',1),(2025,11,'Novembro',2),(2025,11,'Novembro',3),(2025,11,'Novembro',4),(2025,11,'Novembro',5),(2025,11,'Novembro',6),(2025,11,'Novembro',7),(2025,11,'Novembro',8),(2025,11,'Novembro',9),(2025,11,'Novembro',10),(2025,11,'Novembro',11),(2025,11,'Novembro',12),(2025,11,'Novembro',13),(2025,11,'Novembro',14),(2025,11,'Novembro',15),(2025,11,'Novembro',16),(2025,11,'Novembro',17),(2025,11,'Novembro',18),(2025,11,'Novembro',19),(2025,11,'Novembro',20),(2025,11,'Novembro',21),(2025,11,'Novembro',22),(2025,11,'Novembro',23),(2025,11,'Novembro',24),(2025,11,'Novembro',25),(2025,11,'Novembro',26),(2025,11,'Novembro',27),(2025,11,'Novembro',28),(2025,11,'Novembro',29),(2025,11,'Novembro',30),(2025,12,'Dezembro',1),(2025,12,'Dezembro',2),(2025,12,'Dezembro',3),(2025,12,'Dezembro',4),(2025,12,'Dezembro',5),(2025,12,'Dezembro',6),(2025,12,'Dezembro',7),(2025,12,'Dezembro',8),(2025,12,'Dezembro',9),(2025,12,'Dezembro',10),(2025,12,'Dezembro',11),(2025,12,'Dezembro',12),(2025,12,'Dezembro',13),(2025,12,'Dezembro',14),(2025,12,'Dezembro',15),(2025,12,'Dezembro',16),(2025,12,'Dezembro',17),(2025,12,'Dezembro',18),(2025,12,'Dezembro',19),(2025,12,'Dezembro',20),(2025,12,'Dezembro',21),(2025,12,'Dezembro',22),(2025,12,'Dezembro',23),(2025,12,'Dezembro',24),(2025,12,'Dezembro',25),(2025,12,'Dezembro',26),(2025,12,'Dezembro',27),(2025,12,'Dezembro',28),(2025,12,'Dezembro',29),(2025,12,'Dezembro',30),(2025,12,'Dezembro',31);
+
+UPDATE calendario SET dia_nomeacao = 'Segunda-Feira' WHERE id = 1;
+UPDATE calendario SET dia_nomeacao = 'Segunda-Feira' WHERE id = 7;
+UPDATE calendario SET dia_nomeacao = 'Segunda-Feira' WHERE id = 13;
+UPDATE calendario SET dia_nomeacao = 'Segunda-Feira' WHERE id = 19;
+UPDATE calendario SET dia_nomeacao = 'Segunda-Feira' WHERE id = 25;
+UPDATE calendario SET dia_nomeacao = 'Segunda-Feira' WHERE id = 31;
+UPDATE calendario SET dia_nomeacao = 'Segunda-Feira' WHERE id = 37;
+UPDATE calendario SET dia_nomeacao = 'Segunda-Feira' WHERE id = 43;
+UPDATE calendario SET dia_nomeacao = 'Segunda-Feira' WHERE id = 49;
+UPDATE calendario SET dia_nomeacao = 'Segunda-Feira' WHERE id = 55;
+UPDATE calendario SET dia_nomeacao = 'Segunda-Feira' WHERE id = 61;
+UPDATE calendario SET dia_nomeacao = 'Segunda-Feira' WHERE id = 67;
+UPDATE calendario SET dia_nomeacao = 'Segunda-Feira' WHERE id = 73;
+UPDATE calendario SET dia_nomeacao = 'Segunda-Feira' WHERE id = 79;
+UPDATE calendario SET dia_nomeacao = 'Segunda-Feira' WHERE id = 85;
+UPDATE calendario SET dia_nomeacao = 'Segunda-Feira' WHERE id = 91;
+UPDATE calendario SET dia_nomeacao = 'Segunda-Feira' WHERE id = 97;
+UPDATE calendario SET dia_nomeacao = 'Segunda-Feira' WHERE id = 103;
+UPDATE calendario SET dia_nomeacao = 'Segunda-Feira' WHERE id = 109;
+UPDATE calendario SET dia_nomeacao = 'Segunda-Feira' WHERE id = 115;
+UPDATE calendario SET dia_nomeacao = 'Segunda-Feira' WHERE id = 121;
+UPDATE calendario SET dia_nomeacao = 'Segunda-Feira' WHERE id = 127;
+UPDATE calendario SET dia_nomeacao = 'Segunda-Feira' WHERE id = 133;
+UPDATE calendario SET dia_nomeacao = 'Segunda-Feira' WHERE id = 139;
+UPDATE calendario SET dia_nomeacao = 'Segunda-Feira' WHERE id = 145;
+UPDATE calendario SET dia_nomeacao = 'Segunda-Feira' WHERE id = 151;
+UPDATE calendario SET dia_nomeacao = 'Segunda-Feira' WHERE id = 157;
+UPDATE calendario SET dia_nomeacao = 'Segunda-Feira' WHERE id = 163;
+UPDATE calendario SET dia_nomeacao = 'Segunda-Feira' WHERE id = 169;
+UPDATE calendario SET dia_nomeacao = 'Segunda-Feira' WHERE id = 175;
+UPDATE calendario SET dia_nomeacao = 'Segunda-Feira' WHERE id = 181;
+UPDATE calendario SET dia_nomeacao = 'Segunda-Feira' WHERE id = 187;
+UPDATE calendario SET dia_nomeacao = 'Segunda-Feira' WHERE id = 193;
+UPDATE calendario SET dia_nomeacao = 'Segunda-Feira' WHERE id = 199;
+UPDATE calendario SET dia_nomeacao = 'Segunda-Feira' WHERE id = 205;
+UPDATE calendario SET dia_nomeacao = 'Segunda-Feira' WHERE id = 211;
+UPDATE calendario SET dia_nomeacao = 'Segunda-Feira' WHERE id = 217;
+UPDATE calendario SET dia_nomeacao = 'Segunda-Feira' WHERE id = 223;
+UPDATE calendario SET dia_nomeacao = 'Segunda-Feira' WHERE id = 229;
+UPDATE calendario SET dia_nomeacao = 'Segunda-Feira' WHERE id = 235;
+UPDATE calendario SET dia_nomeacao = 'Segunda-Feira' WHERE id = 241;
+UPDATE calendario SET dia_nomeacao = 'Segunda-Feira' WHERE id = 247;
+UPDATE calendario SET dia_nomeacao = 'Segunda-Feira' WHERE id = 253;
+UPDATE calendario SET dia_nomeacao = 'Segunda-Feira' WHERE id = 259;
+UPDATE calendario SET dia_nomeacao = 'Segunda-Feira' WHERE id = 265;
+UPDATE calendario SET dia_nomeacao = 'Segunda-Feira' WHERE id = 271;
+UPDATE calendario SET dia_nomeacao = 'Segunda-Feira' WHERE id = 277;
+UPDATE calendario SET dia_nomeacao = 'Segunda-Feira' WHERE id = 283;
+UPDATE calendario SET dia_nomeacao = 'Segunda-Feira' WHERE id = 289;
+UPDATE calendario SET dia_nomeacao = 'Segunda-Feira' WHERE id = 295;
+UPDATE calendario SET dia_nomeacao = 'Segunda-Feira' WHERE id = 301;
+UPDATE calendario SET dia_nomeacao = 'Segunda-Feira' WHERE id = 307;
+UPDATE calendario SET dia_nomeacao = 'Segunda-Feira' WHERE id = 313;
+UPDATE calendario SET dia_nomeacao = 'Segunda-Feira' WHERE id = 319;
+UPDATE calendario SET dia_nomeacao = 'Segunda-Feira' WHERE id = 325;
+UPDATE calendario SET dia_nomeacao = 'Segunda-Feira' WHERE id = 331;
+UPDATE calendario SET dia_nomeacao = 'Segunda-Feira' WHERE id = 337;
+UPDATE calendario SET dia_nomeacao = 'Segunda-Feira' WHERE id = 343;
+UPDATE calendario SET dia_nomeacao = 'Segunda-Feira' WHERE id = 349;
+UPDATE calendario SET dia_nomeacao = 'Segunda-Feira' WHERE id = 355;
+UPDATE calendario SET dia_nomeacao = 'Segunda-Feira' WHERE id = 361;
+UPDATE calendario SET dia_nomeacao = 'Segunda-Feira' WHERE id = 367;
+UPDATE calendario SET dia_nomeacao = 'Segunda-Feira' WHERE id = 373;
+UPDATE calendario SET dia_nomeacao = 'Segunda-Feira' WHERE id = 379;
+UPDATE calendario SET dia_nomeacao = 'Segunda-Feira' WHERE id = 385;
+UPDATE calendario SET dia_nomeacao = 'Segunda-Feira' WHERE id = 391;
+UPDATE calendario SET dia_nomeacao = 'Segunda-Feira' WHERE id = 397;
+UPDATE calendario SET dia_nomeacao = 'Segunda-Feira' WHERE id = 403;
+UPDATE calendario SET dia_nomeacao = 'Segunda-Feira' WHERE id = 409;
+UPDATE calendario SET dia_nomeacao = 'Segunda-Feira' WHERE id = 415;
+UPDATE calendario SET dia_nomeacao = 'Segunda-Feira' WHERE id = 421;
+UPDATE calendario SET dia_nomeacao = 'Segunda-Feira' WHERE id = 427;
+UPDATE calendario SET dia_nomeacao = 'Segunda-Feira' WHERE id = 433;
+UPDATE calendario SET dia_nomeacao = 'Segunda-Feira' WHERE id = 439;
+UPDATE calendario SET dia_nomeacao = 'Segunda-Feira' WHERE id = 445;
+UPDATE calendario SET dia_nomeacao = 'Segunda-Feira' WHERE id = 451;
+UPDATE calendario SET dia_nomeacao = 'Segunda-Feira' WHERE id = 457;
+UPDATE calendario SET dia_nomeacao = 'Segunda-Feira' WHERE id = 463;
+UPDATE calendario SET dia_nomeacao = 'Segunda-Feira' WHERE id = 469;
+UPDATE calendario SET dia_nomeacao = 'Segunda-Feira' WHERE id = 475;
+UPDATE calendario SET dia_nomeacao = 'Segunda-Feira' WHERE id = 481;
+UPDATE calendario SET dia_nomeacao = 'Segunda-Feira' WHERE id = 487;
+UPDATE calendario SET dia_nomeacao = 'Segunda-Feira' WHERE id = 493;
+UPDATE calendario SET dia_nomeacao = 'Segunda-Feira' WHERE id = 499;
+UPDATE calendario SET dia_nomeacao = 'Segunda-Feira' WHERE id = 505;
+UPDATE calendario SET dia_nomeacao = 'Segunda-Feira' WHERE id = 511;
+UPDATE calendario SET dia_nomeacao = 'Segunda-Feira' WHERE id = 517;
+UPDATE calendario SET dia_nomeacao = 'Segunda-Feira' WHERE id = 523;
+UPDATE calendario SET dia_nomeacao = 'Segunda-Feira' WHERE id = 529;
+UPDATE calendario SET dia_nomeacao = 'Segunda-Feira' WHERE id = 535;
+UPDATE calendario SET dia_nomeacao = 'Segunda-Feira' WHERE id = 541;
+UPDATE calendario SET dia_nomeacao = 'Segunda-Feira' WHERE id = 547;
+UPDATE calendario SET dia_nomeacao = 'Segunda-Feira' WHERE id = 553;
+UPDATE calendario SET dia_nomeacao = 'Segunda-Feira' WHERE id = 559;
+UPDATE calendario SET dia_nomeacao = 'Segunda-Feira' WHERE id = 565;
+UPDATE calendario SET dia_nomeacao = 'Segunda-Feira' WHERE id = 571;
+UPDATE calendario SET dia_nomeacao = 'Segunda-Feira' WHERE id = 577;
+UPDATE calendario SET dia_nomeacao = 'Segunda-Feira' WHERE id = 583;
+UPDATE calendario SET dia_nomeacao = 'Segunda-Feira' WHERE id = 589;
+UPDATE calendario SET dia_nomeacao = 'Segunda-Feira' WHERE id = 595;
+UPDATE calendario SET dia_nomeacao = 'Segunda-Feira' WHERE id = 601;
+UPDATE calendario SET dia_nomeacao = 'Segunda-Feira' WHERE id = 607;
+UPDATE calendario SET dia_nomeacao = 'Segunda-Feira' WHERE id = 613;
+UPDATE calendario SET dia_nomeacao = 'Segunda-Feira' WHERE id = 619;
+UPDATE calendario SET dia_nomeacao = 'Segunda-Feira' WHERE id = 625;
+UPDATE calendario SET dia_nomeacao = 'Segunda-Feira' WHERE id = 631;
+UPDATE calendario SET dia_nomeacao = 'Segunda-Feira' WHERE id = 637;
+UPDATE calendario SET dia_nomeacao = 'Segunda-Feira' WHERE id = 643;
+UPDATE calendario SET dia_nomeacao = 'Segunda-Feira' WHERE id = 649;
+UPDATE calendario SET dia_nomeacao = 'Segunda-Feira' WHERE id = 655;
+UPDATE calendario SET dia_nomeacao = 'Segunda-Feira' WHERE id = 661;
+UPDATE calendario SET dia_nomeacao = 'Segunda-Feira' WHERE id = 667;
+UPDATE calendario SET dia_nomeacao = 'Segunda-Feira' WHERE id = 673;
+UPDATE calendario SET dia_nomeacao = 'Segunda-Feira' WHERE id = 679;
+UPDATE calendario SET dia_nomeacao = 'Segunda-Feira' WHERE id = 685;
+UPDATE calendario SET dia_nomeacao = 'Segunda-Feira' WHERE id = 691;
+UPDATE calendario SET dia_nomeacao = 'Segunda-Feira' WHERE id = 697;
+UPDATE calendario SET dia_nomeacao = 'Segunda-Feira' WHERE id = 703;
+UPDATE calendario SET dia_nomeacao = 'Segunda-Feira' WHERE id = 709;
+UPDATE calendario SET dia_nomeacao = 'Segunda-Feira' WHERE id = 715;
+UPDATE calendario SET dia_nomeacao = 'Segunda-Feira' WHERE id = 721;
+UPDATE calendario SET dia_nomeacao = 'Segunda-Feira' WHERE id = 727;
+UPDATE calendario SET dia_nomeacao = 'Terça-Feira' WHERE id = 2;
+UPDATE calendario SET dia_nomeacao = 'Terça-Feira' WHERE id = 8;
+UPDATE calendario SET dia_nomeacao = 'Terça-Feira' WHERE id = 14;
+UPDATE calendario SET dia_nomeacao = 'Terça-Feira' WHERE id = 20;
+UPDATE calendario SET dia_nomeacao = 'Terça-Feira' WHERE id = 26;
+UPDATE calendario SET dia_nomeacao = 'Terça-Feira' WHERE id = 32;
+UPDATE calendario SET dia_nomeacao = 'Terça-Feira' WHERE id = 38;
+UPDATE calendario SET dia_nomeacao = 'Terça-Feira' WHERE id = 44;
+UPDATE calendario SET dia_nomeacao = 'Terça-Feira' WHERE id = 50;
+UPDATE calendario SET dia_nomeacao = 'Terça-Feira' WHERE id = 56;
+UPDATE calendario SET dia_nomeacao = 'Terça-Feira' WHERE id = 62;
+UPDATE calendario SET dia_nomeacao = 'Terça-Feira' WHERE id = 68;
+UPDATE calendario SET dia_nomeacao = 'Terça-Feira' WHERE id = 74;
+UPDATE calendario SET dia_nomeacao = 'Terça-Feira' WHERE id = 80;
+UPDATE calendario SET dia_nomeacao = 'Terça-Feira' WHERE id = 86;
+UPDATE calendario SET dia_nomeacao = 'Terça-Feira' WHERE id = 92;
+UPDATE calendario SET dia_nomeacao = 'Terça-Feira' WHERE id = 98;
+UPDATE calendario SET dia_nomeacao = 'Terça-Feira' WHERE id = 104;
+UPDATE calendario SET dia_nomeacao = 'Terça-Feira' WHERE id = 110;
+UPDATE calendario SET dia_nomeacao = 'Terça-Feira' WHERE id = 116;
+UPDATE calendario SET dia_nomeacao = 'Terça-Feira' WHERE id = 122;
+UPDATE calendario SET dia_nomeacao = 'Terça-Feira' WHERE id = 128;
+UPDATE calendario SET dia_nomeacao = 'Terça-Feira' WHERE id = 134;
+UPDATE calendario SET dia_nomeacao = 'Terça-Feira' WHERE id = 140;
+UPDATE calendario SET dia_nomeacao = 'Terça-Feira' WHERE id = 146;
+UPDATE calendario SET dia_nomeacao = 'Terça-Feira' WHERE id = 152;
+UPDATE calendario SET dia_nomeacao = 'Terça-Feira' WHERE id = 158;
+UPDATE calendario SET dia_nomeacao = 'Terça-Feira' WHERE id = 164;
+UPDATE calendario SET dia_nomeacao = 'Terça-Feira' WHERE id = 170;
+UPDATE calendario SET dia_nomeacao = 'Terça-Feira' WHERE id = 176;
+UPDATE calendario SET dia_nomeacao = 'Terça-Feira' WHERE id = 182;
+UPDATE calendario SET dia_nomeacao = 'Terça-Feira' WHERE id = 188;
+UPDATE calendario SET dia_nomeacao = 'Terça-Feira' WHERE id = 194;
+UPDATE calendario SET dia_nomeacao = 'Terça-Feira' WHERE id = 200;
+UPDATE calendario SET dia_nomeacao = 'Terça-Feira' WHERE id = 206;
+UPDATE calendario SET dia_nomeacao = 'Terça-Feira' WHERE id = 212;
+UPDATE calendario SET dia_nomeacao = 'Terça-Feira' WHERE id = 218;
+UPDATE calendario SET dia_nomeacao = 'Terça-Feira' WHERE id = 224;
+UPDATE calendario SET dia_nomeacao = 'Terça-Feira' WHERE id = 230;
+UPDATE calendario SET dia_nomeacao = 'Terça-Feira' WHERE id = 236;
+UPDATE calendario SET dia_nomeacao = 'Terça-Feira' WHERE id = 242;
+UPDATE calendario SET dia_nomeacao = 'Terça-Feira' WHERE id = 248;
+UPDATE calendario SET dia_nomeacao = 'Terça-Feira' WHERE id = 254;
+UPDATE calendario SET dia_nomeacao = 'Terça-Feira' WHERE id = 260;
+UPDATE calendario SET dia_nomeacao = 'Terça-Feira' WHERE id = 266;
+UPDATE calendario SET dia_nomeacao = 'Terça-Feira' WHERE id = 272;
+UPDATE calendario SET dia_nomeacao = 'Terça-Feira' WHERE id = 278;
+UPDATE calendario SET dia_nomeacao = 'Terça-Feira' WHERE id = 284;
+UPDATE calendario SET dia_nomeacao = 'Terça-Feira' WHERE id = 290;
+UPDATE calendario SET dia_nomeacao = 'Terça-Feira' WHERE id = 296;
+UPDATE calendario SET dia_nomeacao = 'Terça-Feira' WHERE id = 302;
+UPDATE calendario SET dia_nomeacao = 'Terça-Feira' WHERE id = 308;
+UPDATE calendario SET dia_nomeacao = 'Terça-Feira' WHERE id = 314;
+UPDATE calendario SET dia_nomeacao = 'Terça-Feira' WHERE id = 320;
+UPDATE calendario SET dia_nomeacao = 'Terça-Feira' WHERE id = 326;
+UPDATE calendario SET dia_nomeacao = 'Terça-Feira' WHERE id = 332;
+UPDATE calendario SET dia_nomeacao = 'Terça-Feira' WHERE id = 338;
+UPDATE calendario SET dia_nomeacao = 'Terça-Feira' WHERE id = 344;
+UPDATE calendario SET dia_nomeacao = 'Terça-Feira' WHERE id = 350;
+UPDATE calendario SET dia_nomeacao = 'Terça-Feira' WHERE id = 356;
+UPDATE calendario SET dia_nomeacao = 'Terça-Feira' WHERE id = 362;
+UPDATE calendario SET dia_nomeacao = 'Terça-Feira' WHERE id = 368;
+UPDATE calendario SET dia_nomeacao = 'Terça-Feira' WHERE id = 374;
+UPDATE calendario SET dia_nomeacao = 'Terça-Feira' WHERE id = 380;
+UPDATE calendario SET dia_nomeacao = 'Terça-Feira' WHERE id = 386;
+UPDATE calendario SET dia_nomeacao = 'Terça-Feira' WHERE id = 392;
+UPDATE calendario SET dia_nomeacao = 'Terça-Feira' WHERE id = 398;
+UPDATE calendario SET dia_nomeacao = 'Terça-Feira' WHERE id = 404;
+UPDATE calendario SET dia_nomeacao = 'Terça-Feira' WHERE id = 410;
+UPDATE calendario SET dia_nomeacao = 'Terça-Feira' WHERE id = 416;
+UPDATE calendario SET dia_nomeacao = 'Terça-Feira' WHERE id = 422;
+UPDATE calendario SET dia_nomeacao = 'Terça-Feira' WHERE id = 428;
+UPDATE calendario SET dia_nomeacao = 'Terça-Feira' WHERE id = 434;
+UPDATE calendario SET dia_nomeacao = 'Terça-Feira' WHERE id = 440;
+UPDATE calendario SET dia_nomeacao = 'Terça-Feira' WHERE id = 446;
+UPDATE calendario SET dia_nomeacao = 'Terça-Feira' WHERE id = 452;
+UPDATE calendario SET dia_nomeacao = 'Terça-Feira' WHERE id = 458;
+UPDATE calendario SET dia_nomeacao = 'Terça-Feira' WHERE id = 464;
+UPDATE calendario SET dia_nomeacao = 'Terça-Feira' WHERE id = 470;
+UPDATE calendario SET dia_nomeacao = 'Terça-Feira' WHERE id = 476;
+UPDATE calendario SET dia_nomeacao = 'Terça-Feira' WHERE id = 482;
+UPDATE calendario SET dia_nomeacao = 'Terça-Feira' WHERE id = 488;
+UPDATE calendario SET dia_nomeacao = 'Terça-Feira' WHERE id = 494;
+UPDATE calendario SET dia_nomeacao = 'Terça-Feira' WHERE id = 500;
+UPDATE calendario SET dia_nomeacao = 'Terça-Feira' WHERE id = 506;
+UPDATE calendario SET dia_nomeacao = 'Terça-Feira' WHERE id = 512;
+UPDATE calendario SET dia_nomeacao = 'Terça-Feira' WHERE id = 518;
+UPDATE calendario SET dia_nomeacao = 'Terça-Feira' WHERE id = 524;
+UPDATE calendario SET dia_nomeacao = 'Terça-Feira' WHERE id = 530;
+UPDATE calendario SET dia_nomeacao = 'Terça-Feira' WHERE id = 536;
+UPDATE calendario SET dia_nomeacao = 'Terça-Feira' WHERE id = 542;
+UPDATE calendario SET dia_nomeacao = 'Terça-Feira' WHERE id = 548;
+UPDATE calendario SET dia_nomeacao = 'Terça-Feira' WHERE id = 554;
+UPDATE calendario SET dia_nomeacao = 'Terça-Feira' WHERE id = 560;
+UPDATE calendario SET dia_nomeacao = 'Terça-Feira' WHERE id = 566;
+UPDATE calendario SET dia_nomeacao = 'Terça-Feira' WHERE id = 572;
+UPDATE calendario SET dia_nomeacao = 'Terça-Feira' WHERE id = 578;
+UPDATE calendario SET dia_nomeacao = 'Terça-Feira' WHERE id = 584;
+UPDATE calendario SET dia_nomeacao = 'Terça-Feira' WHERE id = 590;
+UPDATE calendario SET dia_nomeacao = 'Terça-Feira' WHERE id = 596;
+UPDATE calendario SET dia_nomeacao = 'Terça-Feira' WHERE id = 602;
+UPDATE calendario SET dia_nomeacao = 'Terça-Feira' WHERE id = 608;
+UPDATE calendario SET dia_nomeacao = 'Terça-Feira' WHERE id = 614;
+UPDATE calendario SET dia_nomeacao = 'Terça-Feira' WHERE id = 620;
+UPDATE calendario SET dia_nomeacao = 'Terça-Feira' WHERE id = 626;
+UPDATE calendario SET dia_nomeacao = 'Terça-Feira' WHERE id = 632;
+UPDATE calendario SET dia_nomeacao = 'Terça-Feira' WHERE id = 638;
+UPDATE calendario SET dia_nomeacao = 'Terça-Feira' WHERE id = 644;
+UPDATE calendario SET dia_nomeacao = 'Terça-Feira' WHERE id = 650;
+UPDATE calendario SET dia_nomeacao = 'Terça-Feira' WHERE id = 656;
+UPDATE calendario SET dia_nomeacao = 'Terça-Feira' WHERE id = 662;
+UPDATE calendario SET dia_nomeacao = 'Terça-Feira' WHERE id = 668;
+UPDATE calendario SET dia_nomeacao = 'Terça-Feira' WHERE id = 674;
+UPDATE calendario SET dia_nomeacao = 'Terça-Feira' WHERE id = 680;
+UPDATE calendario SET dia_nomeacao = 'Terça-Feira' WHERE id = 686;
+UPDATE calendario SET dia_nomeacao = 'Terça-Feira' WHERE id = 692;
+UPDATE calendario SET dia_nomeacao = 'Terça-Feira' WHERE id = 698;
+UPDATE calendario SET dia_nomeacao = 'Terça-Feira' WHERE id = 704;
+UPDATE calendario SET dia_nomeacao = 'Terça-Feira' WHERE id = 710;
+UPDATE calendario SET dia_nomeacao = 'Terça-Feira' WHERE id = 716;
+UPDATE calendario SET dia_nomeacao = 'Terça-Feira' WHERE id = 722;
+UPDATE calendario SET dia_nomeacao = 'Terça-Feira' WHERE id = 728;
+UPDATE calendario SET dia_nomeacao = 'Quarta-Feira' WHERE id = 3;
+UPDATE calendario SET dia_nomeacao = 'Quarta-Feira' WHERE id = 9;
+UPDATE calendario SET dia_nomeacao = 'Quarta-Feira' WHERE id = 15;
+UPDATE calendario SET dia_nomeacao = 'Quarta-Feira' WHERE id = 21;
+UPDATE calendario SET dia_nomeacao = 'Quarta-Feira' WHERE id = 27;
+UPDATE calendario SET dia_nomeacao = 'Quarta-Feira' WHERE id = 33;
+UPDATE calendario SET dia_nomeacao = 'Quarta-Feira' WHERE id = 39;
+UPDATE calendario SET dia_nomeacao = 'Quarta-Feira' WHERE id = 45;
+UPDATE calendario SET dia_nomeacao = 'Quarta-Feira' WHERE id = 51;
+UPDATE calendario SET dia_nomeacao = 'Quarta-Feira' WHERE id = 57;
+UPDATE calendario SET dia_nomeacao = 'Quarta-Feira' WHERE id = 63;
+UPDATE calendario SET dia_nomeacao = 'Quarta-Feira' WHERE id = 69;
+UPDATE calendario SET dia_nomeacao = 'Quarta-Feira' WHERE id = 75;
+UPDATE calendario SET dia_nomeacao = 'Quarta-Feira' WHERE id = 81;
+UPDATE calendario SET dia_nomeacao = 'Quarta-Feira' WHERE id = 87;
+UPDATE calendario SET dia_nomeacao = 'Quarta-Feira' WHERE id = 93;
+UPDATE calendario SET dia_nomeacao = 'Quarta-Feira' WHERE id = 99;
+UPDATE calendario SET dia_nomeacao = 'Quarta-Feira' WHERE id = 105;
+UPDATE calendario SET dia_nomeacao = 'Quarta-Feira' WHERE id = 111;
+UPDATE calendario SET dia_nomeacao = 'Quarta-Feira' WHERE id = 117;
+UPDATE calendario SET dia_nomeacao = 'Quarta-Feira' WHERE id = 123;
+UPDATE calendario SET dia_nomeacao = 'Quarta-Feira' WHERE id = 129;
+UPDATE calendario SET dia_nomeacao = 'Quarta-Feira' WHERE id = 135;
+UPDATE calendario SET dia_nomeacao = 'Quarta-Feira' WHERE id = 141;
+UPDATE calendario SET dia_nomeacao = 'Quarta-Feira' WHERE id = 147;
+UPDATE calendario SET dia_nomeacao = 'Quarta-Feira' WHERE id = 153;
+UPDATE calendario SET dia_nomeacao = 'Quarta-Feira' WHERE id = 159;
+UPDATE calendario SET dia_nomeacao = 'Quarta-Feira' WHERE id = 165;
+UPDATE calendario SET dia_nomeacao = 'Quarta-Feira' WHERE id = 171;
+UPDATE calendario SET dia_nomeacao = 'Quarta-Feira' WHERE id = 177;
+UPDATE calendario SET dia_nomeacao = 'Quarta-Feira' WHERE id = 183;
+UPDATE calendario SET dia_nomeacao = 'Quarta-Feira' WHERE id = 189;
+UPDATE calendario SET dia_nomeacao = 'Quarta-Feira' WHERE id = 195;
+UPDATE calendario SET dia_nomeacao = 'Quarta-Feira' WHERE id = 201;
+UPDATE calendario SET dia_nomeacao = 'Quarta-Feira' WHERE id = 207;
+UPDATE calendario SET dia_nomeacao = 'Quarta-Feira' WHERE id = 213;
+UPDATE calendario SET dia_nomeacao = 'Quarta-Feira' WHERE id = 219;
+UPDATE calendario SET dia_nomeacao = 'Quarta-Feira' WHERE id = 225;
+UPDATE calendario SET dia_nomeacao = 'Quarta-Feira' WHERE id = 231;
+UPDATE calendario SET dia_nomeacao = 'Quarta-Feira' WHERE id = 237;
+UPDATE calendario SET dia_nomeacao = 'Quarta-Feira' WHERE id = 243;
+UPDATE calendario SET dia_nomeacao = 'Quarta-Feira' WHERE id = 249;
+UPDATE calendario SET dia_nomeacao = 'Quarta-Feira' WHERE id = 255;
+UPDATE calendario SET dia_nomeacao = 'Quarta-Feira' WHERE id = 261;
+UPDATE calendario SET dia_nomeacao = 'Quarta-Feira' WHERE id = 267;
+UPDATE calendario SET dia_nomeacao = 'Quarta-Feira' WHERE id = 273;
+UPDATE calendario SET dia_nomeacao = 'Quarta-Feira' WHERE id = 279;
+UPDATE calendario SET dia_nomeacao = 'Quarta-Feira' WHERE id = 285;
+UPDATE calendario SET dia_nomeacao = 'Quarta-Feira' WHERE id = 291;
+UPDATE calendario SET dia_nomeacao = 'Quarta-Feira' WHERE id = 297;
+UPDATE calendario SET dia_nomeacao = 'Quarta-Feira' WHERE id = 303;
+UPDATE calendario SET dia_nomeacao = 'Quarta-Feira' WHERE id = 309;
+UPDATE calendario SET dia_nomeacao = 'Quarta-Feira' WHERE id = 315;
+UPDATE calendario SET dia_nomeacao = 'Quarta-Feira' WHERE id = 321;
+UPDATE calendario SET dia_nomeacao = 'Quarta-Feira' WHERE id = 327;
+UPDATE calendario SET dia_nomeacao = 'Quarta-Feira' WHERE id = 333;
+UPDATE calendario SET dia_nomeacao = 'Quarta-Feira' WHERE id = 339;
+UPDATE calendario SET dia_nomeacao = 'Quarta-Feira' WHERE id = 345;
+UPDATE calendario SET dia_nomeacao = 'Quarta-Feira' WHERE id = 351;
+UPDATE calendario SET dia_nomeacao = 'Quarta-Feira' WHERE id = 357;
+UPDATE calendario SET dia_nomeacao = 'Quarta-Feira' WHERE id = 363;
+UPDATE calendario SET dia_nomeacao = 'Quarta-Feira' WHERE id = 369;
+UPDATE calendario SET dia_nomeacao = 'Quarta-Feira' WHERE id = 375;
+UPDATE calendario SET dia_nomeacao = 'Quarta-Feira' WHERE id = 381;
+UPDATE calendario SET dia_nomeacao = 'Quarta-Feira' WHERE id = 387;
+UPDATE calendario SET dia_nomeacao = 'Quarta-Feira' WHERE id = 393;
+UPDATE calendario SET dia_nomeacao = 'Quarta-Feira' WHERE id = 399;
+UPDATE calendario SET dia_nomeacao = 'Quarta-Feira' WHERE id = 405;
+UPDATE calendario SET dia_nomeacao = 'Quarta-Feira' WHERE id = 411;
+UPDATE calendario SET dia_nomeacao = 'Quarta-Feira' WHERE id = 417;
+UPDATE calendario SET dia_nomeacao = 'Quarta-Feira' WHERE id = 423;
+UPDATE calendario SET dia_nomeacao = 'Quarta-Feira' WHERE id = 429;
+UPDATE calendario SET dia_nomeacao = 'Quarta-Feira' WHERE id = 435;
+UPDATE calendario SET dia_nomeacao = 'Quarta-Feira' WHERE id = 441;
+UPDATE calendario SET dia_nomeacao = 'Quarta-Feira' WHERE id = 447;
+UPDATE calendario SET dia_nomeacao = 'Quarta-Feira' WHERE id = 453;
+UPDATE calendario SET dia_nomeacao = 'Quarta-Feira' WHERE id = 459;
+UPDATE calendario SET dia_nomeacao = 'Quarta-Feira' WHERE id = 465;
+UPDATE calendario SET dia_nomeacao = 'Quarta-Feira' WHERE id = 471;
+UPDATE calendario SET dia_nomeacao = 'Quarta-Feira' WHERE id = 477;
+UPDATE calendario SET dia_nomeacao = 'Quarta-Feira' WHERE id = 483;
+UPDATE calendario SET dia_nomeacao = 'Quarta-Feira' WHERE id = 489;
+UPDATE calendario SET dia_nomeacao = 'Quarta-Feira' WHERE id = 495;
+UPDATE calendario SET dia_nomeacao = 'Quarta-Feira' WHERE id = 501;
+UPDATE calendario SET dia_nomeacao = 'Quarta-Feira' WHERE id = 507;
+UPDATE calendario SET dia_nomeacao = 'Quarta-Feira' WHERE id = 513;
+UPDATE calendario SET dia_nomeacao = 'Quarta-Feira' WHERE id = 519;
+UPDATE calendario SET dia_nomeacao = 'Quarta-Feira' WHERE id = 525;
+UPDATE calendario SET dia_nomeacao = 'Quarta-Feira' WHERE id = 531;
+UPDATE calendario SET dia_nomeacao = 'Quarta-Feira' WHERE id = 537;
+UPDATE calendario SET dia_nomeacao = 'Quarta-Feira' WHERE id = 543;
+UPDATE calendario SET dia_nomeacao = 'Quarta-Feira' WHERE id = 549;
+UPDATE calendario SET dia_nomeacao = 'Quarta-Feira' WHERE id = 555;
+UPDATE calendario SET dia_nomeacao = 'Quarta-Feira' WHERE id = 561;
+UPDATE calendario SET dia_nomeacao = 'Quarta-Feira' WHERE id = 567;
+UPDATE calendario SET dia_nomeacao = 'Quarta-Feira' WHERE id = 573;
+UPDATE calendario SET dia_nomeacao = 'Quarta-Feira' WHERE id = 579;
+UPDATE calendario SET dia_nomeacao = 'Quarta-Feira' WHERE id = 585;
+UPDATE calendario SET dia_nomeacao = 'Quarta-Feira' WHERE id = 591;
+UPDATE calendario SET dia_nomeacao = 'Quarta-Feira' WHERE id = 597;
+UPDATE calendario SET dia_nomeacao = 'Quarta-Feira' WHERE id = 603;
+UPDATE calendario SET dia_nomeacao = 'Quarta-Feira' WHERE id = 609;
+UPDATE calendario SET dia_nomeacao = 'Quarta-Feira' WHERE id = 615;
+UPDATE calendario SET dia_nomeacao = 'Quarta-Feira' WHERE id = 621;
+UPDATE calendario SET dia_nomeacao = 'Quarta-Feira' WHERE id = 627;
+UPDATE calendario SET dia_nomeacao = 'Quarta-Feira' WHERE id = 633;
+UPDATE calendario SET dia_nomeacao = 'Quarta-Feira' WHERE id = 639;
+UPDATE calendario SET dia_nomeacao = 'Quarta-Feira' WHERE id = 645;
+UPDATE calendario SET dia_nomeacao = 'Quarta-Feira' WHERE id = 651;
+UPDATE calendario SET dia_nomeacao = 'Quarta-Feira' WHERE id = 657;
+UPDATE calendario SET dia_nomeacao = 'Quarta-Feira' WHERE id = 663;
+UPDATE calendario SET dia_nomeacao = 'Quarta-Feira' WHERE id = 669;
+UPDATE calendario SET dia_nomeacao = 'Quarta-Feira' WHERE id = 675;
+UPDATE calendario SET dia_nomeacao = 'Quarta-Feira' WHERE id = 681;
+UPDATE calendario SET dia_nomeacao = 'Quarta-Feira' WHERE id = 687;
+UPDATE calendario SET dia_nomeacao = 'Quarta-Feira' WHERE id = 693;
+UPDATE calendario SET dia_nomeacao = 'Quarta-Feira' WHERE id = 699;
+UPDATE calendario SET dia_nomeacao = 'Quarta-Feira' WHERE id = 705;
+UPDATE calendario SET dia_nomeacao = 'Quarta-Feira' WHERE id = 711;
+UPDATE calendario SET dia_nomeacao = 'Quarta-Feira' WHERE id = 717;
+UPDATE calendario SET dia_nomeacao = 'Quarta-Feira' WHERE id = 723;
+UPDATE calendario SET dia_nomeacao = 'Quarta-Feira' WHERE id = 729;
+UPDATE calendario SET dia_nomeacao = 'Quinta-Feira' WHERE id = 4;
+UPDATE calendario SET dia_nomeacao = 'Quinta-Feira' WHERE id = 10;
+UPDATE calendario SET dia_nomeacao = 'Quinta-Feira' WHERE id = 16;
+UPDATE calendario SET dia_nomeacao = 'Quinta-Feira' WHERE id = 22;
+UPDATE calendario SET dia_nomeacao = 'Quinta-Feira' WHERE id = 28;
+UPDATE calendario SET dia_nomeacao = 'Quinta-Feira' WHERE id = 34;
+UPDATE calendario SET dia_nomeacao = 'Quinta-Feira' WHERE id = 40;
+UPDATE calendario SET dia_nomeacao = 'Quinta-Feira' WHERE id = 46;
+UPDATE calendario SET dia_nomeacao = 'Quinta-Feira' WHERE id = 52;
+UPDATE calendario SET dia_nomeacao = 'Quinta-Feira' WHERE id = 58;
+UPDATE calendario SET dia_nomeacao = 'Quinta-Feira' WHERE id = 64;
+UPDATE calendario SET dia_nomeacao = 'Quinta-Feira' WHERE id = 70;
+UPDATE calendario SET dia_nomeacao = 'Quinta-Feira' WHERE id = 76;
+UPDATE calendario SET dia_nomeacao = 'Quinta-Feira' WHERE id = 82;
+UPDATE calendario SET dia_nomeacao = 'Quinta-Feira' WHERE id = 88;
+UPDATE calendario SET dia_nomeacao = 'Quinta-Feira' WHERE id = 94;
+UPDATE calendario SET dia_nomeacao = 'Quinta-Feira' WHERE id = 100;
+UPDATE calendario SET dia_nomeacao = 'Quinta-Feira' WHERE id = 106;
+UPDATE calendario SET dia_nomeacao = 'Quinta-Feira' WHERE id = 112;
+UPDATE calendario SET dia_nomeacao = 'Quinta-Feira' WHERE id = 118;
+UPDATE calendario SET dia_nomeacao = 'Quinta-Feira' WHERE id = 124;
+UPDATE calendario SET dia_nomeacao = 'Quinta-Feira' WHERE id = 130;
+UPDATE calendario SET dia_nomeacao = 'Quinta-Feira' WHERE id = 136;
+UPDATE calendario SET dia_nomeacao = 'Quinta-Feira' WHERE id = 142;
+UPDATE calendario SET dia_nomeacao = 'Quinta-Feira' WHERE id = 148;
+UPDATE calendario SET dia_nomeacao = 'Quinta-Feira' WHERE id = 154;
+UPDATE calendario SET dia_nomeacao = 'Quinta-Feira' WHERE id = 160;
+UPDATE calendario SET dia_nomeacao = 'Quinta-Feira' WHERE id = 166;
+UPDATE calendario SET dia_nomeacao = 'Quinta-Feira' WHERE id = 172;
+UPDATE calendario SET dia_nomeacao = 'Quinta-Feira' WHERE id = 178;
+UPDATE calendario SET dia_nomeacao = 'Quinta-Feira' WHERE id = 184;
+UPDATE calendario SET dia_nomeacao = 'Quinta-Feira' WHERE id = 190;
+UPDATE calendario SET dia_nomeacao = 'Quinta-Feira' WHERE id = 196;
+UPDATE calendario SET dia_nomeacao = 'Quinta-Feira' WHERE id = 202;
+UPDATE calendario SET dia_nomeacao = 'Quinta-Feira' WHERE id = 208;
+UPDATE calendario SET dia_nomeacao = 'Quinta-Feira' WHERE id = 214;
+UPDATE calendario SET dia_nomeacao = 'Quinta-Feira' WHERE id = 220;
+UPDATE calendario SET dia_nomeacao = 'Quinta-Feira' WHERE id = 226;
+UPDATE calendario SET dia_nomeacao = 'Quinta-Feira' WHERE id = 232;
+UPDATE calendario SET dia_nomeacao = 'Quinta-Feira' WHERE id = 238;
+UPDATE calendario SET dia_nomeacao = 'Quinta-Feira' WHERE id = 244;
+UPDATE calendario SET dia_nomeacao = 'Quinta-Feira' WHERE id = 250;
+UPDATE calendario SET dia_nomeacao = 'Quinta-Feira' WHERE id = 256;
+UPDATE calendario SET dia_nomeacao = 'Quinta-Feira' WHERE id = 262;
+UPDATE calendario SET dia_nomeacao = 'Quinta-Feira' WHERE id = 268;
+UPDATE calendario SET dia_nomeacao = 'Quinta-Feira' WHERE id = 274;
+UPDATE calendario SET dia_nomeacao = 'Quinta-Feira' WHERE id = 280;
+UPDATE calendario SET dia_nomeacao = 'Quinta-Feira' WHERE id = 286;
+UPDATE calendario SET dia_nomeacao = 'Quinta-Feira' WHERE id = 292;
+UPDATE calendario SET dia_nomeacao = 'Quinta-Feira' WHERE id = 298;
+UPDATE calendario SET dia_nomeacao = 'Quinta-Feira' WHERE id = 304;
+UPDATE calendario SET dia_nomeacao = 'Quinta-Feira' WHERE id = 310;
+UPDATE calendario SET dia_nomeacao = 'Quinta-Feira' WHERE id = 316;
+UPDATE calendario SET dia_nomeacao = 'Quinta-Feira' WHERE id = 322;
+UPDATE calendario SET dia_nomeacao = 'Quinta-Feira' WHERE id = 328;
+UPDATE calendario SET dia_nomeacao = 'Quinta-Feira' WHERE id = 334;
+UPDATE calendario SET dia_nomeacao = 'Quinta-Feira' WHERE id = 340;
+UPDATE calendario SET dia_nomeacao = 'Quinta-Feira' WHERE id = 346;
+UPDATE calendario SET dia_nomeacao = 'Quinta-Feira' WHERE id = 352;
+UPDATE calendario SET dia_nomeacao = 'Quinta-Feira' WHERE id = 358;
+UPDATE calendario SET dia_nomeacao = 'Quinta-Feira' WHERE id = 364;
+UPDATE calendario SET dia_nomeacao = 'Quinta-Feira' WHERE id = 370;
+UPDATE calendario SET dia_nomeacao = 'Quinta-Feira' WHERE id = 376;
+UPDATE calendario SET dia_nomeacao = 'Quinta-Feira' WHERE id = 382;
+UPDATE calendario SET dia_nomeacao = 'Quinta-Feira' WHERE id = 388;
+UPDATE calendario SET dia_nomeacao = 'Quinta-Feira' WHERE id = 394;
+UPDATE calendario SET dia_nomeacao = 'Quinta-Feira' WHERE id = 400;
+UPDATE calendario SET dia_nomeacao = 'Quinta-Feira' WHERE id = 406;
+UPDATE calendario SET dia_nomeacao = 'Quinta-Feira' WHERE id = 412;
+UPDATE calendario SET dia_nomeacao = 'Quinta-Feira' WHERE id = 418;
+UPDATE calendario SET dia_nomeacao = 'Quinta-Feira' WHERE id = 424;
+UPDATE calendario SET dia_nomeacao = 'Quinta-Feira' WHERE id = 430;
+UPDATE calendario SET dia_nomeacao = 'Quinta-Feira' WHERE id = 436;
+UPDATE calendario SET dia_nomeacao = 'Quinta-Feira' WHERE id = 442;
+UPDATE calendario SET dia_nomeacao = 'Quinta-Feira' WHERE id = 448;
+UPDATE calendario SET dia_nomeacao = 'Quinta-Feira' WHERE id = 454;
+UPDATE calendario SET dia_nomeacao = 'Quinta-Feira' WHERE id = 460;
+UPDATE calendario SET dia_nomeacao = 'Quinta-Feira' WHERE id = 466;
+UPDATE calendario SET dia_nomeacao = 'Quinta-Feira' WHERE id = 472;
+UPDATE calendario SET dia_nomeacao = 'Quinta-Feira' WHERE id = 478;
+UPDATE calendario SET dia_nomeacao = 'Quinta-Feira' WHERE id = 484;
+UPDATE calendario SET dia_nomeacao = 'Quinta-Feira' WHERE id = 490;
+UPDATE calendario SET dia_nomeacao = 'Quinta-Feira' WHERE id = 496;
+UPDATE calendario SET dia_nomeacao = 'Quinta-Feira' WHERE id = 502;
+UPDATE calendario SET dia_nomeacao = 'Quinta-Feira' WHERE id = 508;
+UPDATE calendario SET dia_nomeacao = 'Quinta-Feira' WHERE id = 514;
+UPDATE calendario SET dia_nomeacao = 'Quinta-Feira' WHERE id = 520;
+UPDATE calendario SET dia_nomeacao = 'Quinta-Feira' WHERE id = 526;
+UPDATE calendario SET dia_nomeacao = 'Quinta-Feira' WHERE id = 532;
+UPDATE calendario SET dia_nomeacao = 'Quinta-Feira' WHERE id = 538;
+UPDATE calendario SET dia_nomeacao = 'Quinta-Feira' WHERE id = 544;
+UPDATE calendario SET dia_nomeacao = 'Quinta-Feira' WHERE id = 550;
+UPDATE calendario SET dia_nomeacao = 'Quinta-Feira' WHERE id = 556;
+UPDATE calendario SET dia_nomeacao = 'Quinta-Feira' WHERE id = 562;
+UPDATE calendario SET dia_nomeacao = 'Quinta-Feira' WHERE id = 568;
+UPDATE calendario SET dia_nomeacao = 'Quinta-Feira' WHERE id = 574;
+UPDATE calendario SET dia_nomeacao = 'Quinta-Feira' WHERE id = 580;
+UPDATE calendario SET dia_nomeacao = 'Quinta-Feira' WHERE id = 586;
+UPDATE calendario SET dia_nomeacao = 'Quinta-Feira' WHERE id = 592;
+UPDATE calendario SET dia_nomeacao = 'Quinta-Feira' WHERE id = 598;
+UPDATE calendario SET dia_nomeacao = 'Quinta-Feira' WHERE id = 604;
+UPDATE calendario SET dia_nomeacao = 'Quinta-Feira' WHERE id = 610;
+UPDATE calendario SET dia_nomeacao = 'Quinta-Feira' WHERE id = 616;
+UPDATE calendario SET dia_nomeacao = 'Quinta-Feira' WHERE id = 622;
+UPDATE calendario SET dia_nomeacao = 'Quinta-Feira' WHERE id = 628;
+UPDATE calendario SET dia_nomeacao = 'Quinta-Feira' WHERE id = 634;
+UPDATE calendario SET dia_nomeacao = 'Quinta-Feira' WHERE id = 640;
+UPDATE calendario SET dia_nomeacao = 'Quinta-Feira' WHERE id = 646;
+UPDATE calendario SET dia_nomeacao = 'Quinta-Feira' WHERE id = 652;
+UPDATE calendario SET dia_nomeacao = 'Quinta-Feira' WHERE id = 658;
+UPDATE calendario SET dia_nomeacao = 'Quinta-Feira' WHERE id = 664;
+UPDATE calendario SET dia_nomeacao = 'Quinta-Feira' WHERE id = 670;
+UPDATE calendario SET dia_nomeacao = 'Quinta-Feira' WHERE id = 676;
+UPDATE calendario SET dia_nomeacao = 'Quinta-Feira' WHERE id = 682;
+UPDATE calendario SET dia_nomeacao = 'Quinta-Feira' WHERE id = 688;
+UPDATE calendario SET dia_nomeacao = 'Quinta-Feira' WHERE id = 694;
+UPDATE calendario SET dia_nomeacao = 'Quinta-Feira' WHERE id = 700;
+UPDATE calendario SET dia_nomeacao = 'Quinta-Feira' WHERE id = 706;
+UPDATE calendario SET dia_nomeacao = 'Quinta-Feira' WHERE id = 712;
+UPDATE calendario SET dia_nomeacao = 'Quinta-Feira' WHERE id = 718;
+UPDATE calendario SET dia_nomeacao = 'Quinta-Feira' WHERE id = 724;
+UPDATE calendario SET dia_nomeacao = 'Quinta-Feira' WHERE id = 730;
+UPDATE calendario SET dia_nomeacao = 'Sexta-Feira' WHERE id = 5;
+UPDATE calendario SET dia_nomeacao = 'Sexta-Feira' WHERE id = 11;
+UPDATE calendario SET dia_nomeacao = 'Sexta-Feira' WHERE id = 17;
+UPDATE calendario SET dia_nomeacao = 'Sexta-Feira' WHERE id = 23;
+UPDATE calendario SET dia_nomeacao = 'Sexta-Feira' WHERE id = 29;
+UPDATE calendario SET dia_nomeacao = 'Sexta-Feira' WHERE id = 35;
+UPDATE calendario SET dia_nomeacao = 'Sexta-Feira' WHERE id = 41;
+UPDATE calendario SET dia_nomeacao = 'Sexta-Feira' WHERE id = 47;
+UPDATE calendario SET dia_nomeacao = 'Sexta-Feira' WHERE id = 53;
+UPDATE calendario SET dia_nomeacao = 'Sexta-Feira' WHERE id = 59;
+UPDATE calendario SET dia_nomeacao = 'Sexta-Feira' WHERE id = 65;
+UPDATE calendario SET dia_nomeacao = 'Sexta-Feira' WHERE id = 71;
+UPDATE calendario SET dia_nomeacao = 'Sexta-Feira' WHERE id = 77;
+UPDATE calendario SET dia_nomeacao = 'Sexta-Feira' WHERE id = 83;
+UPDATE calendario SET dia_nomeacao = 'Sexta-Feira' WHERE id = 89;
+UPDATE calendario SET dia_nomeacao = 'Sexta-Feira' WHERE id = 95;
+UPDATE calendario SET dia_nomeacao = 'Sexta-Feira' WHERE id = 101;
+UPDATE calendario SET dia_nomeacao = 'Sexta-Feira' WHERE id = 107;
+UPDATE calendario SET dia_nomeacao = 'Sexta-Feira' WHERE id = 113;
+UPDATE calendario SET dia_nomeacao = 'Sexta-Feira' WHERE id = 119;
+UPDATE calendario SET dia_nomeacao = 'Sexta-Feira' WHERE id = 125;
+UPDATE calendario SET dia_nomeacao = 'Sexta-Feira' WHERE id = 131;
+UPDATE calendario SET dia_nomeacao = 'Sexta-Feira' WHERE id = 137;
+UPDATE calendario SET dia_nomeacao = 'Sexta-Feira' WHERE id = 143;
+UPDATE calendario SET dia_nomeacao = 'Sexta-Feira' WHERE id = 149;
+UPDATE calendario SET dia_nomeacao = 'Sexta-Feira' WHERE id = 155;
+UPDATE calendario SET dia_nomeacao = 'Sexta-Feira' WHERE id = 161;
+UPDATE calendario SET dia_nomeacao = 'Sexta-Feira' WHERE id = 167;
+UPDATE calendario SET dia_nomeacao = 'Sexta-Feira' WHERE id = 173;
+UPDATE calendario SET dia_nomeacao = 'Sexta-Feira' WHERE id = 179;
+UPDATE calendario SET dia_nomeacao = 'Sexta-Feira' WHERE id = 185;
+UPDATE calendario SET dia_nomeacao = 'Sexta-Feira' WHERE id = 191;
+UPDATE calendario SET dia_nomeacao = 'Sexta-Feira' WHERE id = 197;
+UPDATE calendario SET dia_nomeacao = 'Sexta-Feira' WHERE id = 203;
+UPDATE calendario SET dia_nomeacao = 'Sexta-Feira' WHERE id = 209;
+UPDATE calendario SET dia_nomeacao = 'Sexta-Feira' WHERE id = 215;
+UPDATE calendario SET dia_nomeacao = 'Sexta-Feira' WHERE id = 221;
+UPDATE calendario SET dia_nomeacao = 'Sexta-Feira' WHERE id = 227;
+UPDATE calendario SET dia_nomeacao = 'Sexta-Feira' WHERE id = 233;
+UPDATE calendario SET dia_nomeacao = 'Sexta-Feira' WHERE id = 239;
+UPDATE calendario SET dia_nomeacao = 'Sexta-Feira' WHERE id = 245;
+UPDATE calendario SET dia_nomeacao = 'Sexta-Feira' WHERE id = 251;
+UPDATE calendario SET dia_nomeacao = 'Sexta-Feira' WHERE id = 257;
+UPDATE calendario SET dia_nomeacao = 'Sexta-Feira' WHERE id = 263;
+UPDATE calendario SET dia_nomeacao = 'Sexta-Feira' WHERE id = 269;
+UPDATE calendario SET dia_nomeacao = 'Sexta-Feira' WHERE id = 275;
+UPDATE calendario SET dia_nomeacao = 'Sexta-Feira' WHERE id = 281;
+UPDATE calendario SET dia_nomeacao = 'Sexta-Feira' WHERE id = 287;
+UPDATE calendario SET dia_nomeacao = 'Sexta-Feira' WHERE id = 293;
+UPDATE calendario SET dia_nomeacao = 'Sexta-Feira' WHERE id = 299;
+UPDATE calendario SET dia_nomeacao = 'Sexta-Feira' WHERE id = 305;
+UPDATE calendario SET dia_nomeacao = 'Sexta-Feira' WHERE id = 311;
+UPDATE calendario SET dia_nomeacao = 'Sexta-Feira' WHERE id = 317;
+UPDATE calendario SET dia_nomeacao = 'Sexta-Feira' WHERE id = 323;
+UPDATE calendario SET dia_nomeacao = 'Sexta-Feira' WHERE id = 329;
+UPDATE calendario SET dia_nomeacao = 'Sexta-Feira' WHERE id = 335;
+UPDATE calendario SET dia_nomeacao = 'Sexta-Feira' WHERE id = 341;
+UPDATE calendario SET dia_nomeacao = 'Sexta-Feira' WHERE id = 347;
+UPDATE calendario SET dia_nomeacao = 'Sexta-Feira' WHERE id = 353;
+UPDATE calendario SET dia_nomeacao = 'Sexta-Feira' WHERE id = 359;
+UPDATE calendario SET dia_nomeacao = 'Sexta-Feira' WHERE id = 365;
+UPDATE calendario SET dia_nomeacao = 'Sexta-Feira' WHERE id = 371;
+UPDATE calendario SET dia_nomeacao = 'Sexta-Feira' WHERE id = 377;
+UPDATE calendario SET dia_nomeacao = 'Sexta-Feira' WHERE id = 383;
+UPDATE calendario SET dia_nomeacao = 'Sexta-Feira' WHERE id = 389;
+UPDATE calendario SET dia_nomeacao = 'Sexta-Feira' WHERE id = 395;
+UPDATE calendario SET dia_nomeacao = 'Sexta-Feira' WHERE id = 401;
+UPDATE calendario SET dia_nomeacao = 'Sexta-Feira' WHERE id = 407;
+UPDATE calendario SET dia_nomeacao = 'Sexta-Feira' WHERE id = 413;
+UPDATE calendario SET dia_nomeacao = 'Sexta-Feira' WHERE id = 419;
+UPDATE calendario SET dia_nomeacao = 'Sexta-Feira' WHERE id = 425;
+UPDATE calendario SET dia_nomeacao = 'Sexta-Feira' WHERE id = 431;
+UPDATE calendario SET dia_nomeacao = 'Sexta-Feira' WHERE id = 437;
+UPDATE calendario SET dia_nomeacao = 'Sexta-Feira' WHERE id = 443;
+UPDATE calendario SET dia_nomeacao = 'Sexta-Feira' WHERE id = 449;
+UPDATE calendario SET dia_nomeacao = 'Sexta-Feira' WHERE id = 455;
+UPDATE calendario SET dia_nomeacao = 'Sexta-Feira' WHERE id = 461;
+UPDATE calendario SET dia_nomeacao = 'Sexta-Feira' WHERE id = 467;
+UPDATE calendario SET dia_nomeacao = 'Sexta-Feira' WHERE id = 473;
+UPDATE calendario SET dia_nomeacao = 'Sexta-Feira' WHERE id = 479;
+UPDATE calendario SET dia_nomeacao = 'Sexta-Feira' WHERE id = 485;
+UPDATE calendario SET dia_nomeacao = 'Sexta-Feira' WHERE id = 491;
+UPDATE calendario SET dia_nomeacao = 'Sexta-Feira' WHERE id = 497;
+UPDATE calendario SET dia_nomeacao = 'Sexta-Feira' WHERE id = 503;
+UPDATE calendario SET dia_nomeacao = 'Sexta-Feira' WHERE id = 509;
+UPDATE calendario SET dia_nomeacao = 'Sexta-Feira' WHERE id = 515;
+UPDATE calendario SET dia_nomeacao = 'Sexta-Feira' WHERE id = 521;
+UPDATE calendario SET dia_nomeacao = 'Sexta-Feira' WHERE id = 527;
+UPDATE calendario SET dia_nomeacao = 'Sexta-Feira' WHERE id = 533;
+UPDATE calendario SET dia_nomeacao = 'Sexta-Feira' WHERE id = 539;
+UPDATE calendario SET dia_nomeacao = 'Sexta-Feira' WHERE id = 545;
+UPDATE calendario SET dia_nomeacao = 'Sexta-Feira' WHERE id = 551;
+UPDATE calendario SET dia_nomeacao = 'Sexta-Feira' WHERE id = 557;
+UPDATE calendario SET dia_nomeacao = 'Sexta-Feira' WHERE id = 563;
+UPDATE calendario SET dia_nomeacao = 'Sexta-Feira' WHERE id = 569;
+UPDATE calendario SET dia_nomeacao = 'Sexta-Feira' WHERE id = 575;
+UPDATE calendario SET dia_nomeacao = 'Sexta-Feira' WHERE id = 581;
+UPDATE calendario SET dia_nomeacao = 'Sexta-Feira' WHERE id = 587;
+UPDATE calendario SET dia_nomeacao = 'Sexta-Feira' WHERE id = 593;
+UPDATE calendario SET dia_nomeacao = 'Sexta-Feira' WHERE id = 599;
+UPDATE calendario SET dia_nomeacao = 'Sexta-Feira' WHERE id = 605;
+UPDATE calendario SET dia_nomeacao = 'Sexta-Feira' WHERE id = 611;
+UPDATE calendario SET dia_nomeacao = 'Sexta-Feira' WHERE id = 617;
+UPDATE calendario SET dia_nomeacao = 'Sexta-Feira' WHERE id = 623;
+UPDATE calendario SET dia_nomeacao = 'Sexta-Feira' WHERE id = 629;
+UPDATE calendario SET dia_nomeacao = 'Sexta-Feira' WHERE id = 635;
+UPDATE calendario SET dia_nomeacao = 'Sexta-Feira' WHERE id = 641;
+UPDATE calendario SET dia_nomeacao = 'Sexta-Feira' WHERE id = 647;
+UPDATE calendario SET dia_nomeacao = 'Sexta-Feira' WHERE id = 653;
+UPDATE calendario SET dia_nomeacao = 'Sexta-Feira' WHERE id = 659;
+UPDATE calendario SET dia_nomeacao = 'Sexta-Feira' WHERE id = 665;
+UPDATE calendario SET dia_nomeacao = 'Sexta-Feira' WHERE id = 671;
+UPDATE calendario SET dia_nomeacao = 'Sexta-Feira' WHERE id = 677;
+UPDATE calendario SET dia_nomeacao = 'Sexta-Feira' WHERE id = 683;
+UPDATE calendario SET dia_nomeacao = 'Sexta-Feira' WHERE id = 689;
+UPDATE calendario SET dia_nomeacao = 'Sexta-Feira' WHERE id = 695;
+UPDATE calendario SET dia_nomeacao = 'Sexta-Feira' WHERE id = 701;
+UPDATE calendario SET dia_nomeacao = 'Sexta-Feira' WHERE id = 707;
+UPDATE calendario SET dia_nomeacao = 'Sexta-Feira' WHERE id = 713;
+UPDATE calendario SET dia_nomeacao = 'Sexta-Feira' WHERE id = 719;
+UPDATE calendario SET dia_nomeacao = 'Sexta-Feira' WHERE id = 725;
+UPDATE calendario SET dia_nomeacao = 'Sexta-Feira' WHERE id = 731;
+UPDATE calendario SET dia_nomeacao = 'Sábado' WHERE id = 6;
+UPDATE calendario SET dia_nomeacao = 'Sábado' WHERE id = 12;
+UPDATE calendario SET dia_nomeacao = 'Sábado' WHERE id = 18;
+UPDATE calendario SET dia_nomeacao = 'Sábado' WHERE id = 24;
+UPDATE calendario SET dia_nomeacao = 'Sábado' WHERE id = 30;
+UPDATE calendario SET dia_nomeacao = 'Sábado' WHERE id = 36;
+UPDATE calendario SET dia_nomeacao = 'Sábado' WHERE id = 42;
+UPDATE calendario SET dia_nomeacao = 'Sábado' WHERE id = 48;
+UPDATE calendario SET dia_nomeacao = 'Sábado' WHERE id = 54;
+UPDATE calendario SET dia_nomeacao = 'Sábado' WHERE id = 60;
+UPDATE calendario SET dia_nomeacao = 'Sábado' WHERE id = 66;
+UPDATE calendario SET dia_nomeacao = 'Sábado' WHERE id = 72;
+UPDATE calendario SET dia_nomeacao = 'Sábado' WHERE id = 78;
+UPDATE calendario SET dia_nomeacao = 'Sábado' WHERE id = 84;
+UPDATE calendario SET dia_nomeacao = 'Sábado' WHERE id = 90;
+UPDATE calendario SET dia_nomeacao = 'Sábado' WHERE id = 96;
+UPDATE calendario SET dia_nomeacao = 'Sábado' WHERE id = 102;
+UPDATE calendario SET dia_nomeacao = 'Sábado' WHERE id = 108;
+UPDATE calendario SET dia_nomeacao = 'Sábado' WHERE id = 114;
+UPDATE calendario SET dia_nomeacao = 'Sábado' WHERE id = 120;
+UPDATE calendario SET dia_nomeacao = 'Sábado' WHERE id = 126;
+UPDATE calendario SET dia_nomeacao = 'Sábado' WHERE id = 132;
+UPDATE calendario SET dia_nomeacao = 'Sábado' WHERE id = 138;
+UPDATE calendario SET dia_nomeacao = 'Sábado' WHERE id = 144;
+UPDATE calendario SET dia_nomeacao = 'Sábado' WHERE id = 150;
+UPDATE calendario SET dia_nomeacao = 'Sábado' WHERE id = 156;
+UPDATE calendario SET dia_nomeacao = 'Sábado' WHERE id = 162;
+UPDATE calendario SET dia_nomeacao = 'Sábado' WHERE id = 168;
+UPDATE calendario SET dia_nomeacao = 'Sábado' WHERE id = 174;
+UPDATE calendario SET dia_nomeacao = 'Sábado' WHERE id = 180;
+UPDATE calendario SET dia_nomeacao = 'Sábado' WHERE id = 186;
+UPDATE calendario SET dia_nomeacao = 'Sábado' WHERE id = 192;
+UPDATE calendario SET dia_nomeacao = 'Sábado' WHERE id = 198;
+UPDATE calendario SET dia_nomeacao = 'Sábado' WHERE id = 204;
+UPDATE calendario SET dia_nomeacao = 'Sábado' WHERE id = 210;
+UPDATE calendario SET dia_nomeacao = 'Sábado' WHERE id = 216;
+UPDATE calendario SET dia_nomeacao = 'Sábado' WHERE id = 222;
+UPDATE calendario SET dia_nomeacao = 'Sábado' WHERE id = 228;
+UPDATE calendario SET dia_nomeacao = 'Sábado' WHERE id = 234;
+UPDATE calendario SET dia_nomeacao = 'Sábado' WHERE id = 240;
+UPDATE calendario SET dia_nomeacao = 'Sábado' WHERE id = 246;
+UPDATE calendario SET dia_nomeacao = 'Sábado' WHERE id = 252;
+UPDATE calendario SET dia_nomeacao = 'Sábado' WHERE id = 258;
+UPDATE calendario SET dia_nomeacao = 'Sábado' WHERE id = 264;
+UPDATE calendario SET dia_nomeacao = 'Sábado' WHERE id = 270;
+UPDATE calendario SET dia_nomeacao = 'Sábado' WHERE id = 276;
+UPDATE calendario SET dia_nomeacao = 'Sábado' WHERE id = 282;
+UPDATE calendario SET dia_nomeacao = 'Sábado' WHERE id = 288;
+UPDATE calendario SET dia_nomeacao = 'Sábado' WHERE id = 294;
+UPDATE calendario SET dia_nomeacao = 'Sábado' WHERE id = 300;
+UPDATE calendario SET dia_nomeacao = 'Sábado' WHERE id = 306;
+UPDATE calendario SET dia_nomeacao = 'Sábado' WHERE id = 312;
+UPDATE calendario SET dia_nomeacao = 'Sábado' WHERE id = 318;
+UPDATE calendario SET dia_nomeacao = 'Sábado' WHERE id = 324;
+UPDATE calendario SET dia_nomeacao = 'Sábado' WHERE id = 330;
+UPDATE calendario SET dia_nomeacao = 'Sábado' WHERE id = 336;
+UPDATE calendario SET dia_nomeacao = 'Sábado' WHERE id = 342;
+UPDATE calendario SET dia_nomeacao = 'Sábado' WHERE id = 348;
+UPDATE calendario SET dia_nomeacao = 'Sábado' WHERE id = 354;
+UPDATE calendario SET dia_nomeacao = 'Sábado' WHERE id = 360;
+UPDATE calendario SET dia_nomeacao = 'Sábado' WHERE id = 366;
+UPDATE calendario SET dia_nomeacao = 'Sábado' WHERE id = 372;
+UPDATE calendario SET dia_nomeacao = 'Sábado' WHERE id = 378;
+UPDATE calendario SET dia_nomeacao = 'Sábado' WHERE id = 384;
+UPDATE calendario SET dia_nomeacao = 'Sábado' WHERE id = 390;
+UPDATE calendario SET dia_nomeacao = 'Sábado' WHERE id = 396;
+UPDATE calendario SET dia_nomeacao = 'Sábado' WHERE id = 402;
+UPDATE calendario SET dia_nomeacao = 'Sábado' WHERE id = 408;
+UPDATE calendario SET dia_nomeacao = 'Sábado' WHERE id = 414;
+UPDATE calendario SET dia_nomeacao = 'Sábado' WHERE id = 420;
+UPDATE calendario SET dia_nomeacao = 'Sábado' WHERE id = 426;
+UPDATE calendario SET dia_nomeacao = 'Sábado' WHERE id = 432;
+UPDATE calendario SET dia_nomeacao = 'Sábado' WHERE id = 438;
+UPDATE calendario SET dia_nomeacao = 'Sábado' WHERE id = 444;
+UPDATE calendario SET dia_nomeacao = 'Sábado' WHERE id = 450;
+UPDATE calendario SET dia_nomeacao = 'Sábado' WHERE id = 456;
+UPDATE calendario SET dia_nomeacao = 'Sábado' WHERE id = 462;
+UPDATE calendario SET dia_nomeacao = 'Sábado' WHERE id = 468;
+UPDATE calendario SET dia_nomeacao = 'Sábado' WHERE id = 474;
+UPDATE calendario SET dia_nomeacao = 'Sábado' WHERE id = 480;
+UPDATE calendario SET dia_nomeacao = 'Sábado' WHERE id = 486;
+UPDATE calendario SET dia_nomeacao = 'Sábado' WHERE id = 492;
+UPDATE calendario SET dia_nomeacao = 'Sábado' WHERE id = 498;
+UPDATE calendario SET dia_nomeacao = 'Sábado' WHERE id = 504;
+UPDATE calendario SET dia_nomeacao = 'Sábado' WHERE id = 510;
+UPDATE calendario SET dia_nomeacao = 'Sábado' WHERE id = 516;
+UPDATE calendario SET dia_nomeacao = 'Sábado' WHERE id = 522;
+UPDATE calendario SET dia_nomeacao = 'Sábado' WHERE id = 528;
+UPDATE calendario SET dia_nomeacao = 'Sábado' WHERE id = 534;
+UPDATE calendario SET dia_nomeacao = 'Sábado' WHERE id = 540;
+UPDATE calendario SET dia_nomeacao = 'Sábado' WHERE id = 546;
+UPDATE calendario SET dia_nomeacao = 'Sábado' WHERE id = 552;
+UPDATE calendario SET dia_nomeacao = 'Sábado' WHERE id = 558;
+UPDATE calendario SET dia_nomeacao = 'Sábado' WHERE id = 564;
+UPDATE calendario SET dia_nomeacao = 'Sábado' WHERE id = 570;
+UPDATE calendario SET dia_nomeacao = 'Sábado' WHERE id = 576;
+UPDATE calendario SET dia_nomeacao = 'Sábado' WHERE id = 582;
+UPDATE calendario SET dia_nomeacao = 'Sábado' WHERE id = 588;
+UPDATE calendario SET dia_nomeacao = 'Sábado' WHERE id = 594;
+UPDATE calendario SET dia_nomeacao = 'Sábado' WHERE id = 600;
+UPDATE calendario SET dia_nomeacao = 'Sábado' WHERE id = 606;
+UPDATE calendario SET dia_nomeacao = 'Sábado' WHERE id = 612;
+UPDATE calendario SET dia_nomeacao = 'Sábado' WHERE id = 618;
+UPDATE calendario SET dia_nomeacao = 'Sábado' WHERE id = 624;
+UPDATE calendario SET dia_nomeacao = 'Sábado' WHERE id = 630;
+UPDATE calendario SET dia_nomeacao = 'Sábado' WHERE id = 636;
+UPDATE calendario SET dia_nomeacao = 'Sábado' WHERE id = 642;
+UPDATE calendario SET dia_nomeacao = 'Sábado' WHERE id = 648;
+UPDATE calendario SET dia_nomeacao = 'Sábado' WHERE id = 654;
+UPDATE calendario SET dia_nomeacao = 'Sábado' WHERE id = 660;
+UPDATE calendario SET dia_nomeacao = 'Sábado' WHERE id = 666;
+UPDATE calendario SET dia_nomeacao = 'Sábado' WHERE id = 672;
+UPDATE calendario SET dia_nomeacao = 'Sábado' WHERE id = 678;
+UPDATE calendario SET dia_nomeacao = 'Sábado' WHERE id = 684;
+UPDATE calendario SET dia_nomeacao = 'Sábado' WHERE id = 690;
+UPDATE calendario SET dia_nomeacao = 'Sábado' WHERE id = 696;
+UPDATE calendario SET dia_nomeacao = 'Sábado' WHERE id = 702;
+UPDATE calendario SET dia_nomeacao = 'Sábado' WHERE id = 708;
+UPDATE calendario SET dia_nomeacao = 'Sábado' WHERE id = 714;
+UPDATE calendario SET dia_nomeacao = 'Sábado' WHERE id = 720;
+UPDATE calendario SET dia_nomeacao = 'Sábado' WHERE id = 726;
+UPDATE calendario SET dia_nomeacao = 'Domingo' WHERE id = 7;
+UPDATE calendario SET dia_nomeacao = 'Domingo' WHERE id = 13;
+UPDATE calendario SET dia_nomeacao = 'Domingo' WHERE id = 19;
+UPDATE calendario SET dia_nomeacao = 'Domingo' WHERE id = 25;
+UPDATE calendario SET dia_nomeacao = 'Domingo' WHERE id = 31;
+UPDATE calendario SET dia_nomeacao = 'Domingo' WHERE id = 37;
+UPDATE calendario SET dia_nomeacao = 'Domingo' WHERE id = 43;
+UPDATE calendario SET dia_nomeacao = 'Domingo' WHERE id = 49;
+UPDATE calendario SET dia_nomeacao = 'Domingo' WHERE id = 55;
+UPDATE calendario SET dia_nomeacao = 'Domingo' WHERE id = 61;
+UPDATE calendario SET dia_nomeacao = 'Domingo' WHERE id = 67;
+UPDATE calendario SET dia_nomeacao = 'Domingo' WHERE id = 73;
+UPDATE calendario SET dia_nomeacao = 'Domingo' WHERE id = 79;
+UPDATE calendario SET dia_nomeacao = 'Domingo' WHERE id = 85;
+UPDATE calendario SET dia_nomeacao = 'Domingo' WHERE id = 91;
+UPDATE calendario SET dia_nomeacao = 'Domingo' WHERE id = 97;
+UPDATE calendario SET dia_nomeacao = 'Domingo' WHERE id = 103;
+UPDATE calendario SET dia_nomeacao = 'Domingo' WHERE id = 109;
+UPDATE calendario SET dia_nomeacao = 'Domingo' WHERE id = 115;
+UPDATE calendario SET dia_nomeacao = 'Domingo' WHERE id = 121;
+UPDATE calendario SET dia_nomeacao = 'Domingo' WHERE id = 127;
+UPDATE calendario SET dia_nomeacao = 'Domingo' WHERE id = 133;
+UPDATE calendario SET dia_nomeacao = 'Domingo' WHERE id = 139;
+UPDATE calendario SET dia_nomeacao = 'Domingo' WHERE id = 145;
+UPDATE calendario SET dia_nomeacao = 'Domingo' WHERE id = 151;
+UPDATE calendario SET dia_nomeacao = 'Domingo' WHERE id = 157;
+UPDATE calendario SET dia_nomeacao = 'Domingo' WHERE id = 163;
+UPDATE calendario SET dia_nomeacao = 'Domingo' WHERE id = 169;
+UPDATE calendario SET dia_nomeacao = 'Domingo' WHERE id = 175;
+UPDATE calendario SET dia_nomeacao = 'Domingo' WHERE id = 181;
+UPDATE calendario SET dia_nomeacao = 'Domingo' WHERE id = 187;
+UPDATE calendario SET dia_nomeacao = 'Domingo' WHERE id = 193;
+UPDATE calendario SET dia_nomeacao = 'Domingo' WHERE id = 199;
+UPDATE calendario SET dia_nomeacao = 'Domingo' WHERE id = 205;
+UPDATE calendario SET dia_nomeacao = 'Domingo' WHERE id = 211;
+UPDATE calendario SET dia_nomeacao = 'Domingo' WHERE id = 217;
+UPDATE calendario SET dia_nomeacao = 'Domingo' WHERE id = 223;
+UPDATE calendario SET dia_nomeacao = 'Domingo' WHERE id = 229;
+UPDATE calendario SET dia_nomeacao = 'Domingo' WHERE id = 235;
+UPDATE calendario SET dia_nomeacao = 'Domingo' WHERE id = 241;
+UPDATE calendario SET dia_nomeacao = 'Domingo' WHERE id = 247;
+UPDATE calendario SET dia_nomeacao = 'Domingo' WHERE id = 253;
+UPDATE calendario SET dia_nomeacao = 'Domingo' WHERE id = 259;
+UPDATE calendario SET dia_nomeacao = 'Domingo' WHERE id = 265;
+UPDATE calendario SET dia_nomeacao = 'Domingo' WHERE id = 271;
+UPDATE calendario SET dia_nomeacao = 'Domingo' WHERE id = 277;
+UPDATE calendario SET dia_nomeacao = 'Domingo' WHERE id = 283;
+UPDATE calendario SET dia_nomeacao = 'Domingo' WHERE id = 289;
+UPDATE calendario SET dia_nomeacao = 'Domingo' WHERE id = 295;
+UPDATE calendario SET dia_nomeacao = 'Domingo' WHERE id = 301;
+UPDATE calendario SET dia_nomeacao = 'Domingo' WHERE id = 307;
+UPDATE calendario SET dia_nomeacao = 'Domingo' WHERE id = 313;
+UPDATE calendario SET dia_nomeacao = 'Domingo' WHERE id = 319;
+UPDATE calendario SET dia_nomeacao = 'Domingo' WHERE id = 325;
+UPDATE calendario SET dia_nomeacao = 'Domingo' WHERE id = 331;
+UPDATE calendario SET dia_nomeacao = 'Domingo' WHERE id = 337;
+UPDATE calendario SET dia_nomeacao = 'Domingo' WHERE id = 343;
+UPDATE calendario SET dia_nomeacao = 'Domingo' WHERE id = 349;
+UPDATE calendario SET dia_nomeacao = 'Domingo' WHERE id = 355;
+UPDATE calendario SET dia_nomeacao = 'Domingo' WHERE id = 361;
+UPDATE calendario SET dia_nomeacao = 'Domingo' WHERE id = 367;
+UPDATE calendario SET dia_nomeacao = 'Domingo' WHERE id = 373;
+UPDATE calendario SET dia_nomeacao = 'Domingo' WHERE id = 379;
+UPDATE calendario SET dia_nomeacao = 'Domingo' WHERE id = 385;
+UPDATE calendario SET dia_nomeacao = 'Domingo' WHERE id = 391;
+UPDATE calendario SET dia_nomeacao = 'Domingo' WHERE id = 397;
+UPDATE calendario SET dia_nomeacao = 'Domingo' WHERE id = 403;
+UPDATE calendario SET dia_nomeacao = 'Domingo' WHERE id = 409;
+UPDATE calendario SET dia_nomeacao = 'Domingo' WHERE id = 415;
+UPDATE calendario SET dia_nomeacao = 'Domingo' WHERE id = 421;
+UPDATE calendario SET dia_nomeacao = 'Domingo' WHERE id = 427;
+UPDATE calendario SET dia_nomeacao = 'Domingo' WHERE id = 433;
+UPDATE calendario SET dia_nomeacao = 'Domingo' WHERE id = 439;
+UPDATE calendario SET dia_nomeacao = 'Domingo' WHERE id = 445;
+UPDATE calendario SET dia_nomeacao = 'Domingo' WHERE id = 451;
+UPDATE calendario SET dia_nomeacao = 'Domingo' WHERE id = 457;
+UPDATE calendario SET dia_nomeacao = 'Domingo' WHERE id = 463;
+UPDATE calendario SET dia_nomeacao = 'Domingo' WHERE id = 469;
+UPDATE calendario SET dia_nomeacao = 'Domingo' WHERE id = 475;
+UPDATE calendario SET dia_nomeacao = 'Domingo' WHERE id = 481;
+UPDATE calendario SET dia_nomeacao = 'Domingo' WHERE id = 487;
+UPDATE calendario SET dia_nomeacao = 'Domingo' WHERE id = 493;
+UPDATE calendario SET dia_nomeacao = 'Domingo' WHERE id = 499;
+UPDATE calendario SET dia_nomeacao = 'Domingo' WHERE id = 505;
+UPDATE calendario SET dia_nomeacao = 'Domingo' WHERE id = 511;
+UPDATE calendario SET dia_nomeacao = 'Domingo' WHERE id = 517;
+UPDATE calendario SET dia_nomeacao = 'Domingo' WHERE id = 523;
+UPDATE calendario SET dia_nomeacao = 'Domingo' WHERE id = 529;
+UPDATE calendario SET dia_nomeacao = 'Domingo' WHERE id = 535;
+UPDATE calendario SET dia_nomeacao = 'Domingo' WHERE id = 541;
+UPDATE calendario SET dia_nomeacao = 'Domingo' WHERE id = 547;
+UPDATE calendario SET dia_nomeacao = 'Domingo' WHERE id = 553;
+UPDATE calendario SET dia_nomeacao = 'Domingo' WHERE id = 559;
+UPDATE calendario SET dia_nomeacao = 'Domingo' WHERE id = 565;
+UPDATE calendario SET dia_nomeacao = 'Domingo' WHERE id = 571;
+UPDATE calendario SET dia_nomeacao = 'Domingo' WHERE id = 577;
+UPDATE calendario SET dia_nomeacao = 'Domingo' WHERE id = 583;
+UPDATE calendario SET dia_nomeacao = 'Domingo' WHERE id = 589;
+UPDATE calendario SET dia_nomeacao = 'Domingo' WHERE id = 595;
+UPDATE calendario SET dia_nomeacao = 'Domingo' WHERE id = 601;
+UPDATE calendario SET dia_nomeacao = 'Domingo' WHERE id = 607;
+UPDATE calendario SET dia_nomeacao = 'Domingo' WHERE id = 613;
+UPDATE calendario SET dia_nomeacao = 'Domingo' WHERE id = 619;
+UPDATE calendario SET dia_nomeacao = 'Domingo' WHERE id = 625;
+UPDATE calendario SET dia_nomeacao = 'Domingo' WHERE id = 631;
+UPDATE calendario SET dia_nomeacao = 'Domingo' WHERE id = 637;
+UPDATE calendario SET dia_nomeacao = 'Domingo' WHERE id = 643;
+UPDATE calendario SET dia_nomeacao = 'Domingo' WHERE id = 649;
+UPDATE calendario SET dia_nomeacao = 'Domingo' WHERE id = 655;
+UPDATE calendario SET dia_nomeacao = 'Domingo' WHERE id = 661;
+UPDATE calendario SET dia_nomeacao = 'Domingo' WHERE id = 667;
+UPDATE calendario SET dia_nomeacao = 'Domingo' WHERE id = 673;
+UPDATE calendario SET dia_nomeacao = 'Domingo' WHERE id = 679;
+UPDATE calendario SET dia_nomeacao = 'Domingo' WHERE id = 685;
+UPDATE calendario SET dia_nomeacao = 'Domingo' WHERE id = 691;
+UPDATE calendario SET dia_nomeacao = 'Domingo' WHERE id = 697;
+UPDATE calendario SET dia_nomeacao = 'Domingo' WHERE id = 703;
+UPDATE calendario SET dia_nomeacao = 'Domingo' WHERE id = 709;
+UPDATE calendario SET dia_nomeacao = 'Domingo' WHERE id = 715;
+UPDATE calendario SET dia_nomeacao = 'Domingo' WHERE id = 721;

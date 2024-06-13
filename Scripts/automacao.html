@@ -10,109 +10,109 @@
     <script>
 
         // Função para gerar os registros em formato HTML
-        function gerarRegistrosHTML() {
+        // function gerarRegistrosHTML() {
 
-            let janeiro = 'Janeiro';
-            let fevereiro = 'Fevereiro';
-            let marco = 'Março';
-            let abril = 'Abril';
-            let maio = 'Maio';
-            let junho = 'Junho';
-            let julho = 'Julho';
-            let agosto = 'Agosto';
-            let setembro = 'Setembro';
-            let outubro = 'Outubro';
-            let novembro = 'Novembro';
-            let dezembro = 'Dezembro';
+        //     let janeiro = 'Janeiro';
+        //     let fevereiro = 'Fevereiro';
+        //     let marco = 'Março';
+        //     let abril = 'Abril';
+        //     let maio = 'Maio';
+        //     let junho = 'Junho';
+        //     let julho = 'Julho';
+        //     let agosto = 'Agosto';
+        //     let setembro = 'Setembro';
+        //     let outubro = 'Outubro';
+        //     let novembro = 'Novembro';
+        //     let dezembro = 'Dezembro';
 
-            let texto = ''
+        //     let texto = ''
         
-            for (let i = 1; i <= 2; i++) {
+        //     for (let i = 1; i <= 2; i++) {
 
-                let ano;
+        //         let ano;
 
-                if(i==1){
-                    ano = 2024
-                }else{
-                    ano = 2025
-                }
+        //         if(i==1){
+        //             ano = 2024
+        //         }else{
+        //             ano = 2025
+        //         }
 
-                for(let j = 1;j<= 12;j++){
+        //         for(let j = 1;j<= 12;j++){
 
-                    let mes = '';
-                    let UltimoDia = ''
+        //             let mes = '';
+        //             let UltimoDia = ''
 
-                    if(j==1){
-                        mes = janeiro
-                    }else if(j==2){
-                        mes = fevereiro
-                    }else if(j==3){
-                        mes = marco
-                    }else if(j==4){
-                        mes = abril
-                    }else if(j==5){
-                        mes = maio
-                    }else if(j==6){
-                        mes = junho
-                    }else if(j==7){
-                        mes = julho
-                    }else if(j==8){
-                        mes = agosto
-                    }else if(j==9){
-                        mes = setembro
-                    }else if(j==10){
-                        mes = outubro
-                    }else if(j==11){
-                        mes = novembro
-                    }else if(j==12){
-                        mes = dezembro
-                    }
+        //             if(j==1){
+        //                 mes = janeiro
+        //             }else if(j==2){
+        //                 mes = fevereiro
+        //             }else if(j==3){
+        //                 mes = marco
+        //             }else if(j==4){
+        //                 mes = abril
+        //             }else if(j==5){
+        //                 mes = maio
+        //             }else if(j==6){
+        //                 mes = junho
+        //             }else if(j==7){
+        //                 mes = julho
+        //             }else if(j==8){
+        //                 mes = agosto
+        //             }else if(j==9){
+        //                 mes = setembro
+        //             }else if(j==10){
+        //                 mes = outubro
+        //             }else if(j==11){
+        //                 mes = novembro
+        //             }else if(j==12){
+        //                 mes = dezembro
+        //             }
 
-                    if(j==4||j==6||j==9||j==11){
+        //             if(j==4||j==6||j==9||j==11){
                         
-                        for(let h =1;h<=30;h++){
+        //                 for(let h =1;h<=30;h++){
                         
-                            texto += `(${ano},${j},'${mes}',${h}),`
+        //                     texto += `(${ano},${j},'${mes}',${h}),`
                         
-                        }
+        //                 }
                     
-                    }else if(j == 2 && i == 1){
+        //             }else if(j == 2 && i == 1){
                         
-                        for(let h =1;h<=29;h++){
+        //                 for(let h =1;h<=29;h++){
 
-                            texto += `(${ano},${j},'${mes}',${h}),`
+        //                     texto += `(${ano},${j},'${mes}',${h}),`
 
-                        }
+        //                 }
 
-                    }else if (j==2 && i == 2){
+        //             }else if (j==2 && i == 2){
                         
-                        for(let h =1;h<=28;h++){
+        //                 for(let h =1;h<=28;h++){
                         
-                            texto += `(${ano},${j},'${mes}',${h}),`
+        //                     texto += `(${ano},${j},'${mes}',${h}),`
                         
-                        }
+        //                 }
                     
-                    }else{
+        //             }else{
                           
-                        for(let h =1;h<=31;h++){
+        //                 for(let h =1;h<=31;h++){
                         
-                            texto += `(${ano},${j},'${mes}',${h}),`
+        //                     texto += `(${ano},${j},'${mes}',${h}),`
                     
-                        }
+        //                 }
 
-                    }
+        //             }
                     
 
 
-                }
+        //         }
                 
-            }
+        //     }
 
-            var div = document.getElementById('test_div')
+        //     var div = document.getElementById('test_div')
 
-            div.innerHTML = texto
+        //     div.innerHTML = texto
 
-        }
+        // }
 
         // function gerarRegistrosHTML(){
 
@@ -129,77 +129,24 @@
 
         //     let texto = '';
 
-        //     for (let i=1;i<=731;i++){
+        //     for(let j=0;j<7;j++){
 
-        //         if(i<8){
+        //         for (let i=1;i<=731;){
 
-        //             if(i==1){
-                    
-        //                 texto += `UPDATE calendario SET dia_nomeacao = '${listaSemana[0]}' WHERE id = ${i};<br>`
-                
-        //             }else if(i==2){
-                    
-        //                 texto += `UPDATE calendario SET dia_nomeacao = '${listaSemana[1]}' WHERE id = ${i};<br>`
-                    
-        //             }else if(i==3){
-                    
-        //                 texto += `UPDATE calendario SET dia_nomeacao = '${listaSemana[2]}' WHERE id = ${i};<br>`
-                    
-        //             }else if(i==4){
-                    
-        //                 texto += `UPDATE calendario SET dia_nomeacao = '${listaSemana[3]}' WHERE id = ${i};<br>`
-                    
-        //             }else if(i==5){
-                    
-        //                 texto += `UPDATE calendario SET dia_nomeacao = '${listaSemana[4]}' WHERE id = ${i};<br>`
-                    
-        //             }else if(i==6){
-                    
-        //                 texto += `UPDATE calendario SET dia_nomeacao = '${listaSemana[5]}' WHERE id = ${i};<br>`
-                    
-        //             }else if(i==7){
-                    
-        //                 texto += `UPDATE calendario SET dia_nomeacao = '${listaSemana[6]}' WHERE id = ${i};<br>`
-                    
+        //             if((i+j)<=731){
+        //                 texto += `UPDATE calendario SET dia_nomeacao = '${listaSemana[0+j]}' WHERE id = ${i+j};<br>`
+            
+        //                 i+=6
+        //             }else{
+        //                 break
         //             }
-
-        //         }else{
                     
-        //             if(i%7==0){
-                    
-        //                 texto += `UPDATE calendario SET dia_nomeacao = '${listaSemana[0]}' WHERE id = ${i};<br>`
-                    
-        //             }else if(i%6==0){
-                    
-        //                 texto += `UPDATE calendario SET dia_nomeacao = '${listaSemana[1]}' WHERE id = ${i};<br>`
-                    
-        //             }else if(i%5==0){
-                    
-        //                 texto += `UPDATE calendario SET dia_nomeacao = '${listaSemana[2]}' WHERE id = ${i};<br>`
-                    
-        //             }else if(i%4==0){
-                    
-        //                 texto += `UPDATE calendario SET dia_nomeacao = '${listaSemana[3]}' WHERE id = ${i};<br>`
-                    
-        //             }else if(i%3==0){
-                    
-        //                 texto += `UPDATE calendario SET dia_nomeacao = '${listaSemana[4]}' WHERE id = ${i};<br>`
-                    
-        //             }else if(i%2==0){
-                    
-        //                 texto += `UPDATE calendario SET dia_nomeacao = '${listaSemana[5]}' WHERE id = ${i};<br>`
-                    
-        //             }else if(i%1==0){
-                    
-        //                 texto += `UPDATE calendario SET dia_nomeacao = '${listaSemana[6]}' WHERE id = ${i};<br>`
-                    
-        //             }
                 
         //         }
-
-                
-
+            
         //     }
+
+            
 
         //     var div = document.getElementById('test_div')
 
