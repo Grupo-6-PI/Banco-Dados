@@ -114,45 +114,45 @@
 
         // }
 
-        // function gerarRegistrosHTML(){
+        function gerarRegistrosHTML(){
 
         
-        //     let listaSemana = [
-        //         'Segunda-Feira',
-        //         'Terça-Feira',
-        //         'Quarta-Feira',
-        //         'Quinta-Feira',
-        //         'Sexta-Feira',
-        //         'Sábado',
-        //         'Domingo'
-        //     ]
+            let listaSemana = [
+                'Segunda-Feira',
+                'Terça-Feira',
+                'Quarta-Feira',
+                'Quinta-Feira',
+                'Sexta-Feira',
+                'Sábado',
+                'Domingo'
+            ]
 
-        //     let texto = '';
+            let texto = '';
 
-        //     for(let j=0;j<7;j++){
+            for(let j=0;j<7;j++){
 
-        //         for (let i=1;i<=731;){
+                for (let i=1;i<=731;){
 
-        //             if((i+j)<=731){
-        //                 texto += `UPDATE calendario SET dia_nomeacao = '${listaSemana[0+j]}' WHERE id = ${i+j};<br>`
+                    if((i+j)<=731){
+                        texto += `UPDATE calendario SET dia_nomeacao = '${listaSemana[0+j]}' WHERE id = ${i+j};<br>`
             
-        //                 i+=6
-        //             }else{
-        //                 break
-        //             }
+                        i+=7
+                    }else{
+                        break
+                    }
                     
                 
-        //         }
+                }
             
-        //     }
+            }
 
             
 
-        //     var div = document.getElementById('test_div')
+            var div = document.getElementById('test_div')
 
-        //     div.innerHTML = texto
+            div.innerHTML = texto
 
-        // }
+        }
         
     
         gerarRegistrosHTML();
