@@ -806,14 +806,42 @@ UPDATE calendario SET dia_nomeacao = 'Domingo' WHERE id = 714;
 UPDATE calendario SET dia_nomeacao = 'Domingo' WHERE id = 721;
 UPDATE calendario SET dia_nomeacao = 'Domingo' WHERE id = 728;
 
-SELECT * FROM calendario WHERE dia_nomeacao = null;
-
-SELECT * FROM calendario WHERE mes_numeracao = 6 AND ano = 2024;
-
 INSERT INTO reserva_atividade(atividade_id,calendario_id) VALUES
 (1,165),
 (2,166),
 (3,166),
 (4,167),
 (5,168);
+
+INSERT INTO nivel_urgencia(nivel) VALUES
+('Baixa'),
+('Média'),
+('Alta');
+
+INSERT INTO assunto_requisicao(assunto) VALUES
+('Cestas'),
+('Vestuário'),
+('Saúde e Bem-estar'),
+('Outros');
+
+INSERT INTO requisicoes(usuario_id,situacao_id,calendario_id,nivel_urgencia_id,assunto_requisicao_id) VALUES
+(1,5,1,1,1),
+(1,5,17,1,1),
+(1,6,90,3,1);
+
+INSERT INTO requisicoes(usuario_id,situacao_id,calendario_id,nivel_urgencia_id,assunto_requisicao_id) VALUES
+(1,5,91,2,2),
+(1,5,132,2,2),
+(1,6,180,1,2);
+
+INSERT INTO requisicoes(usuario_id,situacao_id,calendario_id,nivel_urgencia_id,assunto_requisicao_id) VALUES
+(1,5,181,1,3),
+(1,6,197,1,3),
+(1,6,270,3,3);
+
+INSERT INTO requisicoes(usuario_id,situacao_id,calendario_id,nivel_urgencia_id,assunto_requisicao_id) VALUES
+(1,6,271,1,4),
+(1,6,293,1,4),
+(1,6,360,3,4);
+
 
