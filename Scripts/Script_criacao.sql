@@ -285,6 +285,8 @@ CREATE TABLE IF NOT EXISTS requisicoes (
   situacao_id BIGINT,
 	CONSTRAINT requisicoes_situacao FOREIGN KEY (situacao_id) REFERENCES situacao(id),
   data_criacao DATETIME,
+  calendario_id BIGINT,
+	CONSTRAINT requisicoes_calendario FOREIGN KEY (calendario_id) REFERENCES calendario(id),
   data_ultima_atualizacao DATETIME,
   email_modificador VARCHAR(150)
 );
