@@ -123,8 +123,8 @@ CREATE TABLE IF NOT EXISTS contato (
   data_criacao DATETIME,
   data_ultima_atualizacao DATETIME,
   email_modificador VARCHAR(150) NULL,
-  tipo_contato BIGINT,
-	CONSTRAINT contato_tipo_contato FOREIGN KEY (tipo_contato) REFERENCES tipo_contato(id),
+  tipo_contato_id BIGINT,
+	CONSTRAINT contato_tipo_contato FOREIGN KEY (tipo_contato_id) REFERENCES tipo_contato(id),
   informacoes_adicionais_id BIGINT,
 	CONSTRAINT contato_informacoes_adicionais FOREIGN KEY (informacoes_adicionais_id) REFERENCES informacoes_adicionais(id)
 );
