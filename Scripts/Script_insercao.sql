@@ -833,58 +833,30 @@ INSERT INTO reserva_atividade(atividade_id,calendario_id,data_criacao,email_modi
 (14,167,current_timestamp(),'adm@gmail.com'),
 (15,168,current_timestamp(),'adm@gmail.com');
 
-INSERT INTO nivel_urgencia(nivel) VALUES
-('Baixa'),
-('Média'),
-('Alta');
-
 INSERT INTO assunto_requisicao(assunto) VALUES
 ('Cestas'),
 ('Vestuário'),
 ('Saúde e Bem-estar'),
 ('Outros');
 
-INSERT INTO requisicoes(usuario_id,situacao_id,calendario_id,nivel_urgencia_id,assunto_requisicao_id,data_criacao,email_modificador) VALUES
-(1,5,1,1,1,current_timestamp(),'adm@gmail.com'),
-(1,5,17,1,1,current_timestamp(),'adm@gmail.com'),
-(1,6,90,3,1,current_timestamp(),'adm@gmail.com'),
-(1,5,17,1,1,current_timestamp(),'adm@gmail.com'),
-(1,6,90,3,1,current_timestamp(),'adm@gmail.com');
+INSERT INTO requisicoes(usuario_id,situacao_id,calendario_id,assunto_requisicao_id,data_criacao,email_modificador) VALUES
+(1,5,1,1,current_timestamp(),'adm@gmail.com'),
+(1,5,17,1,current_timestamp(),'adm@gmail.com'),
+(1,6,90,1,current_timestamp(),'adm@gmail.com'),
+(1,5,17,1,current_timestamp(),'adm@gmail.com'),
+(1,6,90,1,current_timestamp(),'adm@gmail.com');
 
-INSERT INTO requisicoes(usuario_id,situacao_id,calendario_id,nivel_urgencia_id,assunto_requisicao_id,data_criacao,email_modificador) VALUES
-(1,5,1,2,2,current_timestamp(),'adm@gmail.com'),
-(1,5,10,2,2,current_timestamp(),'adm@gmail.com'),
-(1,6,90,1,2,current_timestamp(),'adm@gmail.com');
+INSERT INTO requisicoes(usuario_id,situacao_id,calendario_id,assunto_requisicao_id,data_criacao,email_modificador) VALUES
+(1,5,1,2,current_timestamp(),'adm@gmail.com'),
+(1,5,10,2,current_timestamp(),'adm@gmail.com'),
+(1,6,90,2,current_timestamp(),'adm@gmail.com');
 
-INSERT INTO requisicoes(usuario_id,situacao_id,calendario_id,nivel_urgencia_id,assunto_requisicao_id,data_criacao,email_modificador) VALUES
-(1,5,1,1,3,current_timestamp(),'adm@gmail.com'),
-(1,6,17,1,3,current_timestamp(),'adm@gmail.com'),
-(1,6,90,3,3,current_timestamp(),'adm@gmail.com');
+INSERT INTO requisicoes(usuario_id,situacao_id,calendario_id,assunto_requisicao_id,data_criacao,email_modificador) VALUES
+(1,5,1,3,current_timestamp(),'adm@gmail.com'),
+(1,6,17,3,current_timestamp(),'adm@gmail.com'),
+(1,6,90,3,current_timestamp(),'adm@gmail.com');
 
-INSERT INTO requisicoes(usuario_id,situacao_id,calendario_id,nivel_urgencia_id,assunto_requisicao_id,data_criacao,email_modificador) VALUES
-(1,6,1,1,4,current_timestamp(),'adm@gmail.com'),
-(1,6,17,1,4,current_timestamp(),'adm@gmail.com'),
-(1,6,90,3,4,current_timestamp(),'adm@gmail.com');
-
-/*
-INSERT INTO requisicoes(usuario_id,situacao_id,calendario_id,nivel_urgencia_id,assunto_requisicao_id,data_criacao,email_modificador) VALUES
-(1,5,1,1,1,current_timestamp(),'adm@gmail.com'),
-(1,5,17,1,1,current_timestamp(),'adm@gmail.com'),
-(1,6,90,3,1,current_timestamp(),'adm@gmail.com');
-
-INSERT INTO requisicoes(usuario_id,situacao_id,calendario_id,nivel_urgencia_id,assunto_requisicao_id,data_criacao,email_modificador) VALUES
-(1,5,91,2,2,current_timestamp(),'adm@gmail.com'),
-(1,5,132,2,2,current_timestamp(),'adm@gmail.com'),
-(1,6,180,1,2,current_timestamp(),'adm@gmail.com');
-
-INSERT INTO requisicoes(usuario_id,situacao_id,calendario_id,nivel_urgencia_id,assunto_requisicao_id,data_criacao,email_modificador) VALUES
-(1,5,181,1,3,current_timestamp(),'adm@gmail.com'),
-(1,6,197,1,3,current_timestamp(),'adm@gmail.com'),
-(1,6,270,3,3,current_timestamp(),'adm@gmail.com');
-
-INSERT INTO requisicoes(usuario_id,situacao_id,calendario_id,nivel_urgencia_id,assunto_requisicao_id,data_criacao,email_modificador) VALUES
-(1,6,271,1,4,current_timestamp(),'adm@gmail.com'),
-(1,6,293,1,4,current_timestamp(),'adm@gmail.com'),
-(1,6,360,3,4,current_timestamp(),'adm@gmail.com');
-
-
+INSERT INTO requisicoes(usuario_id,situacao_id,calendario_id,assunto_requisicao_id,data_criacao,email_modificador) VALUES
+(1,6,1,4,current_timestamp(),'adm@gmail.com'),
+(1,6,17,4,current_timestamp(),'adm@gmail.com'),
+(1,6,90,4,current_timestamp(),'adm@gmail.com');

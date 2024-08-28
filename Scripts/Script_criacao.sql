@@ -262,11 +262,6 @@ CREATE TABLE IF NOT EXISTS reserva_atividade(
 	email_modificador VARCHAR(150)
 );
 
-CREATE TABLE IF NOT EXISTS nivel_urgencia (
-  id BIGINT PRIMARY KEY AUTO_INCREMENT,
-  nivel VARCHAR(60)
-);
-
 CREATE TABLE IF NOT EXISTS assunto_requisicao (
   id BIGINT PRIMARY KEY AUTO_INCREMENT,
   assunto VARCHAR(150)
@@ -278,8 +273,6 @@ CREATE TABLE IF NOT EXISTS requisicoes (
   hora_fechamento TIME,
   usuario_id BIGINT,
 	CONSTRAINT requisicoes_usuario FOREIGN KEY (usuario_id) REFERENCES usuario(id),
-  nivel_urgencia_id BIGINT,
-	CONSTRAINT requisicoes_nivel_urgencia FOREIGN KEY (nivel_urgencia_id) REFERENCES nivel_urgencia(id),
   assunto_requisicao_id BIGINT,
 	CONSTRAINT requisicoes_assunto_requisicao FOREIGN KEY (assunto_requisicao_id) REFERENCES assunto_requisicao(id),
   situacao_id BIGINT,
@@ -291,63 +284,20 @@ CREATE TABLE IF NOT EXISTS requisicoes (
   email_modificador VARCHAR(150)
 );
 
-CREATE TABLE IF NOT EXISTS respostas_possiveis(
+CREATE TABLE IF NOT EXISTS categoria(
 	id BIGINT PRIMARY KEY AUTO_INCREMENT,
-    resposta VARCHAR(45)
+    nome VARCHAR(150)
 );
 
-CREATE TABLE IF NOT EXISTS areas_atendimento(
+CREATE TABLE IF NOT EXISTS venda(
 	id BIGINT PRIMARY KEY AUTO_INCREMENT,
-    area VARCHAR(45)
-);
-
-CREATE TABLE IF NOT EXISTS opcoes_atendimento(
-	id BIGINT PRIMARY KEY AUTO_INCREMENT,
-    opcao VARCHAR(100),
-    areas_atendimento_id BIGINT,
-		CONSTRAINT opcoes_atendimento_areas_atendimento FOREIGN KEY (areas_atendimento_id) REFERENCES areas_atendimento(id)
-);
-
-CREATE TABLE IF NOT EXISTS perguntas_frequentes(
-	id BIGINT PRIMARY KEY AUTO_INCREMENT,
-    pergunta VARCHAR(60),
-    opcoes_atendimento_id BIGINT,
-		CONSTRAINT perguntas_frequentes_opcoes_atendimentos foreign key (opcoes_atendimento_id) REFERENCES opcoes_atendimento(id)
-);
-
-CREATE TABLE IF NOT EXISTS apresentacao_resposta(
-	id BIGINT PRIMARY KEY AUTO_INCREMENT,
-    perguntas_frequentes_id BIGINT,
-		CONSTRAINT apresentacao_resposta_perguntas_frequentes FOREIGN KEY (perguntas_frequentes_id) REFERENCES perguntas_frequentes(id),
-    respostas_possiveis_id BIGINT,
-		CONSTRAINT apresentacao_resposta_respostas_possiveis FOREIGN KEY (respostas_possiveis_id) REFERENCES respostas_possiveis(id)
-);
-
-CREATE TABLE IF NOT EXISTS entrada_usuario(
-	id BIGINT PRIMARY KEY AUTO_INCREMENT,
-    usuario_id BIGINT,
-		CONSTRAINT entrada_usuario_usuario FOREIGN KEY (usuario_id) REFERENCES usuario(id)
-);
-
-CREATE TABLE IF NOT EXISTS tipo_mensagem(
-	id BIGINT PRIMARY KEY AUTO_INCREMENT,
-	tipo VARCHAR(100)
-);
-
-CREATE TABLE IF NOT EXISTS mensagem_bot(
-	id BIGINT PRIMARY KEY AUTO_INCREMENT,
-    areas_atendimento_id BIGINT,
-		CONSTRAINT mensagem_bot_areas_atendimento FOREIGN KEY (areas_atendimento_id) REFERENCES areas_atendimento(id),
-	tipo_mensagem_id BIGINT,
-		CONSTRAINT mensagem_bot_tipo_mensagem FOREIGN KEY (tipo_mensagem_id) REFERENCES tipo_mensagem(id)
-);
-
-CREATE TABLE IF NOT EXISTS historico_conversa(
-	id BIGINT PRIMARY KEY AUTO_INCREMENT,
-    entrada_usuario_id BIGINT,
-		CONSTRAINT historico_conversa_entrada_usuario FOREIGN KEY (entrada_usuario_id) REFERENCES entrada_usuario(id),
-    mensagem_bot_id BIGINT,
-		CONSTRAINT historico_conversa_entrada_bot FOREIGN KEY (mensagem_bot_id) REFERENCES mensagem_bot(id)
+	quantidade INT,
+    valor DOUBLE,
+    email_modificador VARCHAR(150),
+    calendario_id BIGINT,
+    CONSTRAINT venda_calendario FOREIGN KEY (calendario_id) REFERENCES calendario(id),
+	categoria_id BIGINT,
+    CONSTRAINT venda_categoria FOREIGN KEY (categoria_id) REFERENCES categoria(id)
 );
 
 -- SELECT datediff(now(),data_nascimento)/365 AS teste FROM informacoes_adicionais;
