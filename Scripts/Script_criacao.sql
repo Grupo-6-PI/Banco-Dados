@@ -3,8 +3,6 @@ DROP DATABASE IF EXISTS TFG;
 
 CREATE DATABASE IF NOT EXISTS TFG;
 	
-
-  
 USE TFG;
     
 CREATE TABLE IF NOT EXISTS estado(
@@ -214,14 +212,14 @@ CREATE TABLE IF NOT EXISTS calendario (
   dia_numeracao INT
 );
 
-CREATE TABLE IF NOT EXISTS disponibilidade_funcionario (
+CREATE TABLE IF NOT EXISTS disponibilidade_voluntario(
   id BIGINT PRIMARY KEY AUTO_INCREMENT,
   hora_comeco TIME,
   hora_final TIME,
   usuario_id BIGINT,
-	CONSTRAINT disponibilidade_funcionario_usuario FOREIGN KEY (usuario_id) REFERENCES usuario(id),
+	CONSTRAINT disponibilidade_voluntario_usuario FOREIGN KEY (usuario_id) REFERENCES usuario(id),
   calendario_id BIGINT,
-	CONSTRAINT disponibilidade_funcionario_calendario FOREIGN KEY (calendario_id) REFERENCES calendario(id),
+	CONSTRAINT disponibilidade_voluntario_calendario FOREIGN KEY (calendario_id) REFERENCES calendario(id),
   data_criacao DATETIME NULL,
   data_ultima_atualizacao DATETIME NULL,
   email_modificador VARCHAR(150) NULL
@@ -231,8 +229,8 @@ CREATE TABLE IF NOT EXISTS repeticao(
 	id BIGINT PRIMARY KEY AUTO_INCREMENT,
     quantidade INT,
     escolha_repeticao VARCHAR(50),
-    disponibilidade_funcionario_id BIGINT,
-		CONSTRAINT repeticao_disponibilidade_funcionario FOREIGN KEY (disponibilidade_funcionario_id) REFERENCES disponibilidade_funcionario(id)
+    disponibilidade_voluntario_id BIGINT,
+		CONSTRAINT repeticao_disponibilidade_voluntario FOREIGN KEY (disponibilidade_voluntario_id) REFERENCES disponibilidade_voluntario(id)
 );
 
 CREATE TABLE IF NOT EXISTS tipo_atividade (
