@@ -308,7 +308,7 @@ SELECT
     nome,
     email,
     CAST(AES_DECRYPT(senha,'chave') as CHAR) AS senha,
-	(SELECT apelido FROM nivel_acesso WHERE id=usuario.nivel_acesso_id) AS acesso
+	nivel_acesso_id
 FROM usuario;
 
 CREATE VIEW acoes_pendentes AS 
