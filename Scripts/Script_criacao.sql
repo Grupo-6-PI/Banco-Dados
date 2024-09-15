@@ -302,7 +302,14 @@ CREATE TABLE IF NOT EXISTS venda(
 
 -- SELECT datediff(now(),data_nascimento)/365 AS teste FROM informacoes_adicionais;
 
-CREATE VIEW login AS SELECT id,nome,email,CAST(AES_DECRYPT(senha,'chave') as CHAR) AS senha FROM usuario;
+CREATE VIEW login AS 
+SELECT 
+	id,
+    nome,
+    email,
+    CAST(AES_DECRYPT(senha,'chave') as CHAR) AS senha,
+	(SELECT apelido FROM nivel_acesso WHERE id=usuario.nivel_acesso_id) AS acesso
+FROM usuario;
 
 CREATE VIEW acoes_pendentes AS 
 	SELECT 

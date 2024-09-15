@@ -43,9 +43,12 @@ INSERT INTO situacao (situacao, tipo_situacao_id) VALUES ('Aberto', 1);
 INSERT INTO situacao (situacao, tipo_situacao_id) VALUES ('Cumprida', 1);
 INSERT INTO situacao (situacao, tipo_situacao_id) VALUES ('Recusada', 1);
 
-INSERT INTO usuario(nome,email,senha) VALUES ('ADM','adm@gmail.com',AES_ENCRYPT('12341234','chave'));
+INSERT INTO nivel_acesso(apelido) VALUES 
+('ADM'),('Voluntário'),('beneficiário');
 
-INSERT INTO usuario(nome,email,senha) VALUES ('Julio Dahi','juliocesardahi@gmail.com',AES_ENCRYPT('12341234','chave'));
+INSERT INTO usuario(nome,email,senha,nivel_acesso_id) VALUES ('ADM','adm@gmail.com',AES_ENCRYPT('12341234','chave'),1);
+
+INSERT INTO usuario(nome,email,senha,nivel_acesso_id) VALUES ('Julio Dahi','juliocesardahi@gmail.com',AES_ENCRYPT('12341234','chave'),2);
 
 INSERT INTO informacoes_adicionais(cpf,data_nascimento,data_criacao,email_modificador) VALUES
 ('48556583830','2005-01-27',current_timestamp(),'adm@gmail.com');
