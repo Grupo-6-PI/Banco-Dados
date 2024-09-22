@@ -323,6 +323,10 @@ CREATE VIEW acoes_pendentes AS
 				ON acao.id = reserva.atividade_id
 			JOIN calendario 
 				ON reserva.calendario_id = calendario.id;
+                
+                Select * from Login;
+                
+                Select * from requisicoes;
 
 /*
 CREATE VIEW get_details_requisicao

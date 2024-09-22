@@ -47,7 +47,7 @@ INSERT INTO nivel_acesso(apelido) VALUES
 ('ADM'),('Voluntário'),('beneficiário');
 
 INSERT INTO usuario(nome,email,senha,nivel_acesso_id) VALUES ('ADM','adm@gmail.com',AES_ENCRYPT('12341234','chave'),1);
-
+INSERT INTO usuario(nome,email,senha,nivel_acesso_id) VALUES ('ADEMIRO','adm_adm@gmail.com',AES_ENCRYPT('12341234','chave'),3);
 INSERT INTO usuario(nome,email,senha,nivel_acesso_id) VALUES ('Julio Dahi','juliocesardahi@gmail.com',AES_ENCRYPT('12341234','chave'),2);
 
 INSERT INTO informacoes_adicionais(cpf,data_nascimento,data_criacao,email_modificador) VALUES
