@@ -271,6 +271,7 @@ CREATE TABLE IF NOT EXISTS requisicoes (
   id BIGINT PRIMARY KEY AUTO_INCREMENT,
   hora_abertura TIME,
   hora_fechamento TIME,
+  descricao VARCHAR(500),
   usuario_id BIGINT,
 	CONSTRAINT requisicoes_usuario FOREIGN KEY (usuario_id) REFERENCES usuario(id),
   assunto_requisicao_id BIGINT,
