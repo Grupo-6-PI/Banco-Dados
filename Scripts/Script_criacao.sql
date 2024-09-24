@@ -325,7 +325,7 @@ CREATE VIEW acoes_pendentes AS
 			JOIN calendario 
 				ON reserva.calendario_id = calendario.id;
                 
-                Select * from Login;
+                Select * from login;
                 
                 Select * from requisicoes;
 
