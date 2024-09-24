@@ -842,6 +842,13 @@ INSERT INTO assunto_requisicao(assunto) VALUES
 ('Saúde e Bem-estar'),
 ('Outros');
 
+INSERT INTO categoria(nome) VALUES
+('Roupa Infantil'),
+('Sapato Infantil'),
+('Roupa Adulto'),
+('Sapato Adulto'),
+('Outros');
+
 INSERT INTO requisicoes(usuario_id,situacao_id,calendario_id,assunto_requisicao_id,data_criacao,email_modificador) VALUES
 (1,5,1,1,current_timestamp(),'adm@gmail.com'),
 (1,5,17,1,current_timestamp(),'adm@gmail.com'),
