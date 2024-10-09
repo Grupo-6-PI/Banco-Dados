@@ -842,7 +842,7 @@ INSERT INTO assunto_requisicao(assunto) VALUES
 ('Saúde e Bem-estar'),
 ('Outros');
 
-INSERT INTO categoria(nome) VALUES
+INSERT INTO categoria VALUES
 ('Roupa Infantil'),
 ('Sapato Infantil'),
 ('Roupa Adulto'),
