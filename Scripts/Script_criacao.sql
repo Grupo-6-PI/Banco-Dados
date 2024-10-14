@@ -48,14 +48,6 @@ CREATE TABLE IF NOT EXISTS endereco (
 	CONSTRAINT endereco_situacao FOREIGN KEY (situacao_id) REFERENCES situacao(id)
 );
 
-CREATE TABLE IF NOT EXISTS quantidade_pessoas (
-  id BIGINT PRIMARY KEY AUTO_INCREMENT,
-  minimo INT NULL,
-  maximo INT NULL,
-  situacao_id BIGINT,
-	CONSTRAINT quantidade_pessoas_situacao FOREIGN KEY (situacao_id) REFERENCES situacao (id)
-);
-
 CREATE TABLE IF NOT EXISTS renda_familiar (
   id BIGINT PRIMARY KEY AUTO_INCREMENT,
   renda DOUBLE,
@@ -66,8 +58,7 @@ CREATE TABLE IF NOT EXISTS renda_familiar (
 CREATE TABLE IF NOT EXISTS familia (
   id BIGINT PRIMARY KEY AUTO_INCREMENT,
   apelido VARCHAR(100),
-  quantidade_pessoas_id BIGINT,
-	CONSTRAINT familia_quantidade_pessoas FOREIGN KEY(quantidade_pessoas_id) REFERENCES quantidade_pessoas(id),
+  quantidade_pessoas INT,
   renda_familiar_id BIGINT,
   	CONSTRAINT familia_renda_familiar FOREIGN KEY(renda_familiar_id) REFERENCES renda_familiar(id),
   situacao_id BIGINT,
@@ -129,30 +120,20 @@ CREATE TABLE IF NOT EXISTS contato (
 	CONSTRAINT contato_informacoes_adicionais FOREIGN KEY (informacoes_adicionais_id) REFERENCES informacoes_adicionais(id)
 );
 
-CREATE TABLE IF NOT EXISTS faixa_etaria(
-	id BIGINT PRIMARY KEY AUTO_INCREMENT,
-    faixa VARCHAR(70)
-);
-
 CREATE TABLE IF NOT EXISTS tamanho_roupa (
   id BIGINT PRIMARY KEY AUTO_INCREMENT,
-  tamanho VARCHAR(10),
-  faixa_etaria_id BIGINT,
-	CONSTRAINT tamanho_roupa_faixa_etaria FOREIGN KEY (faixa_etaria_id) REFERENCES faixa_etaria(id)
+  tamanho VARCHAR(10)
 );
 
 CREATE TABLE IF NOT EXISTS tamanho_calcado (
   id BIGINT PRIMARY KEY AUTO_INCREMENT,
-  tamanho VARCHAR(10),
-  faixa_etaria_id BIGINT,
-	CONSTRAINT tamanho_calcado_faixa_etaria FOREIGN KEY (faixa_etaria_id) REFERENCES faixa_etaria(id)
+  tamanho VARCHAR(10)
 );
 
 CREATE TABLE IF NOT EXISTS dependente(
 	id BIGINT PRIMARY KEY AUTO_INCREMENT,
-    genero VARCHAR(60),
     data_nascimento DATETIME,
-    definiente TINYINT,
+    deficiente TINYINT,
     tamanho_roupa_id BIGINT,
 		CONSTRAINT dependente_tamanho_roupa FOREIGN KEY (tamanho_roupa_id) REFERENCES tamanho_roupa(id),
 	tamanho_calcado_id BIGINT,
