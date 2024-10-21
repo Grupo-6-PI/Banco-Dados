@@ -793,23 +793,49 @@ INSERT INTO tipo_situacao (tipo) VALUES ('Estado');
 INSERT INTO tipo_situacao (tipo) VALUES ('Ação');
 
 -- Inserir dados na tabela Situacao
-INSERT INTO situacao (situacao, tipo_situacao_id) VALUES ('Logado', 1);
-INSERT INTO situacao (situacao, tipo_situacao_id) VALUES ('Deslogado', 1);
 INSERT INTO situacao (situacao, tipo_situacao_id) VALUES ('Ativo', 1);
 INSERT INTO situacao (situacao, tipo_situacao_id) VALUES ('Desativo', 1);
-INSERT INTO situacao (situacao, tipo_situacao_id) VALUES ('Aberto', 1);
-INSERT INTO situacao (situacao, tipo_situacao_id) VALUES ('Cumprida', 1);
-INSERT INTO situacao (situacao, tipo_situacao_id) VALUES ('Recusada', 1);
+INSERT INTO situacao (situacao, tipo_situacao_id) VALUES ('Logado', 2);
+INSERT INTO situacao (situacao, tipo_situacao_id) VALUES ('Deslogado', 2);
+INSERT INTO situacao (situacao, tipo_situacao_id) VALUES ('Aberto', 2);
+INSERT INTO situacao (situacao, tipo_situacao_id) VALUES ('Cumprida', 2);
+INSERT INTO situacao (situacao, tipo_situacao_id) VALUES ('Recusada', 2);
 
 INSERT INTO nivel_acesso(apelido) VALUES 
 ('ADM'),('Voluntário'),('beneficiário');
 
-INSERT INTO usuario(nome,email,senha,nivel_acesso_id) VALUES ('ADM','adm@gmail.com',AES_ENCRYPT('12341234','chave'),1);
-INSERT INTO usuario(nome,email,senha,nivel_acesso_id) VALUES ('ADEMIRO','adm_adm@gmail.com',AES_ENCRYPT('12341234','chave'),3);
-INSERT INTO usuario(nome,email,senha,nivel_acesso_id) VALUES ('Julio Dahi','juliocesardahi@gmail.com',AES_ENCRYPT('12341234','chave'),2);
+INSERT INTO endereco (logradouro,numero,cep,bairro_id,situacao_id) VALUES ('Rua da Palmeiras',8,'08473755',24,1);
 
-INSERT INTO informacoes_adicionais(cpf,data_nascimento,data_criacao,email_modificador) VALUES
-('48556583830','2005-01-27',current_timestamp(),'adm@gmail.com');
+INSERT INTO renda_familiar (renda,situacao_id) VALUES (2.500,1);
+
+INSERT INTO familia (apelido,quantidade_pessoas,renda_familiar_id,situacao_id) VALUES ('Familia ADEMIRO',3,1,1);
+
+INSERT INTO informacoes_adicionais(cpf,data_nascimento,data_criacao,email_modificador,endereco_id,familia_id) VALUES
+('48556583830','2005-01-27',current_timestamp(),'adm@gmail.com',1,1);
+
+INSERT INTO tamanho_roupa (tamanho) VALUES
+('PP'),
+('P'),
+('M'),
+('G'),
+('GG');
+
+INSERT INTO tamanho_calcado(tamanho) VALUES
+('1'),
+('1'),
+('2'),
+('3'),
+('4'),
+('5'),
+('6'),
+('7'),
+('8'),
+('9'),
+('10');
+
+INSERT INTO dependente(data_nascimento,deficiente,tamanho_roupa_id,tamanho_calcado_id,situacao_id,familia_id) VALUES
+('2000-11-24 10:10:10',0,2,7,1,1),
+('2000-11-24 10:10:10',0,1,3,1,1);
 
 INSERT INTO tipo_contato (tipo_contato) VALUES
 ('Email'),
@@ -824,6 +850,10 @@ INSERT INTO tipo_atividade(tipo) VALUES
 ('Multirão de vacina'),
 ('Entrega de alimentos'),
 ('Limpeza');
+
+INSERT INTO usuario(nome,email,senha,nivel_acesso_id,situacao_id) VALUES ('ADM','adm@gmail.com',AES_ENCRYPT('12341234','chave'),1,3);
+INSERT INTO usuario(nome,email,senha,nivel_acesso_id,informacoes_adicionais_id,situacao_id) VALUES ('ADEMIRO','adm_adm@gmail.com',AES_ENCRYPT('12341234','chave'),3,1,3);
+INSERT INTO usuario(nome,email,senha,nivel_acesso_id,situacao_id) VALUES ('Julio Dahi','juliocesardahi@gmail.com',AES_ENCRYPT('12341234','chave'),2,3);
 
 INSERT INTO atividade(nome,hora_comeco,hora_final,descricao,tipo_atividade_id,data_criacao,email_modificador) VALUES
 ('João','15:10:10','16:11:11','Distribuição de doações',1,current_timestamp(),'joao@gmail.com'),
@@ -1607,27 +1637,28 @@ INSERT INTO categoria (nome) VALUES
 ('Sapato Adulto'),
 ('Outros');
 
-INSERT INTO requisicoes(usuario_id,situacao_id,calendario_id,assunto_requisicao_id,data_criacao,email_modificador) VALUES
-(1,5,1,1,current_timestamp(),'adm@gmail.com'),
-(1,5,17,1,current_timestamp(),'adm@gmail.com'),
-(1,6,90,1,current_timestamp(),'adm@gmail.com'),
-(1,5,17,1,current_timestamp(),'adm@gmail.com'),
-(1,6,90,1,current_timestamp(),'adm@gmail.com');
+INSERT INTO requisicoes(usuario_id,situacao_id,calendario_id,assunto_requisicao_id,data_criacao,email_modificador,descricao,hora_abertura) VALUES
+(2,5,1,1,current_timestamp(),'adm@gmail.com','Teste',current_time()),
+(2,5,17,1,current_timestamp(),'adm@gmail.com','Teste',current_time()),
+(2,6,90,1,current_timestamp(),'adm@gmail.com','Teste',current_time()),
+(2,5,17,1,current_timestamp(),'adm@gmail.com','Teste',current_time()),
+(2,7,1,1,current_timestamp(),'adm@gmail.com','Teste',current_time()),
+(2,6,90,1,current_timestamp(),'adm@gmail.com','Teste',current_time());
 
-INSERT INTO requisicoes(usuario_id,situacao_id,calendario_id,assunto_requisicao_id,data_criacao,email_modificador) VALUES
-(1,5,1,2,current_timestamp(),'adm@gmail.com'),
-(1,5,10,2,current_timestamp(),'adm@gmail.com'),
-(1,6,90,2,current_timestamp(),'adm@gmail.com');
+INSERT INTO requisicoes(usuario_id,situacao_id,calendario_id,assunto_requisicao_id,data_criacao,email_modificador,descricao,hora_abertura) VALUES
+(2,5,1,2,current_timestamp(),'adm@gmail.com','Teste',current_time()),
+(2,5,10,2,current_timestamp(),'adm@gmail.com','Teste',current_time()),
+(2,6,90,2,current_timestamp(),'adm@gmail.com','Teste',current_time());
 
-INSERT INTO requisicoes(usuario_id,situacao_id,calendario_id,assunto_requisicao_id,data_criacao,email_modificador) VALUES
-(1,5,1,3,current_timestamp(),'adm@gmail.com'),
-(1,6,17,3,current_timestamp(),'adm@gmail.com'),
-(1,6,90,3,current_timestamp(),'adm@gmail.com');
+INSERT INTO requisicoes(usuario_id,situacao_id,calendario_id,assunto_requisicao_id,data_criacao,email_modificador,descricao,hora_abertura) VALUES
+(2,5,1,3,current_timestamp(),'adm@gmail.com','Teste',current_time()),
+(2,6,17,3,current_timestamp(),'adm@gmail.com','Teste',current_time()),
+(2,6,90,3,current_timestamp(),'adm@gmail.com','Teste',current_time());
 
-INSERT INTO requisicoes(usuario_id,situacao_id,calendario_id,assunto_requisicao_id,data_criacao,email_modificador) VALUES
-(1,6,1,4,current_timestamp(),'adm@gmail.com'),
-(1,6,17,4,current_timestamp(),'adm@gmail.com'),
-(1,6,90,4,current_timestamp(),'adm@gmail.com');
+INSERT INTO requisicoes(usuario_id,situacao_id,calendario_id,assunto_requisicao_id,data_criacao,email_modificador,descricao,hora_abertura) VALUES
+(2,6,1,4,current_timestamp(),'adm@gmail.com','Teste',current_time()),
+(2,6,17,4,current_timestamp(),'adm@gmail.com','Teste',current_time()),
+(2,6,90,4,current_timestamp(),'adm@gmail.com','Teste',current_time());
 
 INSERT INTO venda VALUES
 (1, 4, 20.00, "juliocesardahi@gmail.com", 32, 2);
