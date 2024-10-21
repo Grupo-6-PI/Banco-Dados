@@ -1600,7 +1600,7 @@ INSERT INTO assunto_requisicao(assunto) VALUES
 ('Saúde e Bem-estar'),
 ('Outros');
 
-INSERT INTO categoria VALUES
+INSERT INTO categoria (nome) VALUES
 ('Roupa Infantil'),
 ('Sapato Infantil'),
 ('Roupa Adulto'),
@@ -1628,3 +1628,6 @@ INSERT INTO requisicoes(usuario_id,situacao_id,calendario_id,assunto_requisicao_
 (1,6,1,4,current_timestamp(),'adm@gmail.com'),
 (1,6,17,4,current_timestamp(),'adm@gmail.com'),
 (1,6,90,4,current_timestamp(),'adm@gmail.com');
+
+INSERT INTO venda VALUES
+(1, 4, 20.00, "juliocesardahi@gmail.com", 32, 2);
