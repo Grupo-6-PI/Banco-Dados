@@ -238,6 +238,8 @@ CREATE TABLE IF NOT EXISTS reserva_atividade(
 		CONSTRAINT reserva_atividade_atividade FOREIGN KEY (atividade_id) REFERENCES atividade(id),
 	calendario_id BIGINT,
 		CONSTRAINT reserva_atividade_calendario FOREIGN KEY (calendario_id) REFERENCES calendario(id),
+	endereco_id BIGINT,
+		CONSTRAINT reserva_atividade_endereco FOREIGN KEY (endereco_id) REFERENCES endereco(id),
 	data_criacao DATETIME,
 	data_ultima_atualizacao DATETIME,
 	email_modificador VARCHAR(150)
@@ -305,26 +307,57 @@ CREATE VIEW acoes_pendentes AS
 				ON acao.id = reserva.atividade_id
 			JOIN calendario 
 				ON reserva.calendario_id = calendario.id;
+                
+DELIMITER //
 
-/*
-CREATE VIEW get_details_requisicao
-	AS 
-    SELECT 
-		requisicoes.id AS ID_REQUISICAO,
-        usuario.nome AS SOLICITANTE,
-        informacoes_adicionais.cpf AS 'CPF',
-        informacoes_adicionais.data_nascimento AS 'DATA NASCIMENTO',
-        endereco.logradouro AS 'LOGRADOURO',
-        endereco.numero AS 'NÚMERO',
-        bairro.nome AS 'BAIRRO',
-        familia.id AS 'ID FAMILIA',
-        familia.apelido AS 'NOME DA FAMILIA',
-        (SELECT COUNT(dependente.id) FROM dependente WHERE dependente.familia_id = familia.id) AS 'QUANTIDADE DEPENDENTES'
-	FROM requisicoes
-		JOIN usuario ON requisicoes.usuario_id = usuario.id
-        JOIN informacoes_adicionais ON usuario.informacoes_adicionais_id = informacoes_adicionais.id
-        JOIN endereco ON informacoes_adicionais.endereco_id = endereco.id
-        JOIN bairro ON endereco.bairro_id = bairro.id
-        JOIN familia ON informacoes_adicionais.familia_id = familia.id;
+CREATE PROCEDURE inserir_dias_calendario()
+BEGIN
+    DECLARE data_atual DATE;
+    DECLARE data_fim DATE;
+    DECLARE nome_dia VARCHAR(30);
+    DECLARE nome_mes VARCHAR(20);
 
--- SELECT * FROM get_details_requisicao WHERE ID_REQUISIÇÃO = 1;
+    -- Define o início e o fim do intervalo de datas
+    SET data_atual = '2024-01-01';
+    SET data_fim = '2025-12-31';
+
+    -- Loop para percorrer cada dia no intervalo
+    WHILE data_atual <= data_fim DO
+        -- Define o nome do dia da semana
+        SET nome_dia = CASE DAYOFWEEK(data_atual)
+                          WHEN 1 THEN 'Domingo'
+                          WHEN 2 THEN 'Segunda-Feira'
+                          WHEN 3 THEN 'Terça-Feira'
+                          WHEN 4 THEN 'Quarta-Feira'
+                          WHEN 5 THEN 'Quinta-Feira'
+                          WHEN 6 THEN 'Sexta-Feira'
+                          WHEN 7 THEN 'Sábado'
+                       END;
+
+        -- Define o nome do mês
+        SET nome_mes = CASE MONTH(data_atual)
+                          WHEN 1 THEN 'Janeiro'
+                          WHEN 2 THEN 'Fevereiro'
+                          WHEN 3 THEN 'Março'
+                          WHEN 4 THEN 'Abril'
+                          WHEN 5 THEN 'Maio'
+                          WHEN 6 THEN 'Junho'
+                          WHEN 7 THEN 'Julho'
+                          WHEN 8 THEN 'Agosto'
+                          WHEN 9 THEN 'Setembro'
+                          WHEN 10 THEN 'Outubro'
+                          WHEN 11 THEN 'Novembro'
+                          WHEN 12 THEN 'Dezembro'
+                       END;
+
+        -- Insere o registro na tabela calendario
+        INSERT INTO calendario (ano, mes_nomeacao, mes_numeracao, dia_nomeacao, dia_numeracao)
+        VALUES (YEAR(data_atual), nome_mes, MONTH(data_atual), nome_dia, DAY(data_atual));
+
+        -- Incrementa a data para o próximo dia
+        SET data_atual = DATE_ADD(data_atual, INTERVAL 1 DAY);
+    END WHILE;
+
+END //
+
+DELIMITER ;
