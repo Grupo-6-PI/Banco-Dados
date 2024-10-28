@@ -853,7 +853,7 @@ INSERT INTO tipo_atividade(tipo) VALUES
 
 INSERT INTO usuario(nome,email,senha,nivel_acesso_id,situacao_id) VALUES ('ADM','davi.rsilva@sptech.school',AES_ENCRYPT('12341234','chave'),1,3);
 INSERT INTO usuario(nome,email,senha,nivel_acesso_id,situacao_id) VALUES ('Banca Sprint','bancasprint@gmail.com',AES_ENCRYPT('@BancaSprint5','chave'),1,3);
-INSERT INTO usuario(nome,email,senha,nivel_acesso_id,informacoes_adicionais_id,situacao_id) VALUES ('ADEMIRO','adm_adm@gmail.com',AES_ENCRYPT('12341234','chave'),3,1,3);
+INSERT INTO usuario(nome,email,senha,nivel_acesso_id,informacoes_adicionais_id,situacao_id) VALUES ('ADEMIRO','davi.rsilva@sptech.school',AES_ENCRYPT('12341234','chave'),3,1,3);
 INSERT INTO usuario(nome,email,senha,nivel_acesso_id,situacao_id) VALUES ('Julio Dahi','julio.dahi@sptech.school',AES_ENCRYPT('12341234','chave'),2,3);
 
 INSERT INTO atividade(nome,hora_comeco,hora_final,descricao,tipo_atividade_id,data_criacao,email_modificador) VALUES
