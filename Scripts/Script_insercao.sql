@@ -852,6 +852,7 @@ INSERT INTO tipo_atividade(tipo) VALUES
 ('Limpeza');
 
 INSERT INTO usuario(nome,email,senha,nivel_acesso_id,situacao_id) VALUES ('ADM','adm@gmail.com',AES_ENCRYPT('12341234','chave'),1,3);
+INSERT INTO usuario(nome,email,senha,nivel_acesso_id,situacao_id) VALUES ('Banca Sprint','bancasprint@gmail.com',AES_ENCRYPT('@BancaSprint5','chave'),1,3);
 INSERT INTO usuario(nome,email,senha,nivel_acesso_id,informacoes_adicionais_id,situacao_id) VALUES ('ADEMIRO','adm_adm@gmail.com',AES_ENCRYPT('12341234','chave'),3,1,3);
 INSERT INTO usuario(nome,email,senha,nivel_acesso_id,situacao_id) VALUES ('Julio Dahi','juliocesardahi@gmail.com',AES_ENCRYPT('12341234','chave'),2,3);
 
@@ -880,15 +881,15 @@ INSERT INTO endereco(logradouro,numero,bairro_id) VALUES
 ('Rua Valentim Magalhães',34,52);
 
 INSERT INTO reserva_atividade(atividade_id,calendario_id,data_criacao,email_modificador,endereco_id) VALUES
-(1,294,current_timestamp(),'adm@gmail.com',2),
-(2,294,current_timestamp(),'adm@gmail.com',3),
-(3,295,current_timestamp(),'adm@gmail.com',4),
-(4,295,current_timestamp(),'adm@gmail.com',4),
-(5,296,current_timestamp(),'adm@gmail.com',2),
-(6,296,current_timestamp(),'adm@gmail.com',3),
-(7,297,current_timestamp(),'adm@gmail.com',3),
-(8,297,current_timestamp(),'adm@gmail.com',2),
-(9,298,current_timestamp(),'adm@gmail.com',4);
+(1,301,current_timestamp(),'adm@gmail.com',2),
+(2,301,current_timestamp(),'adm@gmail.com',3),
+(3,302,current_timestamp(),'adm@gmail.com',4),
+(4,302,current_timestamp(),'adm@gmail.com',4),
+(5,303,current_timestamp(),'adm@gmail.com',2),
+(6,303,current_timestamp(),'adm@gmail.com',3),
+(7,304,current_timestamp(),'adm@gmail.com',3),
+(8,304,current_timestamp(),'adm@gmail.com',2),
+(9,305,current_timestamp(),'adm@gmail.com',4);
 
 INSERT INTO assunto_requisicao(assunto) VALUES
 ('Cestas'),
