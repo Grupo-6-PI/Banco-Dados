@@ -317,13 +317,10 @@ BEGIN
     DECLARE nome_dia VARCHAR(30);
     DECLARE nome_mes VARCHAR(20);
 
-    -- Define o início e o fim do intervalo de datas
     SET data_atual = '2024-01-01';
     SET data_fim = '2025-12-31';
 
-    -- Loop para percorrer cada dia no intervalo
     WHILE data_atual <= data_fim DO
-        -- Define o nome do dia da semana
         SET nome_dia = CASE DAYOFWEEK(data_atual)
                           WHEN 1 THEN 'Domingo'
                           WHEN 2 THEN 'Segunda-Feira'
@@ -334,7 +331,6 @@ BEGIN
                           WHEN 7 THEN 'Sábado'
                        END;
 
-        -- Define o nome do mês
         SET nome_mes = CASE MONTH(data_atual)
                           WHEN 1 THEN 'Janeiro'
                           WHEN 2 THEN 'Fevereiro'
@@ -350,14 +346,13 @@ BEGIN
                           WHEN 12 THEN 'Dezembro'
                        END;
 
-        -- Insere o registro na tabela calendario
         INSERT INTO calendario (ano, mes_nomeacao, mes_numeracao, dia_nomeacao, dia_numeracao)
         VALUES (YEAR(data_atual), nome_mes, MONTH(data_atual), nome_dia, DAY(data_atual));
 
-        -- Incrementa a data para o próximo dia
         SET data_atual = DATE_ADD(data_atual, INTERVAL 1 DAY);
     END WHILE;
 
 END //
 
 DELIMITER ;
+
