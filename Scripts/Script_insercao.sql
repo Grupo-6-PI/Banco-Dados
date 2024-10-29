@@ -808,10 +808,10 @@ INSERT INTO endereco (logradouro,numero,cep,bairro_id,situacao_id) VALUES ('Rua 
 
 INSERT INTO renda_familiar (renda,situacao_id) VALUES (2.500,1);
 
-INSERT INTO familia (apelido,quantidade_pessoas,renda_familiar_id,situacao_id) VALUES ('Familia ADEMIRO',3,1,1);
+INSERT INTO familia (apelido,quantidade_pessoas,renda_familiar_id,situacao_id) VALUES ('Familia Silva',3,1,1);
 
 INSERT INTO informacoes_adicionais(cpf,data_nascimento,data_criacao,email_modificador,endereco_id,familia_id) VALUES
-('48556583830','2005-01-27',current_timestamp(),'adm@gmail.com',1,1);
+('48556583830','2005-01-27',current_timestamp(),'davi.rsilva@sptech.school',1,1);
 
 INSERT INTO tamanho_roupa (tamanho) VALUES
 ('PP'),
@@ -844,7 +844,7 @@ INSERT INTO tipo_contato (tipo_contato) VALUES
 ('Ligação');
 
 INSERT INTO contato(informacoes_contato,tipo_contato_id,informacoes_adicionais_id,data_criacao,email_modificador) VALUES
-('642856882',3,1,current_timestamp(),'adm@gmail.com');
+('642856882',3,1,current_timestamp(),'davi.rsilva@sptech.school');
 
 INSERT INTO tipo_atividade(tipo) VALUES
 ('Multirão de vacina'),
@@ -857,18 +857,18 @@ INSERT INTO usuario(nome,email,senha,nivel_acesso_id,situacao_id) VALUES ('Julio
 INSERT INTO usuario(nome,email,senha,nivel_acesso_id,situacao_id) VALUES ('Banca Sprint','bancasprint@gmail.com',AES_ENCRYPT('@BancaSprint5','chave'),1,3);
 
 INSERT INTO atividade(nome,hora_comeco,hora_final,descricao,tipo_atividade_id,data_criacao,email_modificador) VALUES
-('Entregua de Cesta básica','15:10:10','16:11:11','Distribuição de Cestas básicas',1,current_timestamp(),'adm@gmail.com'),
-('Sopão','14:10:10','17:11:11','Sopão comunitario para moradores de rua',1,current_timestamp(),'adm@gmail.com'),
-('Campanha do Casaco','13:10:10','18:11:11','Distribuição de sobertores e casacos para moradores de rua',2,current_timestamp(),'adm@gmail.com'),
-('Sopão','12:10:10','19:11:11','Sopão comunitario para moradores de rua',2,current_timestamp(),'adm@gmail.com'),
-('Entregua de Cesta básica','11:10:10','20:11:11','Distribuição de Cestas básicas',3,current_timestamp(),'adm@gmail.com'),
-('Campanha do Casaco','10:10:10','21:11:11','Distribuição de sobertores e casacos para moradores de rua',1,current_timestamp(),'adm@gmail.com'),
-('Campanha do Casaco','08:10:10','23:11:11','Distribuição de sobertores e casacos para moradores de rua',2,current_timestamp(),'adm@gmail.com'),
-('Sopão','07:10:10','00:11:11','Sopão comunitario para moradores de rua',2,current_timestamp(),'adm@gmail.com'),
-('Entregua de Cesta básica','06:10:10','01:11:11','Distribuição de Cestas básicas',3,current_timestamp(),'adm@gmail.com'),
-('Sopão','04:10:10','03:11:11','Sopão comunitario para moradores de rua',1,current_timestamp(),'adm@gmail.com'),
-('Campanha do Casaco','02:10:10','05:11:11','Distribuição de sobertores e casacos para moradores de rua',2,current_timestamp(),'adm@gmail.com'),
-('Entregua de Cesta básica','01:10:10','06:11:11','Distribuição de Cestas básicas',3,current_timestamp(),'adm@gmail.com');
+('Entregua de Cesta básica','15:10:10','16:11:11','Distribuição de Cestas básicas',1,current_timestamp(),'davi.rsilva@sptech.school'),
+('Sopão','14:10:10','17:11:11','Sopão comunitario para moradores de rua',1,current_timestamp(),'davi.rsilva@sptech.school'),
+('Campanha do Casaco','13:10:10','18:11:11','Distribuição de sobertores e casacos para moradores de rua',2,current_timestamp(),'davi.rsilva@sptech.school'),
+('Sopão','12:10:10','19:11:11','Sopão comunitario para moradores de rua',2,current_timestamp(),'davi.rsilva@sptech.school'),
+('Entregua de Cesta básica','11:10:10','20:11:11','Distribuição de Cestas básicas',3,current_timestamp(),'davi.rsilva@sptech.school'),
+('Campanha do Casaco','10:10:10','21:11:11','Distribuição de sobertores e casacos para moradores de rua',1,current_timestamp(),'davi.rsilva@sptech.school'),
+('Campanha do Casaco','08:10:10','23:11:11','Distribuição de sobertores e casacos para moradores de rua',2,current_timestamp(),'davi.rsilva@sptech.school'),
+('Sopão','07:10:10','00:11:11','Sopão comunitario para moradores de rua',2,current_timestamp(),'davi.rsilva@sptech.school'),
+('Entregua de Cesta básica','06:10:10','01:11:11','Distribuição de Cestas básicas',3,current_timestamp(),'davi.rsilva@sptech.school'),
+('Sopão','04:10:10','03:11:11','Sopão comunitario para moradores de rua',1,current_timestamp(),'davi.rsilva@sptech.school'),
+('Campanha do Casaco','02:10:10','05:11:11','Distribuição de sobertores e casacos para moradores de rua',2,current_timestamp(),'davi.rsilva@sptech.school'),
+('Entregua de Cesta básica','01:10:10','06:11:11','Distribuição de Cestas básicas',3,current_timestamp(),'davi.rsilva@sptech.school');
 
 CALL inserir_dias_calendario();
 
@@ -881,15 +881,15 @@ INSERT INTO endereco(logradouro,numero,bairro_id) VALUES
 ('Rua Valentim Magalhães',34,52);
 
 INSERT INTO reserva_atividade(atividade_id,calendario_id,data_criacao,email_modificador,endereco_id) VALUES
-(1,301,current_timestamp(),'adm@gmail.com',2),
-(2,301,current_timestamp(),'adm@gmail.com',3),
-(3,302,current_timestamp(),'adm@gmail.com',4),
-(4,302,current_timestamp(),'adm@gmail.com',4),
-(5,303,current_timestamp(),'adm@gmail.com',2),
-(6,303,current_timestamp(),'adm@gmail.com',3),
-(7,304,current_timestamp(),'adm@gmail.com',3),
-(8,304,current_timestamp(),'adm@gmail.com',2),
-(9,305,current_timestamp(),'adm@gmail.com',4);
+(1,301,current_timestamp(),'davi.rsilva@sptech.school',2),
+(2,301,current_timestamp(),'davi.rsilva@sptech.school',3),
+(3,302,current_timestamp(),'davi.rsilva@sptech.school',4),
+(4,302,current_timestamp(),'davi.rsilva@sptech.school',4),
+(5,303,current_timestamp(),'davi.rsilva@sptech.school',2),
+(6,303,current_timestamp(),'davi.rsilva@sptech.school',3),
+(7,304,current_timestamp(),'davi.rsilva@sptech.school',3),
+(8,304,current_timestamp(),'davi.rsilva@sptech.school',2),
+(9,305,current_timestamp(),'davi.rsilva@sptech.school',4);
 
 INSERT INTO assunto_requisicao(assunto) VALUES
 ('Cestas'),
@@ -906,102 +906,102 @@ INSERT INTO categoria (nome) VALUES
 
 -- 1° Trimestre
 INSERT INTO requisicoes(usuario_id,situacao_id,calendario_id,assunto_requisicao_id,data_criacao,email_modificador,descricao,hora_abertura) VALUES
-(2,5,1,1,current_timestamp(),'adm@gmail.com','Teste',current_time()),
-(2,5,17,1,current_timestamp(),'adm@gmail.com','Teste',current_time()),
-(2,6,90,1,current_timestamp(),'adm@gmail.com','Teste',current_time()),
-(2,5,17,1,current_timestamp(),'adm@gmail.com','Teste',current_time()),
-(2,7,1,1,current_timestamp(),'adm@gmail.com','Teste',current_time()),
-(2,6,90,1,current_timestamp(),'adm@gmail.com','Teste',current_time());
+(2,5,1,1,current_timestamp(),'davi.rsilva@sptech.school','Teste',current_time()),
+(2,5,17,1,current_timestamp(),'davi.rsilva@sptech.school','Teste',current_time()),
+(2,6,90,1,current_timestamp(),'davi.rsilva@sptech.school','Teste',current_time()),
+(2,5,17,1,current_timestamp(),'davi.rsilva@sptech.school','Teste',current_time()),
+(2,7,1,1,current_timestamp(),'davi.rsilva@sptech.school','Teste',current_time()),
+(2,6,90,1,current_timestamp(),'davi.rsilva@sptech.school','Teste',current_time());
 
 INSERT INTO requisicoes(usuario_id,situacao_id,calendario_id,assunto_requisicao_id,data_criacao,email_modificador,descricao,hora_abertura) VALUES
-(2,5,1,2,current_timestamp(),'adm@gmail.com','Teste',current_time()),
-(2,5,10,2,current_timestamp(),'adm@gmail.com','Teste',current_time()),
-(2,6,90,2,current_timestamp(),'adm@gmail.com','Teste',current_time());
+(2,5,1,2,current_timestamp(),'davi.rsilva@sptech.school','Teste',current_time()),
+(2,5,10,2,current_timestamp(),'davi.rsilva@sptech.school','Teste',current_time()),
+(2,6,90,2,current_timestamp(),'davi.rsilva@sptech.school','Teste',current_time());
 
 INSERT INTO requisicoes(usuario_id,situacao_id,calendario_id,assunto_requisicao_id,data_criacao,email_modificador,descricao,hora_abertura) VALUES
-(2,5,1,3,current_timestamp(),'adm@gmail.com','Teste',current_time()),
-(2,6,17,3,current_timestamp(),'adm@gmail.com','Teste',current_time()),
-(2,6,90,3,current_timestamp(),'adm@gmail.com','Teste',current_time());
+(2,5,1,3,current_timestamp(),'davi.rsilva@sptech.school','Teste',current_time()),
+(2,6,17,3,current_timestamp(),'davi.rsilva@sptech.school','Teste',current_time()),
+(2,6,90,3,current_timestamp(),'davi.rsilva@sptech.school','Teste',current_time());
 
 INSERT INTO requisicoes(usuario_id,situacao_id,calendario_id,assunto_requisicao_id,data_criacao,email_modificador,descricao,hora_abertura) VALUES
-(2,6,1,4,current_timestamp(),'adm@gmail.com','Teste',current_time()),
-(2,6,17,4,current_timestamp(),'adm@gmail.com','Teste',current_time()),
-(2,6,90,4,current_timestamp(),'adm@gmail.com','Teste',current_time());
+(2,6,1,4,current_timestamp(),'davi.rsilva@sptech.school','Teste',current_time()),
+(2,6,17,4,current_timestamp(),'davi.rsilva@sptech.school','Teste',current_time()),
+(2,6,90,4,current_timestamp(),'davi.rsilva@sptech.school','Teste',current_time());
 -- 1° Trimestre
 
 -- 2° Trimestre
 INSERT INTO requisicoes(usuario_id,situacao_id,calendario_id,assunto_requisicao_id,data_criacao,email_modificador,descricao,hora_abertura) VALUES
-(2,5,91,1,current_timestamp(),'adm@gmail.com','Teste',current_time()),
-(2,5,107,1,current_timestamp(),'adm@gmail.com','Teste',current_time()),
-(2,6,180,1,current_timestamp(),'adm@gmail.com','Teste',current_time()),
-(2,5,107,1,current_timestamp(),'adm@gmail.com','Teste',current_time()),
-(2,7,91,1,current_timestamp(),'adm@gmail.com','Teste',current_time()),
-(2,6,180,1,current_timestamp(),'adm@gmail.com','Teste',current_time());
+(2,5,91,1,current_timestamp(),'davi.rsilva@sptech.school','Teste',current_time()),
+(2,5,107,1,current_timestamp(),'davi.rsilva@sptech.school','Teste',current_time()),
+(2,6,180,1,current_timestamp(),'davi.rsilva@sptech.school','Teste',current_time()),
+(2,5,107,1,current_timestamp(),'davi.rsilva@sptech.school','Teste',current_time()),
+(2,7,91,1,current_timestamp(),'davi.rsilva@sptech.school','Teste',current_time()),
+(2,6,180,1,current_timestamp(),'davi.rsilva@sptech.school','Teste',current_time());
 
 INSERT INTO requisicoes(usuario_id,situacao_id,calendario_id,assunto_requisicao_id,data_criacao,email_modificador,descricao,hora_abertura) VALUES
-(2,5,91,2,current_timestamp(),'adm@gmail.com','Teste',current_time()),
-(2,5,100,2,current_timestamp(),'adm@gmail.com','Teste',current_time()),
-(2,6,180,2,current_timestamp(),'adm@gmail.com','Teste',current_time());
+(2,5,91,2,current_timestamp(),'davi.rsilva@sptech.school','Teste',current_time()),
+(2,5,100,2,current_timestamp(),'davi.rsilva@sptech.school','Teste',current_time()),
+(2,6,180,2,current_timestamp(),'davi.rsilva@sptech.school','Teste',current_time());
 
 INSERT INTO requisicoes(usuario_id,situacao_id,calendario_id,assunto_requisicao_id,data_criacao,email_modificador,descricao,hora_abertura) VALUES
-(2,5,91,3,current_timestamp(),'adm@gmail.com','Teste',current_time()),
-(2,6,107,3,current_timestamp(),'adm@gmail.com','Teste',current_time()),
-(2,6,180,3,current_timestamp(),'adm@gmail.com','Teste',current_time());
+(2,5,91,3,current_timestamp(),'davi.rsilva@sptech.school','Teste',current_time()),
+(2,6,107,3,current_timestamp(),'davi.rsilva@sptech.school','Teste',current_time()),
+(2,6,180,3,current_timestamp(),'davi.rsilva@sptech.school','Teste',current_time());
 
 INSERT INTO requisicoes(usuario_id,situacao_id,calendario_id,assunto_requisicao_id,data_criacao,email_modificador,descricao,hora_abertura) VALUES
-(2,6,91,4,current_timestamp(),'adm@gmail.com','Teste',current_time()),
-(2,6,107,4,current_timestamp(),'adm@gmail.com','Teste',current_time()),
-(2,6,180,4,current_timestamp(),'adm@gmail.com','Teste',current_time());
+(2,6,91,4,current_timestamp(),'davi.rsilva@sptech.school','Teste',current_time()),
+(2,6,107,4,current_timestamp(),'davi.rsilva@sptech.school','Teste',current_time()),
+(2,6,180,4,current_timestamp(),'davi.rsilva@sptech.school','Teste',current_time());
 -- 2° Trimestre
 
 -- 3° Trimestre
 INSERT INTO requisicoes(usuario_id,situacao_id,calendario_id,assunto_requisicao_id,data_criacao,email_modificador,descricao,hora_abertura) VALUES
-(2,5,181,1,current_timestamp(),'adm@gmail.com','Teste',current_time()),
-(2,5,197,1,current_timestamp(),'adm@gmail.com','Teste',current_time()),
-(2,6,270,1,current_timestamp(),'adm@gmail.com','Teste',current_time()),
-(2,5,197,1,current_timestamp(),'adm@gmail.com','Teste',current_time()),
-(2,7,181,1,current_timestamp(),'adm@gmail.com','Teste',current_time()),
-(2,6,270,1,current_timestamp(),'adm@gmail.com','Teste',current_time());
+(2,5,181,1,current_timestamp(),'davi.rsilva@sptech.school','Teste',current_time()),
+(2,5,197,1,current_timestamp(),'davi.rsilva@sptech.school','Teste',current_time()),
+(2,6,270,1,current_timestamp(),'davi.rsilva@sptech.school','Teste',current_time()),
+(2,5,197,1,current_timestamp(),'davi.rsilva@sptech.school','Teste',current_time()),
+(2,7,181,1,current_timestamp(),'davi.rsilva@sptech.school','Teste',current_time()),
+(2,6,270,1,current_timestamp(),'davi.rsilva@sptech.school','Teste',current_time());
 
 INSERT INTO requisicoes(usuario_id,situacao_id,calendario_id,assunto_requisicao_id,data_criacao,email_modificador,descricao,hora_abertura) VALUES
-(2,5,181,2,current_timestamp(),'adm@gmail.com','Teste',current_time()),
-(2,5,190,2,current_timestamp(),'adm@gmail.com','Teste',current_time()),
-(2,6,270,2,current_timestamp(),'adm@gmail.com','Teste',current_time());
+(2,5,181,2,current_timestamp(),'davi.rsilva@sptech.school','Teste',current_time()),
+(2,5,190,2,current_timestamp(),'davi.rsilva@sptech.school','Teste',current_time()),
+(2,6,270,2,current_timestamp(),'davi.rsilva@sptech.school','Teste',current_time());
 
 INSERT INTO requisicoes(usuario_id,situacao_id,calendario_id,assunto_requisicao_id,data_criacao,email_modificador,descricao,hora_abertura) VALUES
-(2,5,181,3,current_timestamp(),'adm@gmail.com','Teste',current_time()),
-(2,6,197,3,current_timestamp(),'adm@gmail.com','Teste',current_time()),
-(2,6,270,3,current_timestamp(),'adm@gmail.com','Teste',current_time());
+(2,5,181,3,current_timestamp(),'davi.rsilva@sptech.school','Teste',current_time()),
+(2,6,197,3,current_timestamp(),'davi.rsilva@sptech.school','Teste',current_time()),
+(2,6,270,3,current_timestamp(),'davi.rsilva@sptech.school','Teste',current_time());
 
 INSERT INTO requisicoes(usuario_id,situacao_id,calendario_id,assunto_requisicao_id,data_criacao,email_modificador,descricao,hora_abertura) VALUES
-(2,6,1,4,current_timestamp(),'adm@gmail.com','Teste',current_time()),
-(2,6,17,4,current_timestamp(),'adm@gmail.com','Teste',current_time()),
-(2,6,90,4,current_timestamp(),'adm@gmail.com','Teste',current_time());
+(2,6,1,4,current_timestamp(),'davi.rsilva@sptech.school','Teste',current_time()),
+(2,6,17,4,current_timestamp(),'davi.rsilva@sptech.school','Teste',current_time()),
+(2,6,90,4,current_timestamp(),'davi.rsilva@sptech.school','Teste',current_time());
 -- 3° Trimestre
 
 -- 4° Trimestre
 INSERT INTO requisicoes(usuario_id,situacao_id,calendario_id,assunto_requisicao_id,data_criacao,email_modificador,descricao,hora_abertura) VALUES
-(2,5,271,1,current_timestamp(),'adm@gmail.com','Teste',current_time()),
-(2,5,287,1,current_timestamp(),'adm@gmail.com','Teste',current_time()),
-(2,6,360,1,current_timestamp(),'adm@gmail.com','Teste',current_time()),
-(2,5,297,1,current_timestamp(),'adm@gmail.com','Teste',current_time()),
-(2,7,271,1,current_timestamp(),'adm@gmail.com','Teste',current_time()),
-(2,6,360,1,current_timestamp(),'adm@gmail.com','Teste',current_time());
+(2,5,271,1,current_timestamp(),'davi.rsilva@sptech.school','Teste',current_time()),
+(2,5,287,1,current_timestamp(),'davi.rsilva@sptech.school','Teste',current_time()),
+(2,6,360,1,current_timestamp(),'davi.rsilva@sptech.school','Teste',current_time()),
+(2,5,297,1,current_timestamp(),'davi.rsilva@sptech.school','Teste',current_time()),
+(2,7,271,1,current_timestamp(),'davi.rsilva@sptech.school','Teste',current_time()),
+(2,6,360,1,current_timestamp(),'davi.rsilva@sptech.school','Teste',current_time());
 
 INSERT INTO requisicoes(usuario_id,situacao_id,calendario_id,assunto_requisicao_id,data_criacao,email_modificador,descricao,hora_abertura) VALUES
-(2,5,271,2,current_timestamp(),'adm@gmail.com','Teste',current_time()),
-(2,5,280,2,current_timestamp(),'adm@gmail.com','Teste',current_time()),
-(2,6,360,2,current_timestamp(),'adm@gmail.com','Teste',current_time());
+(2,5,271,2,current_timestamp(),'davi.rsilva@sptech.school','Teste',current_time()),
+(2,5,280,2,current_timestamp(),'davi.rsilva@sptech.school','Teste',current_time()),
+(2,6,360,2,current_timestamp(),'davi.rsilva@sptech.school','Teste',current_time());
 
 INSERT INTO requisicoes(usuario_id,situacao_id,calendario_id,assunto_requisicao_id,data_criacao,email_modificador,descricao,hora_abertura) VALUES
-(2,5,271,3,current_timestamp(),'adm@gmail.com','Teste',current_time()),
-(2,6,287,3,current_timestamp(),'adm@gmail.com','Teste',current_time()),
-(2,6,360,3,current_timestamp(),'adm@gmail.com','Teste',current_time());
+(2,5,271,3,current_timestamp(),'davi.rsilva@sptech.school','Teste',current_time()),
+(2,6,287,3,current_timestamp(),'davi.rsilva@sptech.school','Teste',current_time()),
+(2,6,360,3,current_timestamp(),'davi.rsilva@sptech.school','Teste',current_time());
 
 INSERT INTO requisicoes(usuario_id,situacao_id,calendario_id,assunto_requisicao_id,data_criacao,email_modificador,descricao,hora_abertura) VALUES
-(2,6,271,4,current_timestamp(),'adm@gmail.com','Teste',current_time()),
-(2,6,287,4,current_timestamp(),'adm@gmail.com','Teste',current_time()),
-(2,6,360,4,current_timestamp(),'adm@gmail.com','Teste',current_time());
+(2,6,271,4,current_timestamp(),'davi.rsilva@sptech.school','Teste',current_time()),
+(2,6,287,4,current_timestamp(),'davi.rsilva@sptech.school','Teste',current_time()),
+(2,6,360,4,current_timestamp(),'davi.rsilva@sptech.school','Teste',current_time());
 -- 4° Trimestre
 
 INSERT INTO venda VALUES
