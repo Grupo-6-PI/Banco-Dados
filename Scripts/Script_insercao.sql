@@ -1006,3 +1006,5 @@ INSERT INTO requisicoes(usuario_id,situacao_id,calendario_id,assunto_requisicao_
 
 INSERT INTO venda VALUES
 (1, 4, 20.00, "juliocesardahi@gmail.com", 32, 2);
+
+SELECT * FROM usuario;
