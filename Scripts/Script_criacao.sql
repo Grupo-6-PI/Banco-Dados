@@ -41,7 +41,7 @@ CREATE TABLE IF NOT EXISTS endereco (
   id BIGINT PRIMARY KEY AUTO_INCREMENT,
   logradouro VARCHAR(100) NULL,
   numero INT NULL,
-  cep CHAR(8) NULL,
+  cep CHAR(15) NULL,
   bairro_id BIGINT,
 	CONSTRAINT endereco_bairro FOREIGN KEY (bairro_id) REFERENCES bairro(id),
   situacao_id BIGINT,
@@ -86,7 +86,7 @@ CREATE TABLE IF NOT EXISTS identificador (
 
 CREATE TABLE IF NOT EXISTS informacoes_adicionais (
   id BIGINT PRIMARY KEY AUTO_INCREMENT,
-  cpf CHAR(11) NULL,
+  cpf CHAR(15) NULL,
   data_nascimento DATE NULL,
   endereco_id BIGINT,
 	CONSTRAINT informacoes_adicionais_endereco FOREIGN KEY (endereco_id) REFERENCES endereco(id),
