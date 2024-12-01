@@ -318,7 +318,7 @@ BEGIN
     DECLARE nome_mes VARCHAR(20);
 
     SET data_atual = '2024-01-01';
-    SET data_fim = '2025-12-31';
+    SET data_fim = '2027-12-31';
 
     WHILE data_atual <= data_fim DO
         SET nome_dia = CASE DAYOFWEEK(data_atual)
@@ -355,4 +355,6 @@ BEGIN
 END //
 
 DELIMITER ;
+
+
 
