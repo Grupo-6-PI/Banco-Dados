@@ -356,5 +356,253 @@ END //
 
 DELIMITER ;
 
+CREATE VIEW requisicoes_total AS
+SELECT 
+	requisicoes.id as req_id,
+	requisicoes.assunto_requisicao_id,
+    requisicoes.situacao_id,
+    requisicoes.calendario_id,
+    calendario.id as cal_id,
+    calendario.ano,
+    calendario.mes_nomeacao,
+    calendario.mes_numeracao,
+    calendario.dia_nomeacao,
+    calendario.dia_numeracao
+    FROM requisicoes 
+    JOIN calendario 
+    ON requisicoes.calendario_id = calendario.id;
 
+CREATE VIEW requisicoes_grafico AS
+SELECT 
+	1 as id ,
+    (SELECT COUNT(req_id) FROM requisicoes_total WHERE assunto_requisicao_id = 1 AND mes_numeracao IN (1, 2, 3)) AS Cestas_T1_pedidas,
+    (SELECT COUNT(req_id) FROM requisicoes_total WHERE assunto_requisicao_id = 1 AND situacao_id = 6 AND mes_numeracao IN (1, 2, 3)) AS Cestas_T1_cumpridas,
+    (SELECT COUNT(req_id) FROM requisicoes_total WHERE assunto_requisicao_id = 1 AND mes_numeracao IN (4, 5, 6)) AS Cestas_T2_pedidas,
+    (SELECT COUNT(req_id) FROM requisicoes_total WHERE assunto_requisicao_id = 1 AND situacao_id = 6 AND mes_numeracao IN (4, 5, 6)) AS Cestas_T2_cumpridas,
+    (SELECT COUNT(req_id) FROM requisicoes_total WHERE assunto_requisicao_id = 1 AND mes_numeracao IN (7, 8, 9)) AS Cestas_T3_pedidas,
+    (SELECT COUNT(req_id) FROM requisicoes_total WHERE assunto_requisicao_id = 1 AND situacao_id = 6 AND mes_numeracao IN (7, 8, 9)) AS Cestas_T3_cumpridas,
+    (SELECT COUNT(req_id) FROM requisicoes_total WHERE assunto_requisicao_id = 1 AND mes_numeracao IN (10, 11, 12)) AS Cestas_T4_pedidas,
+    (SELECT COUNT(req_id) FROM requisicoes_total WHERE assunto_requisicao_id = 1 AND situacao_id = 6 AND mes_numeracao IN (10, 11, 12)) AS Cestas_T4_cumpridas,
+    (SELECT COUNT(req_id) FROM requisicoes_total WHERE assunto_requisicao_id = 2 AND mes_numeracao IN (1, 2, 3)) AS Vestuario_T1_pedidas,
+    (SELECT COUNT(req_id) FROM requisicoes_total WHERE assunto_requisicao_id = 2 AND situacao_id = 6 AND mes_numeracao IN (1, 2, 3)) AS Vestuario_T1_cumpridas,
+    (SELECT COUNT(req_id) FROM requisicoes_total WHERE assunto_requisicao_id = 2 AND mes_numeracao IN (4, 5, 6)) AS Vestuario_T2_pedidas,
+    (SELECT COUNT(req_id) FROM requisicoes_total WHERE assunto_requisicao_id = 2 AND situacao_id = 6 AND mes_numeracao IN (4, 5, 6)) AS Vestuario_T2_cumpridas,
+    (SELECT COUNT(req_id) FROM requisicoes_total WHERE assunto_requisicao_id = 2 AND mes_numeracao IN (7, 8, 9)) AS Vestuario_T3_pedidas,
+    (SELECT COUNT(req_id) FROM requisicoes_total WHERE assunto_requisicao_id = 2 AND situacao_id = 6 AND mes_numeracao IN (7, 8, 9)) AS Vestuario_T3_cumpridas,
+    (SELECT COUNT(req_id) FROM requisicoes_total WHERE assunto_requisicao_id = 2 AND mes_numeracao IN (10, 11, 12)) AS Vestuario_T4_pedidas,
+    (SELECT COUNT(req_id) FROM requisicoes_total WHERE assunto_requisicao_id = 2 AND situacao_id = 6 AND mes_numeracao IN (10, 11, 12)) AS Vestuario_T4_cumpridas,
+    (SELECT COUNT(req_id) FROM requisicoes_total WHERE assunto_requisicao_id = 3 AND mes_numeracao IN (1, 2, 3)) AS Saude_T1_pedidas,
+    (SELECT COUNT(req_id) FROM requisicoes_total WHERE assunto_requisicao_id = 3 AND situacao_id = 6 AND mes_numeracao IN (1, 2, 3)) AS Saude_T1_cumpridas,
+    (SELECT COUNT(req_id) FROM requisicoes_total WHERE assunto_requisicao_id = 3 AND mes_numeracao IN (4, 5, 6)) AS Saude_T2_pedidas,
+    (SELECT COUNT(req_id) FROM requisicoes_total WHERE assunto_requisicao_id = 3 AND situacao_id = 6 AND mes_numeracao IN (4, 5, 6)) AS Saude_T2_cumpridas,
+    (SELECT COUNT(req_id) FROM requisicoes_total WHERE assunto_requisicao_id = 3 AND mes_numeracao IN (7, 8, 9)) AS Saude_T3_pedidas,
+    (SELECT COUNT(req_id) FROM requisicoes_total WHERE assunto_requisicao_id = 3 AND situacao_id = 6 AND mes_numeracao IN (7, 8, 9)) AS Saude_T3_cumpridas,
+    (SELECT COUNT(req_id) FROM requisicoes_total WHERE assunto_requisicao_id = 3 AND mes_numeracao IN (10, 11, 12)) AS Saude_T4_pedidas,
+    (SELECT COUNT(req_id) FROM requisicoes_total WHERE assunto_requisicao_id = 3 AND situacao_id = 6 AND mes_numeracao IN (10, 11, 12)) AS Saude_T4_cumpridas,
+    (SELECT COUNT(req_id) FROM requisicoes_total WHERE assunto_requisicao_id = 4 AND mes_numeracao IN (1, 2, 3)) AS Outros_T1_pedidas,
+    (SELECT COUNT(req_id) FROM requisicoes_total WHERE assunto_requisicao_id = 4 AND situacao_id = 6 AND mes_numeracao IN (1, 2, 3)) AS Outros_T1_cumpridas,
+    (SELECT COUNT(req_id) FROM requisicoes_total WHERE assunto_requisicao_id = 4 AND mes_numeracao IN (4, 5, 6)) AS Outros_T2_pedidas,
+    (SELECT COUNT(req_id) FROM requisicoes_total WHERE assunto_requisicao_id = 4 AND situacao_id = 6 AND mes_numeracao IN (4, 5, 6)) AS Outros_T2_cumpridas,
+    (SELECT COUNT(req_id) FROM requisicoes_total WHERE assunto_requisicao_id = 4 AND mes_numeracao IN (7, 8, 9)) AS Outros_T3_pedidas,
+    (SELECT COUNT(req_id) FROM requisicoes_total WHERE assunto_requisicao_id = 4 AND situacao_id = 6 AND mes_numeracao IN (7, 8, 9)) AS Outros_T3_cumpridas,
+    (SELECT COUNT(req_id) FROM requisicoes_total WHERE assunto_requisicao_id = 4 AND mes_numeracao IN (10, 11, 12)) AS Outros_T4_pedidas,
+    (SELECT COUNT(req_id) FROM requisicoes_total WHERE assunto_requisicao_id = 4 AND situacao_id = 6 AND mes_numeracao IN (10, 11, 12)) AS Outros_T4_cumpridas
+FROM
+    requisicoes_total
+LIMIT 1;
+
+DELIMITER //
+
+DELIMITER //
+
+CREATE PROCEDURE consulta_requisicoes_semanal_por_mes(IN mes INT, IN ano INT)
+BEGIN
+    SELECT 
+        -- Cestas
+        (SELECT COUNT(req_id) 
+         FROM requisicoes_total 
+         WHERE assunto_requisicao_id = 1 AND mes_numeracao = mes AND ano = ano AND dia_numeracao BETWEEN 1 AND 7) AS Cestas_S1_pedidas,
+        (SELECT COUNT(req_id) 
+         FROM requisicoes_total 
+         WHERE assunto_requisicao_id = 1 AND situacao_id = 6 AND mes_numeracao = mes AND ano = ano AND dia_numeracao BETWEEN 1 AND 7) AS Cestas_S1_cumpridas,
+        (SELECT COUNT(req_id) 
+         FROM requisicoes_total 
+         WHERE assunto_requisicao_id = 1 AND mes_numeracao = mes AND ano = ano AND dia_numeracao BETWEEN 8 AND 14) AS Cestas_S2_pedidas,
+        (SELECT COUNT(req_id) 
+         FROM requisicoes_total 
+         WHERE assunto_requisicao_id = 1 AND situacao_id = 6 AND mes_numeracao = mes AND ano = ano AND dia_numeracao BETWEEN 8 AND 14) AS Cestas_S2_cumpridas,
+        (SELECT COUNT(req_id) 
+         FROM requisicoes_total 
+         WHERE assunto_requisicao_id = 1 AND mes_numeracao = mes AND ano = ano AND dia_numeracao BETWEEN 15 AND 21) AS Cestas_S3_pedidas,
+        (SELECT COUNT(req_id) 
+         FROM requisicoes_total 
+         WHERE assunto_requisicao_id = 1 AND situacao_id = 6 AND mes_numeracao = mes AND ano = ano AND dia_numeracao BETWEEN 15 AND 21) AS Cestas_S3_cumpridas,
+        (SELECT COUNT(req_id) 
+         FROM requisicoes_total 
+         WHERE assunto_requisicao_id = 1 AND mes_numeracao = mes AND ano = ano AND dia_numeracao BETWEEN 22 AND 28) AS Cestas_S4_pedidas,
+        (SELECT COUNT(req_id) 
+         FROM requisicoes_total 
+         WHERE assunto_requisicao_id = 1 AND situacao_id = 6 AND mes_numeracao = mes AND ano = ano AND dia_numeracao BETWEEN 22 AND 28) AS Cestas_S4_cumpridas,
+        (SELECT COUNT(req_id) 
+         FROM requisicoes_total 
+         WHERE assunto_requisicao_id = 1 AND mes_numeracao = mes AND ano = ano AND dia_numeracao >= 29) AS Cestas_S5_pedidas,
+        (SELECT COUNT(req_id) 
+         FROM requisicoes_total 
+         WHERE assunto_requisicao_id = 1 AND situacao_id = 6 AND mes_numeracao = mes AND ano = ano AND dia_numeracao >= 29) AS Cestas_S5_cumpridas,
+
+        -- Vestuário
+        (SELECT COUNT(req_id) 
+         FROM requisicoes_total 
+         WHERE assunto_requisicao_id = 2 AND mes_numeracao = mes AND ano = ano AND dia_numeracao BETWEEN 1 AND 7) AS Vestuario_S1_pedidas,
+        (SELECT COUNT(req_id) 
+         FROM requisicoes_total 
+         WHERE assunto_requisicao_id = 2 AND situacao_id = 6 AND mes_numeracao = mes AND ano = ano AND dia_numeracao BETWEEN 1 AND 7) AS Vestuario_S1_cumpridas,
+        (SELECT COUNT(req_id) 
+         FROM requisicoes_total 
+         WHERE assunto_requisicao_id = 2 AND mes_numeracao = mes AND ano = ano AND dia_numeracao BETWEEN 8 AND 14) AS Vestuario_S2_pedidas,
+        (SELECT COUNT(req_id) 
+         FROM requisicoes_total 
+         WHERE assunto_requisicao_id = 2 AND situacao_id = 6 AND mes_numeracao = mes AND ano = ano AND dia_numeracao BETWEEN 8 AND 14) AS Vestuario_S2_cumpridas,
+        (SELECT COUNT(req_id) 
+         FROM requisicoes_total 
+         WHERE assunto_requisicao_id = 2 AND mes_numeracao = mes AND ano = ano AND dia_numeracao BETWEEN 15 AND 21) AS Vestuario_S3_pedidas,
+        (SELECT COUNT(req_id) 
+         FROM requisicoes_total 
+         WHERE assunto_requisicao_id = 2 AND situacao_id = 6 AND mes_numeracao = mes AND ano = ano AND dia_numeracao BETWEEN 15 AND 21) AS Vestuario_S3_cumpridas,
+        (SELECT COUNT(req_id) 
+         FROM requisicoes_total 
+         WHERE assunto_requisicao_id = 2 AND mes_numeracao = mes AND ano = ano AND dia_numeracao BETWEEN 22 AND 28) AS Vestuario_S4_pedidas,
+        (SELECT COUNT(req_id) 
+         FROM requisicoes_total 
+         WHERE assunto_requisicao_id = 2 AND situacao_id = 6 AND mes_numeracao = mes AND ano = ano AND dia_numeracao BETWEEN 22 AND 28) AS Vestuario_S4_cumpridas,
+        (SELECT COUNT(req_id) 
+         FROM requisicoes_total 
+         WHERE assunto_requisicao_id = 2 AND mes_numeracao = mes AND ano = ano AND dia_numeracao >= 29) AS Vestuario_S5_pedidas,
+        (SELECT COUNT(req_id) 
+         FROM requisicoes_total 
+         WHERE assunto_requisicao_id = 2 AND situacao_id = 6 AND mes_numeracao = mes AND ano = ano AND dia_numeracao >= 29) AS Vestuario_S5_cumpridas,
+
+        -- Saúde
+        (SELECT COUNT(req_id) 
+         FROM requisicoes_total 
+         WHERE assunto_requisicao_id = 3 AND mes_numeracao = mes AND ano = ano AND dia_numeracao BETWEEN 1 AND 7) AS Saude_S1_pedidas,
+        (SELECT COUNT(req_id) 
+         FROM requisicoes_total 
+         WHERE assunto_requisicao_id = 3 AND situacao_id = 6 AND mes_numeracao = mes AND ano = ano AND dia_numeracao BETWEEN 1 AND 7) AS Saude_S1_cumpridas,
+        (SELECT COUNT(req_id) 
+         FROM requisicoes_total 
+         WHERE assunto_requisicao_id = 3 AND mes_numeracao = mes AND ano = ano AND dia_numeracao BETWEEN 8 AND 14) AS Saude_S2_pedidas,
+        (SELECT COUNT(req_id) 
+         FROM requisicoes_total 
+         WHERE assunto_requisicao_id = 3 AND situacao_id = 6 AND mes_numeracao = mes AND ano = ano AND dia_numeracao BETWEEN 8 AND 14) AS Saude_S2_cumpridas,
+        (SELECT COUNT(req_id) 
+         FROM requisicoes_total 
+         WHERE assunto_requisicao_id = 3 AND mes_numeracao = mes AND ano = ano AND dia_numeracao BETWEEN 15 AND 21) AS Saude_S3_pedidas,
+        (SELECT COUNT(req_id) 
+         FROM requisicoes_total 
+         WHERE assunto_requisicao_id = 3 AND situacao_id = 6 AND mes_numeracao = mes AND ano = ano AND dia_numeracao BETWEEN 15 AND 21) AS Saude_S3_cumpridas,
+        (SELECT COUNT(req_id) 
+         FROM requisicoes_total 
+         WHERE assunto_requisicao_id = 3 AND mes_numeracao = mes AND ano = ano AND dia_numeracao BETWEEN 22 AND 28) AS Saude_S4_pedidas,
+        (SELECT COUNT(req_id) 
+         FROM requisicoes_total 
+         WHERE assunto_requisicao_id = 3 AND situacao_id = 6 AND mes_numeracao = mes AND ano = ano AND dia_numeracao BETWEEN 22 AND 28) AS Saude_S4_cumpridas,
+        (SELECT COUNT(req_id) 
+         FROM requisicoes_total 
+         WHERE assunto_requisicao_id = 3 AND mes_numeracao = mes AND ano = ano AND dia_numeracao >= 29) AS Saude_S5_pedidas,
+        (SELECT COUNT(req_id) 
+         FROM requisicoes_total 
+         WHERE assunto_requisicao_id = 3 AND situacao_id = 6 AND mes_numeracao = mes AND ano = ano AND dia_numeracao >= 29) AS Saude_S5_cumpridas,
+
+        -- Outros
+        (SELECT COUNT(req_id) 
+         FROM requisicoes_total 
+         WHERE assunto_requisicao_id = 4 AND mes_numeracao = mes AND ano = ano AND dia_numeracao BETWEEN 1 AND 7) AS Outros_S1_pedidas,
+        (SELECT COUNT(req_id) 
+         FROM requisicoes_total 
+         WHERE assunto_requisicao_id = 4 AND situacao_id = 6 AND mes_numeracao = mes AND ano = ano AND dia_numeracao BETWEEN 1 AND 7) AS Outros_S1_cumpridas,
+        (SELECT COUNT(req_id) 
+         FROM requisicoes_total 
+         WHERE assunto_requisicao_id = 4 AND mes_numeracao = mes AND ano = ano AND dia_numeracao BETWEEN 8 AND 14) AS Outros_S2_pedidas,
+        (SELECT COUNT(req_id) 
+         FROM requisicoes_total 
+         WHERE assunto_requisicao_id = 4 AND situacao_id = 6 AND mes_numeracao = mes AND ano = ano AND dia_numeracao BETWEEN 8 AND 14) AS Outros_S2_cumpridas,
+        (SELECT COUNT(req_id) 
+         FROM requisicoes_total 
+         WHERE assunto_requisicao_id = 4 AND mes_numeracao = mes AND ano = ano AND dia_numeracao BETWEEN 15 AND 21) AS Outros_S3_pedidas,
+        (SELECT COUNT(req_id) 
+         FROM requisicoes_total 
+         WHERE assunto_requisicao_id = 4 AND situacao_id = 6 AND mes_numeracao = mes AND ano = ano AND dia_numeracao BETWEEN 15 AND 21) AS Outros_S3_cumpridas,
+        (SELECT COUNT(req_id) 
+         FROM requisicoes_total 
+         WHERE assunto_requisicao_id = 4 AND mes_numeracao = mes AND ano = ano AND dia_numeracao BETWEEN 22 AND 28) AS Outros_S4_pedidas,
+        (SELECT COUNT(req_id) 
+         FROM requisicoes_total 
+         WHERE assunto_requisicao_id = 4 AND situacao_id = 6 AND mes_numeracao = mes AND ano = ano AND dia_numeracao BETWEEN 22 AND 28) AS Outros_S4_cumpridas,
+        (SELECT COUNT(req_id) 
+         FROM requisicoes_total 
+         WHERE assunto_requisicao_id = 4 AND mes_numeracao = mes AND ano = ano AND dia_numeracao >= 29) AS Outros_S5_pedidas,
+        (SELECT COUNT(req_id) 
+         FROM requisicoes_total 
+         WHERE assunto_requisicao_id = 4 AND situacao_id = 6 AND mes_numeracao = mes AND ano = ano AND dia_numeracao >= 29) AS Outros_S5_cumpridas;
+END;
+//
+
+DELIMITER ;
+
+DELIMITER $$
+
+CREATE PROCEDURE consulta_requisicoes_por_semana(
+    IN ano INT,
+    IN mes INT,
+    IN semana INT
+)
+BEGIN
+    DECLARE inicio_semana INT;
+    DECLARE fim_semana INT;
+
+    -- Calcular início e fim da semana
+    SELECT 
+        MIN(dia_numeracao), MAX(dia_numeracao)
+    INTO 
+        inicio_semana, fim_semana
+    FROM calendario
+    WHERE ano = ano
+      AND mes_numeracao = mes
+      AND FLOOR((dia_numeracao - 1) / 7) + 1 = semana;
+
+    -- Realizar a consulta com os valores calculados
+    SELECT 
+        cal.dia_numeracao,
+        cal.dia_nomeacao,
+        
+        -- Cestas
+        COUNT(CASE WHEN req.assunto_requisicao_id = 1 THEN req.req_id END) AS Cestas_pedidas,
+        COUNT(CASE WHEN req.assunto_requisicao_id = 1 AND req.situacao_id = 6 THEN req.req_id END) AS Cestas_cumpridas,
+        
+        -- Vestuário
+        COUNT(CASE WHEN req.assunto_requisicao_id = 2 THEN req.req_id END) AS Vestuario_pedidas,
+        COUNT(CASE WHEN req.assunto_requisicao_id = 2 AND req.situacao_id = 6 THEN req.req_id END) AS Vestuario_cumpridas,
+        
+        -- Saúde
+        COUNT(CASE WHEN req.assunto_requisicao_id = 3 THEN req.req_id END) AS Saude_pedidas,
+        COUNT(CASE WHEN req.assunto_requisicao_id = 3 AND req.situacao_id = 6 THEN req.req_id END) AS Saude_cumpridas,
+        
+        -- Outros
+        COUNT(CASE WHEN req.assunto_requisicao_id = 4 THEN req.req_id END) AS Outros_pedidas,
+        COUNT(CASE WHEN req.assunto_requisicao_id = 4 AND req.situacao_id = 6 THEN req.req_id END) AS Outros_cumpridas
+
+    FROM calendario cal
+    LEFT JOIN requisicoes_total req
+        ON cal.ano = req.ano
+        AND cal.mes_numeracao = req.mes_numeracao
+        AND cal.dia_numeracao = req.dia_numeracao
+    WHERE cal.ano = ano
+      AND cal.mes_numeracao = mes
+      AND cal.dia_numeracao BETWEEN inicio_semana AND fim_semana
+    GROUP BY cal.dia_numeracao, cal.dia_nomeacao
+    ORDER BY cal.dia_numeracao;
+END$$
+
+DELIMITER ;
 

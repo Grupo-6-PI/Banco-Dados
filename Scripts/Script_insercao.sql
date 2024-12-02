@@ -852,7 +852,7 @@ INSERT INTO tipo_atividade(tipo) VALUES
 ('Limpeza');
 
 INSERT INTO usuario(nome,email,senha,nivel_acesso_id,situacao_id) VALUES ('ADM','davi.rsilva@sptech.school',AES_ENCRYPT('12341234','chave'),1,3);
-INSERT INTO usuario(nome,email,senha,nivel_acesso_id,informacoes_adicionais_id,situacao_id) VALUES ('ADEMIRO','davi.rsilva@sptech.school',AES_ENCRYPT('12341234','chave'),3,1,3);
+INSERT INTO usuario(nome,email,senha,nivel_acesso_id,informacoes_adicionais_id,situacao_id) VALUES ('ADEMIRO','teste@gmail.com',AES_ENCRYPT('12341234','chave'),3,1,3);
 INSERT INTO usuario(nome,email,senha,nivel_acesso_id,situacao_id) VALUES ('Julio Dahi','julio.dahi@sptech.school',AES_ENCRYPT('12341234','chave'),2,3);
 INSERT INTO usuario(nome,email,senha,nivel_acesso_id,situacao_id) VALUES ('Banca Sprint','bancasprint@gmail.com',AES_ENCRYPT('@BancaSprint5','chave'),1,3);
 
@@ -999,9 +999,9 @@ INSERT INTO requisicoes(usuario_id,situacao_id,calendario_id,assunto_requisicao_
 (2,6,360,3,current_timestamp(),'davi.rsilva@sptech.school','Teste',current_time());
 
 INSERT INTO requisicoes(usuario_id,situacao_id,calendario_id,assunto_requisicao_id,data_criacao,email_modificador,descricao,hora_abertura) VALUES
-(2,6,271,4,current_timestamp(),'davi.rsilva@sptech.school','Teste',current_time()),
-(2,6,287,4,current_timestamp(),'davi.rsilva@sptech.school','Teste',current_time()),
-(2,6,360,4,current_timestamp(),'davi.rsilva@sptech.school','Teste',current_time());
+(2,6,336,4,current_timestamp(),'davi.rsilva@sptech.school','Teste',current_time()),
+(2,6,337,4,current_timestamp(),'davi.rsilva@sptech.school','Teste',current_time()),
+(2,6,338,4,current_timestamp(),'davi.rsilva@sptech.school','Teste',current_time());
 -- 4° Trimestre
 
 INSERT INTO venda VALUES
