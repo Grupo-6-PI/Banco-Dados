@@ -1046,7 +1046,6 @@ INSERT INTO requisicoes(usuario_id, situacao_id, calendario_id, assunto_requisic
 (2, 5, 357, 2, current_timestamp(), current_timestamp(), 'davi.rsilva@sptech.school', 'Pedido de doação de roupas para pessoas em condições financeiras difíceis.', current_time()),
 (2, 6, 357, 3, current_timestamp(), current_timestamp(), 'davi.rsilva@sptech.school', 'Solicitação de doação de produtos de saúde e bem-estar para apoiar famílias em situação de risco.', current_time()),
 (2, 7, 357, 4, current_timestamp(), current_timestamp(), 'davi.rsilva@sptech.school', 'Doação de itens diversos para auxiliar pessoas que estão passando por dificuldades financeiras e sociais.', current_time()),
-INSERT INTO requisicoes(usuario_id, situacao_id, calendario_id, assunto_requisicao_id, data_criacao, data_ultima_atualizacao, email_modificador, descricao, hora_abertura) VALUES
 (2, 6, 358, 3, current_timestamp(), current_timestamp(), 'davi.rsilva@sptech.school', 'Solicitação de doação de itens de Saúde e Bem-estar para a comunidade.', current_time()),
 (2, 7, 358, 4, current_timestamp(), current_timestamp(), 'davi.rsilva@sptech.school', 'Pedido de doação de vestuário para pessoas em situação de vulnerabilidade social.', current_time()),
 (2, 5, 358, 1, current_timestamp(), current_timestamp(), 'davi.rsilva@sptech.school', 'Doação de cestas básicas para famílias em necessidade.', current_time()),
