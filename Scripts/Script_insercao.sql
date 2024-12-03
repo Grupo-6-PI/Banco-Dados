@@ -809,7 +809,7 @@ INSERT INTO tipo_atividade(tipo) VALUES
 ('Entrega de alimentos'),
 ('Limpeza');
 
-INSERT INTO usuario(nome,email,senha,nivel_acesso_id,situacao_id) VALUES ('ADM','davi.rsilva@sptech.school',AES_ENCRYPT('12341234','chave'),1,3);
+INSERT INTO usuario(nome,email,senha,nivel_acesso_id,situacao_id) VALUES ('ADM','davi.rsilva@sptech.school',AES_ENCRYPT('12341234','chave'),1,1);
 
 INSERT INTO endereco (logradouro,numero,cep,bairro_id,situacao_id) VALUES ('Rua da Palmeiras',8,'08473755',24,1);
 
@@ -825,6 +825,8 @@ VALUES ('Praça do Sol', 789, '11122000', 35, 1);
 INSERT INTO endereco(logradouro, numero, cep, bairro_id, situacao_id) 
 VALUES ('Rua do Parque', 101, '65432000', 67, 1);
 
+SELECT * FROM endereco;
+
 INSERT INTO renda_familiar (renda,situacao_id) VALUES (2.500,1);
 INSERT INTO renda_familiar (renda,situacao_id) VALUES (1.500,1);
 INSERT INTO renda_familiar (renda,situacao_id) VALUES (1.100,1);
@@ -836,16 +838,16 @@ INSERT INTO familia(apelido, quantidade_pessoas, renda_familiar_id, situacao_id)
 VALUES ('Familia Martins', 4, 1, 1);
 
 INSERT INTO familia(apelido, quantidade_pessoas, renda_familiar_id, situacao_id) 
-VALUES ('Familia Almeida', 5, 2, 2);
+VALUES ('Familia Almeida', 5, 2, 1);
 
 INSERT INTO familia(apelido, quantidade_pessoas, renda_familiar_id, situacao_id) 
-VALUES ('Familia Costa', 3, 2, 3);
+VALUES ('Familia Costa', 3, 2, 1);
 
 INSERT INTO familia(apelido, quantidade_pessoas, renda_familiar_id, situacao_id) 
 VALUES ('Familia Oliveira', 6, 3, 1);
 
 INSERT INTO informacoes_adicionais(cpf,data_nascimento,data_criacao,email_modificador,endereco_id,familia_id) VALUES
-('48556583830','2005-01-27',current_timestamp(),'davi.rsilva@sptech.school',1,1);
+('98765431200','2005-01-27',current_timestamp(),'davi.rsilva@sptech.school',1,1);
 
 INSERT INTO informacoes_adicionais(cpf, data_nascimento, data_criacao, email_modificador, endereco_id, familia_id) 
 VALUES 
@@ -857,11 +859,11 @@ VALUES
 
 INSERT INTO informacoes_adicionais(cpf, data_nascimento, data_criacao, email_modificador, endereco_id, familia_id) 
 VALUES 
-('11223344556', '1985-11-12', current_timestamp(), 'patricia.costa@hotmail.com', 4, 1);
+('11223344556', '1985-11-12', current_timestamp(), 'patricia.costa@hotmail.com', 4, 4);
 
 INSERT INTO informacoes_adicionais(cpf, data_nascimento, data_criacao, email_modificador, endereco_id, familia_id) 
 VALUES 
-('55667788999', '1995-02-25', current_timestamp(), 'felipe.oliveira@gmail.com', 5, 2);
+('55667788999', '1995-02-25', current_timestamp(), 'felipe.oliveira@gmail.com', 5, 5);
 
 INSERT INTO tamanho_roupa (tamanho) VALUES
 ('PP'),
@@ -892,11 +894,11 @@ VALUES ('2010-05-12', 0, 2, 5, 1, 2),
        ('2012-07-23', 0, 1, 4, 1, 2);
 
 INSERT INTO dependente(data_nascimento, deficiente, tamanho_roupa_id, tamanho_calcado_id, situacao_id, familia_id) 
-VALUES ('2015-03-30', 1, 3, 6, 2, 3),
-       ('2018-01-11', 0, 1, 3, 2, 3);
+VALUES ('2015-03-30', 1, 3, 6, 1, 3),
+       ('2018-01-11', 0, 1, 3, 1, 3);
 
 INSERT INTO dependente(data_nascimento, deficiente, tamanho_roupa_id, tamanho_calcado_id, situacao_id, familia_id) 
-VALUES ('2010-09-18', 0, 2, 5, 3, 4);
+VALUES ('2010-09-18', 0, 2, 5, 1, 4);
 
 INSERT INTO dependente(data_nascimento, deficiente, tamanho_roupa_id, tamanho_calcado_id, situacao_id, familia_id) 
 VALUES ('2009-12-25', 1, 4, 7, 1, 5),
@@ -920,10 +922,10 @@ INSERT INTO usuario(nome, email, senha, nivel_acesso_id, informacoes_adicionais_
 VALUES ('Ricardo Almeida', 'ricardo.almeida@outlook.com', AES_ENCRYPT('senha5678', 'chave'), 3, 3, 2);
 
 INSERT INTO usuario(nome, email, senha, nivel_acesso_id, informacoes_adicionais_id, situacao_id) 
-VALUES ('Patricia Costa', 'patricia.costa@hotmail.com', AES_ENCRYPT('senha8765', 'chave'), 3, 1, 3);
+VALUES ('Patricia Costa', 'patricia.costa@hotmail.com', AES_ENCRYPT('senha8765', 'chave'), 3, 4, 3);
 
 INSERT INTO usuario(nome, email, senha, nivel_acesso_id, informacoes_adicionais_id, situacao_id) 
-VALUES ('Felipe Oliveira', 'felipe.oliveira@gmail.com', AES_ENCRYPT('senha4321', 'chave'), 3, 2, 1);
+VALUES ('Felipe Oliveira', 'felipe.oliveira@gmail.com', AES_ENCRYPT('senha4321', 'chave'), 3, 5, 1);
 
 INSERT INTO usuario(nome,email,senha,nivel_acesso_id,situacao_id) VALUES ('Julio Dahi','julio.dahi@sptech.school',AES_ENCRYPT('12341234','chave'),2,3);
 INSERT INTO usuario(nome,email,senha,nivel_acesso_id,situacao_id) VALUES ('Banca Sprint','bancasprint@gmail.com',AES_ENCRYPT('@BancaSprint5','chave'),1,3);
@@ -947,10 +949,10 @@ CALL inserir_dias_calendario();
 INSERT INTO bairro(nome,cidade_id) VALUES
 ('Parque da Mooca',565);
 
-INSERT INTO endereco(logradouro,numero,bairro_id) VALUES
-('Avenida Paes de Barros',1815,110),
-('Rua madre de Deus',NULL,110),
-('Rua Valentim Magalhães',34,52);
+-- INSERT INTO endereco(logradouro,numero,bairro_id) VALUES
+-- ('Avenida Paes de Barros',1815,110),
+-- ('Rua madre de Deus',NULL,110),
+-- ('Rua Valentim Magalhães',34,52);
 
 INSERT INTO reserva_atividade(atividade_id,calendario_id,data_criacao,email_modificador,endereco_id) VALUES
 (1,301,current_timestamp(),'davi.rsilva@sptech.school',2),
@@ -977,148 +979,172 @@ INSERT INTO categoria (nome) VALUES
 ('Outros');
 
 -- 1° Trimestre
-INSERT INTO requisicoes(usuario_id, situacao_id, calendario_id, assunto_requisicao_id, data_criacao, email_modificador, descricao, hora_abertura) VALUES
-(2, 5, 1, 1, current_timestamp(), 'davi.rsilva@sptech.school', 'Pedido de doação de cestas básicas para famílias carentes', current_time()),
-(3, 5, 17, 1, current_timestamp(), 'davi.rsilva@sptech.school', 'Reforço na solicitação de cestas básicas para comunidades vulneráveis', current_time()),
-(4, 6, 90, 1, current_timestamp(), 'davi.rsilva@sptech.school', 'Campanha de cestas básicas para vítimas de desastres naturais', current_time()),
-(5, 5, 17, 1, current_timestamp(), 'davi.rsilva@sptech.school', 'Repetição de pedido de cestas básicas para a campanha solidária', current_time()),
-(6, 7, 1, 1, current_timestamp(), 'davi.rsilva@sptech.school', 'Doação emergencial de cestas básicas para assistência imediata', current_time()),
-(2, 6, 90, 1, current_timestamp(), 'davi.rsilva@sptech.school', 'Doação de cestas básicas para campanha de inverno', current_time());
+INSERT INTO requisicoes(usuario_id, situacao_id, calendario_id, assunto_requisicao_id, data_criacao, data_ultima_atualizacao,email_modificador, descricao, hora_abertura) VALUES
+(2, 5, 1, 1, current_timestamp(), current_timestamp(), 'davi.rsilva@sptech.school', 'Pedido de doação de cestas básicas para famílias carentes', current_time()),
+(3, 5, 17, 1, current_timestamp(), current_timestamp(), 'davi.rsilva@sptech.school', 'Reforço na solicitação de cestas básicas para comunidades vulneráveis', current_time()),
+(4, 6, 90, 1, current_timestamp(), current_timestamp(), 'davi.rsilva@sptech.school', 'Campanha de cestas básicas para vítimas de desastres naturais', current_time()),
+(5, 5, 17, 1, current_timestamp(), current_timestamp(), 'davi.rsilva@sptech.school', 'Repetição de pedido de cestas básicas para a campanha solidária', current_time()),
+(6, 7, 1, 1, current_timestamp(), current_timestamp(), 'davi.rsilva@sptech.school', 'Doação emergencial de cestas básicas para assistência imediata', current_time()),
+(2, 6, 90, 1, current_timestamp(), current_timestamp(), 'davi.rsilva@sptech.school', 'Doação de cestas básicas para campanha de inverno', current_time());
 
-INSERT INTO requisicoes(usuario_id, situacao_id, calendario_id, assunto_requisicao_id, data_criacao, email_modificador, descricao, hora_abertura) VALUES
-(3, 5, 20, 1, current_timestamp(), 'davi.rsilva@sptech.school', 'Campanha de arrecadação de cestas básicas para comunidades ribeirinhas', current_time()),
-(4, 6, 25, 1, current_timestamp(), 'davi.rsilva@sptech.school', 'Doação de cestas básicas para famílias impactadas por enchentes', current_time()),
-(5, 7, 30, 1, current_timestamp(), 'davi.rsilva@sptech.school', 'Requisição de cestas básicas para escola comunitária', current_time()),
-(6, 5, 35, 2, current_timestamp(), 'davi.rsilva@sptech.school', 'Arrecadação de roupas infantis para orfanatos locais', current_time()),
-(2, 6, 40, 2, current_timestamp(), 'davi.rsilva@sptech.school', 'Solicitação de vestuário de frio para moradores de rua', current_time()),
-(3, 7, 45, 2, current_timestamp(), 'davi.rsilva@sptech.school', 'Doação de uniformes escolares para crianças carentes', current_time());
+INSERT INTO requisicoes(usuario_id, situacao_id, calendario_id, assunto_requisicao_id, data_criacao, data_ultima_atualizacao,email_modificador, descricao, hora_abertura) VALUES
+(3, 5, 20, 1, current_timestamp(),  current_timestamp(), 'davi.rsilva@sptech.school', 'Campanha de arrecadação de cestas básicas para comunidades ribeirinhas', current_time()),
+(4, 6, 25, 1, current_timestamp(),  current_timestamp(), 'davi.rsilva@sptech.school', 'Doação de cestas básicas para famílias impactadas por enchentes', current_time()),
+(5, 7, 30, 1, current_timestamp(),  current_timestamp(), 'davi.rsilva@sptech.school', 'Requisição de cestas básicas para escola comunitária', current_time()),
+(6, 5, 35, 2, current_timestamp(),  current_timestamp(), 'davi.rsilva@sptech.school', 'Arrecadação de roupas infantis para orfanatos locais', current_time()),
+(2, 6, 40, 2, current_timestamp(),  current_timestamp(), 'davi.rsilva@sptech.school', 'Solicitação de vestuário de frio para moradores de rua', current_time()),
+(3, 7, 45, 2, current_timestamp(),  current_timestamp(), 'davi.rsilva@sptech.school', 'Doação de uniformes escolares para crianças carentes', current_time());
 
 -- 2°Trimestre
-INSERT INTO requisicoes(usuario_id, situacao_id, calendario_id, assunto_requisicao_id, data_criacao, email_modificador, descricao, hora_abertura) VALUES
-(4, 5, 50, 3, current_timestamp(), 'davi.rsilva@sptech.school', 'Pedido de kits de higiene pessoal para abrigos temporários', current_time()),
-(5, 6, 55, 3, current_timestamp(), 'davi.rsilva@sptech.school', 'Solicitação de medicamentos básicos para postos de saúde comunitários', current_time()),
-(6, 7, 60, 3, current_timestamp(), 'davi.rsilva@sptech.school', 'Doação de máscaras e álcool em gel para escolas públicas', current_time()),
-(2, 5, 65, 4, current_timestamp(), 'davi.rsilva@sptech.school', 'Doação de itens diversos para projetos de inclusão social', current_time()),
-(3, 6, 70, 4, current_timestamp(), 'davi.rsilva@sptech.school', 'Arrecadação de materiais de construção para reforma de casas', current_time()),
-(4, 7, 75, 4, current_timestamp(), 'davi.rsilva@sptech.school', 'Pedido de doação de brinquedos para comunidades carentes', current_time());
+INSERT INTO requisicoes(usuario_id, situacao_id, calendario_id, assunto_requisicao_id, data_criacao, data_ultima_atualizacao,email_modificador, descricao, hora_abertura) VALUES
+(4, 5, 50, 3, current_timestamp(),  current_timestamp(), 'davi.rsilva@sptech.school', 'Pedido de kits de higiene pessoal para abrigos temporários', current_time()),
+(5, 6, 55, 3, current_timestamp(),  current_timestamp(), 'davi.rsilva@sptech.school', 'Solicitação de medicamentos básicos para postos de saúde comunitários', current_time()),
+(6, 7, 60, 3, current_timestamp(),  current_timestamp(), 'davi.rsilva@sptech.school', 'Doação de máscaras e álcool em gel para escolas públicas', current_time()),
+(2, 5, 65, 4, current_timestamp(),  current_timestamp(), 'davi.rsilva@sptech.school', 'Doação de itens diversos para projetos de inclusão social', current_time()),
+(3, 6, 70, 4, current_timestamp(),  current_timestamp(), 'davi.rsilva@sptech.school', 'Arrecadação de materiais de construção para reforma de casas', current_time()),
+(4, 7, 75, 4, current_timestamp(),  current_timestamp(), 'davi.rsilva@sptech.school', 'Pedido de doação de brinquedos para comunidades carentes', current_time());
 
 -- 3° Trimestre
-INSERT INTO requisicoes(usuario_id, situacao_id, calendario_id, assunto_requisicao_id, data_criacao, email_modificador, descricao, hora_abertura) VALUES
-(5, 5, 91, 2, current_timestamp(), 'davi.rsilva@sptech.school', 'Pedido de doação de vestuário para famílias carentes', current_time()),
-(6, 5, 107, 2, current_timestamp(), 'davi.rsilva@sptech.school', 'Solicitação de roupas de inverno para comunidades em necessidade', current_time()),
-(2, 6, 180, 2, current_timestamp(), 'davi.rsilva@sptech.school', 'Doação de roupas e calçados para campanha solidária', current_time());
+INSERT INTO requisicoes(usuario_id, situacao_id, calendario_id, assunto_requisicao_id, data_criacao, data_ultima_atualizacao,email_modificador, descricao, hora_abertura) VALUES
+(5, 5, 91, 2, current_timestamp(),  current_timestamp(), 'davi.rsilva@sptech.school', 'Pedido de doação de vestuário para famílias carentes', current_time()),
+(6, 5, 107, 2, current_timestamp(),  current_timestamp(), 'davi.rsilva@sptech.school', 'Solicitação de roupas de inverno para comunidades em necessidade', current_time()),
+(2, 6, 180, 2, current_timestamp(),  current_timestamp(), 'davi.rsilva@sptech.school', 'Doação de roupas e calçados para campanha solidária', current_time());
 
-INSERT INTO requisicoes(usuario_id, situacao_id, calendario_id, assunto_requisicao_id, data_criacao, email_modificador, descricao, hora_abertura) VALUES
-(3, 5, 95, 1, current_timestamp(), 'davi.rsilva@sptech.school', 'Doação de cestas básicas para comunidades rurais afetadas pela seca', current_time()),
-(4, 6, 100, 1, current_timestamp(), 'davi.rsilva@sptech.school', 'Arrecadação de cestas básicas para famílias em situação de vulnerabilidade extrema', current_time()),
-(5, 7, 105, 1, current_timestamp(), 'davi.rsilva@sptech.school', 'Distribuição de cestas básicas em parceria com ONGs locais', current_time()),
-(6, 5, 110, 2, current_timestamp(), 'davi.rsilva@sptech.school', 'Requisição de roupas para recém-nascidos em maternidades públicas', current_time()),
-(2, 6, 115, 2, current_timestamp(), 'davi.rsilva@sptech.school', 'Campanha de doação de calçados para crianças em idade escolar', current_time()),
-(3, 7, 120, 2, current_timestamp(), 'davi.rsilva@sptech.school', 'Solicitação de vestuário para famílias afetadas por incêndios residenciais', current_time());
+INSERT INTO requisicoes(usuario_id, situacao_id, calendario_id, assunto_requisicao_id, data_criacao, data_ultima_atualizacao,email_modificador, descricao, hora_abertura) VALUES
+(3, 5, 95, 1, current_timestamp(),  current_timestamp(), 'davi.rsilva@sptech.school', 'Doação de cestas básicas para comunidades rurais afetadas pela seca', current_time()),
+(4, 6, 100, 1, current_timestamp(),  current_timestamp(), 'davi.rsilva@sptech.school', 'Arrecadação de cestas básicas para famílias em situação de vulnerabilidade extrema', current_time()),
+(5, 7, 105, 1, current_timestamp(),  current_timestamp(), 'davi.rsilva@sptech.school', 'Distribuição de cestas básicas em parceria com ONGs locais', current_time()),
+(6, 5, 110, 2, current_timestamp(),  current_timestamp(), 'davi.rsilva@sptech.school', 'Requisição de roupas para recém-nascidos em maternidades públicas', current_time()),
+(2, 6, 115, 2, current_timestamp(),  current_timestamp(), 'davi.rsilva@sptech.school', 'Campanha de doação de calçados para crianças em idade escolar', current_time()),
+(3, 7, 120, 2, current_timestamp(),  current_timestamp(), 'davi.rsilva@sptech.school', 'Solicitação de vestuário para famílias afetadas por incêndios residenciais', current_time());
 
 -- 4°Trimestre
-INSERT INTO requisicoes(usuario_id, situacao_id, calendario_id, assunto_requisicao_id, data_criacao, email_modificador, descricao, hora_abertura) VALUES
-(4, 5, 125, 3, current_timestamp(), 'davi.rsilva@sptech.school', 'Doação de kits de primeiros socorros para áreas de difícil acesso', current_time()),
-(5, 6, 130, 3, current_timestamp(), 'davi.rsilva@sptech.school', 'Pedido de produtos de higiene pessoal para asilos e casas de repouso', current_time()),
-(6, 7, 135, 3, current_timestamp(), 'davi.rsilva@sptech.school', 'Arrecadação de medicamentos essenciais para campanhas de saúde em comunidades indígenas', current_time()),
-(2, 5, 140, 4, current_timestamp(), 'davi.rsilva@sptech.school', 'Solicitação de doação de livros para bibliotecas comunitárias', current_time()),
-(3, 6, 145, 4, current_timestamp(), 'davi.rsilva@sptech.school', 'Requisição de equipamentos esportivos para projetos de inclusão social', current_time()),
-(4, 7, 150, 4, current_timestamp(), 'davi.rsilva@sptech.school', 'Doação de materiais escolares para crianças em situação de vulnerabilidade', current_time());
+INSERT INTO requisicoes(usuario_id, situacao_id, calendario_id, assunto_requisicao_id, data_criacao, data_ultima_atualizacao,email_modificador, descricao, hora_abertura) VALUES
+(4, 5, 125, 3, current_timestamp(),  current_timestamp(), 'davi.rsilva@sptech.school', 'Doação de kits de primeiros socorros para áreas de difícil acesso', current_time()),
+(5, 6, 130, 3, current_timestamp(),  current_timestamp(), 'davi.rsilva@sptech.school', 'Pedido de produtos de higiene pessoal para asilos e casas de repouso', current_time()),
+(6, 7, 135, 3, current_timestamp(),  current_timestamp(), 'davi.rsilva@sptech.school', 'Arrecadação de medicamentos essenciais para campanhas de saúde em comunidades indígenas', current_time()),
+(2, 5, 140, 4, current_timestamp(),  current_timestamp(), 'davi.rsilva@sptech.school', 'Solicitação de doação de livros para bibliotecas comunitárias', current_time()),
+(3, 6, 145, 4, current_timestamp(),  current_timestamp(), 'davi.rsilva@sptech.school', 'Requisição de equipamentos esportivos para projetos de inclusão social', current_time()),
+(4, 7, 150, 4, current_timestamp(),  current_timestamp(), 'davi.rsilva@sptech.school', 'Doação de materiais escolares para crianças em situação de vulnerabilidade', current_time());
 
-INSERT INTO requisicoes(usuario_id, situacao_id, calendario_id, assunto_requisicao_id, data_criacao, email_modificador, descricao, hora_abertura) VALUES
-(1, 5, 336, 1, current_timestamp(), 'davi.rsilva@sptech.school', 'Descrição automática para o calendário_id 336, assunto 1', current_time()),
-(2, 6, 336, 2, current_timestamp(), 'davi.rsilva@sptech.school', 'Descrição automática para o calendário_id 336, assunto 2', current_time()),
-(3, 7, 336, 3, current_timestamp(), 'davi.rsilva@sptech.school', 'Descrição automática para o calendário_id 336, assunto 3', current_time()),
-(2, 6, 337, 2, current_timestamp(), 'davi.rsilva@sptech.school', 'Descrição automática para o calendário_id 337, assunto 2', current_time()),
-(3, 7, 337, 3, current_timestamp(), 'davi.rsilva@sptech.school', 'Descrição automática para o calendário_id 337, assunto 3', current_time()),
-(4, 5, 337, 4, current_timestamp(), 'davi.rsilva@sptech.school', 'Descrição automática para o calendário_id 337, assunto 4', current_time()),
-(3, 7, 338, 3, current_timestamp(), 'davi.rsilva@sptech.school', 'Descrição automática para o calendário_id 338, assunto 3', current_time()),
-(4, 5, 338, 4, current_timestamp(), 'davi.rsilva@sptech.school', 'Descrição automática para o calendário_id 338, assunto 4', current_time()),
-(5, 6, 338, 1, current_timestamp(), 'davi.rsilva@sptech.school', 'Descrição automática para o calendário_id 338, assunto 1', current_time()),
-(4, 5, 339, 4, current_timestamp(), 'davi.rsilva@sptech.school', 'Descrição automática para o calendário_id 339, assunto 4', current_time()),
-(5, 6, 339, 1, current_timestamp(), 'davi.rsilva@sptech.school', 'Descrição automática para o calendário_id 339, assunto 1', current_time()),
-(6, 7, 339, 2, current_timestamp(), 'davi.rsilva@sptech.school', 'Descrição automática para o calendário_id 339, assunto 2', current_time()),
-(5, 6, 340, 1, current_timestamp(), 'davi.rsilva@sptech.school', 'Descrição automática para o calendário_id 340, assunto 1', current_time()),
-(6, 7, 340, 2, current_timestamp(), 'davi.rsilva@sptech.school', 'Descrição automática para o calendário_id 340, assunto 2', current_time()),
-(1, 5, 340, 3, current_timestamp(), 'davi.rsilva@sptech.school', 'Descrição automática para o calendário_id 340, assunto 3', current_time()),
-(6, 7, 341, 2, current_timestamp(), 'davi.rsilva@sptech.school', 'Descrição automática para o calendário_id 341, assunto 2', current_time()),
-(1, 5, 341, 3, current_timestamp(), 'davi.rsilva@sptech.school', 'Descrição automática para o calendário_id 341, assunto 3', current_time()),
-(2, 6, 341, 4, current_timestamp(), 'davi.rsilva@sptech.school', 'Descrição automática para o calendário_id 341, assunto 4', current_time()),
-(1, 5, 342, 3, current_timestamp(), 'davi.rsilva@sptech.school', 'Descrição automática para o calendário_id 342, assunto 3', current_time()),
-(2, 6, 342, 4, current_timestamp(), 'davi.rsilva@sptech.school', 'Descrição automática para o calendário_id 342, assunto 4', current_time()),
-(3, 7, 342, 1, current_timestamp(), 'davi.rsilva@sptech.school', 'Descrição automática para o calendário_id 342, assunto 1', current_time()),
-(2, 6, 343, 4, current_timestamp(), 'davi.rsilva@sptech.school', 'Descrição automática para o calendário_id 343, assunto 4', current_time()),
-(3, 7, 343, 1, current_timestamp(), 'davi.rsilva@sptech.school', 'Descrição automática para o calendário_id 343, assunto 1', current_time()),
-(4, 5, 343, 2, current_timestamp(), 'davi.rsilva@sptech.school', 'Descrição automática para o calendário_id 343, assunto 2', current_time()),
-(3, 7, 344, 1, current_timestamp(), 'davi.rsilva@sptech.school', 'Descrição automática para o calendário_id 344, assunto 1', current_time()),
-(4, 5, 344, 2, current_timestamp(), 'davi.rsilva@sptech.school', 'Descrição automática para o calendário_id 344, assunto 2', current_time()),
-(5, 6, 344, 3, current_timestamp(), 'davi.rsilva@sptech.school', 'Descrição automática para o calendário_id 344, assunto 3', current_time()),
-(4, 5, 345, 2, current_timestamp(), 'davi.rsilva@sptech.school', 'Descrição automática para o calendário_id 345, assunto 2', current_time()),
-(5, 6, 345, 3, current_timestamp(), 'davi.rsilva@sptech.school', 'Descrição automática para o calendário_id 345, assunto 3', current_time()),
-(6, 7, 345, 4, current_timestamp(), 'davi.rsilva@sptech.school', 'Descrição automática para o calendário_id 345, assunto 4', current_time()),
-(5, 6, 346, 3, current_timestamp(), 'davi.rsilva@sptech.school', 'Descrição automática para o calendário_id 346, assunto 3', current_time()),
-(6, 7, 346, 4, current_timestamp(), 'davi.rsilva@sptech.school', 'Descrição automática para o calendário_id 346, assunto 4', current_time()),
-(1, 5, 346, 1, current_timestamp(), 'davi.rsilva@sptech.school', 'Descrição automática para o calendário_id 346, assunto 1', current_time()),
-(6, 7, 347, 4, current_timestamp(), 'davi.rsilva@sptech.school', 'Descrição automática para o calendário_id 347, assunto 4', current_time()),
-(1, 5, 347, 1, current_timestamp(), 'davi.rsilva@sptech.school', 'Descrição automática para o calendário_id 347, assunto 1', current_time()),
-(2, 6, 347, 2, current_timestamp(), 'davi.rsilva@sptech.school', 'Descrição automática para o calendário_id 347, assunto 2', current_time()),
-(1, 5, 348, 1, current_timestamp(), 'davi.rsilva@sptech.school', 'Descrição automática para o calendário_id 348, assunto 1', current_time()),
-(2, 6, 348, 2, current_timestamp(), 'davi.rsilva@sptech.school', 'Descrição automática para o calendário_id 348, assunto 2', current_time()),
-(3, 7, 348, 3, current_timestamp(), 'davi.rsilva@sptech.school', 'Descrição automática para o calendário_id 348, assunto 3', current_time()),
-(2, 6, 349, 2, current_timestamp(), 'davi.rsilva@sptech.school', 'Descrição automática para o calendário_id 349, assunto 2', current_time()),
-(3, 7, 349, 3, current_timestamp(), 'davi.rsilva@sptech.school', 'Descrição automática para o calendário_id 349, assunto 3', current_time()),
-(4, 5, 349, 4, current_timestamp(), 'davi.rsilva@sptech.school', 'Descrição automática para o calendário_id 349, assunto 4', current_time()),
-(3, 7, 350, 3, current_timestamp(), 'davi.rsilva@sptech.school', 'Descrição automática para o calendário_id 350, assunto 3', current_time()),
-(4, 5, 350, 4, current_timestamp(), 'davi.rsilva@sptech.school', 'Descrição automática para o calendário_id 350, assunto 4', current_time()),
-(5, 6, 350, 1, current_timestamp(), 'davi.rsilva@sptech.school', 'Descrição automática para o calendário_id 350, assunto 1', current_time()),
-(4, 5, 351, 4, current_timestamp(), 'davi.rsilva@sptech.school', 'Descrição automática para o calendário_id 351, assunto 4', current_time()),
-(5, 6, 351, 1, current_timestamp(), 'davi.rsilva@sptech.school', 'Descrição automática para o calendário_id 351, assunto 1', current_time()),
-(6, 7, 351, 2, current_timestamp(), 'davi.rsilva@sptech.school', 'Descrição automática para o calendário_id 351, assunto 2', current_time()),
-(5, 6, 352, 1, current_timestamp(), 'davi.rsilva@sptech.school', 'Descrição automática para o calendário_id 352, assunto 1', current_time()),
-(6, 7, 352, 2, current_timestamp(), 'davi.rsilva@sptech.school', 'Descrição automática para o calendário_id 352, assunto 2', current_time()),
-(1, 5, 352, 3, current_timestamp(), 'davi.rsilva@sptech.school', 'Descrição automática para o calendário_id 352, assunto 3', current_time()),
-(6, 7, 353, 2, current_timestamp(), 'davi.rsilva@sptech.school', 'Descrição automática para o calendário_id 353, assunto 2', current_time()),
-(1, 5, 353, 3, current_timestamp(), 'davi.rsilva@sptech.school', 'Descrição automática para o calendário_id 353, assunto 3', current_time()),
-(2, 6, 353, 4, current_timestamp(), 'davi.rsilva@sptech.school', 'Descrição automática para o calendário_id 353, assunto 4', current_time()),
-(1, 5, 354, 3, current_timestamp(), 'davi.rsilva@sptech.school', 'Descrição automática para o calendário_id 354, assunto 3', current_time()),
-(2, 6, 354, 4, current_timestamp(), 'davi.rsilva@sptech.school', 'Descrição automática para o calendário_id 354, assunto 4', current_time()),
-(3, 7, 354, 1, current_timestamp(), 'davi.rsilva@sptech.school', 'Descrição automática para o calendário_id 354, assunto 1', current_time()),
-(2, 6, 355, 4, current_timestamp(), 'davi.rsilva@sptech.school', 'Descrição automática para o calendário_id 355, assunto 4', current_time()),
-(3, 7, 355, 1, current_timestamp(), 'davi.rsilva@sptech.school', 'Descrição automática para o calendário_id 355, assunto 1', current_time()),
-(4, 5, 355, 2, current_timestamp(), 'davi.rsilva@sptech.school', 'Descrição automática para o calendário_id 355, assunto 2', current_time()),
-(3, 7, 356, 1, current_timestamp(), 'davi.rsilva@sptech.school', 'Descrição automática para o calendário_id 356, assunto 1', current_time()),
-(4, 5, 356, 2, current_timestamp(), 'davi.rsilva@sptech.school', 'Descrição automática para o calendário_id 356, assunto 2', current_time()),
-(5, 6, 356, 3, current_timestamp(), 'davi.rsilva@sptech.school', 'Descrição automática para o calendário_id 356, assunto 3', current_time()),
-(4, 5, 357, 2, current_timestamp(), 'davi.rsilva@sptech.school', 'Descrição automática para o calendário_id 357, assunto 2', current_time()),
-(5, 6, 357, 3, current_timestamp(), 'davi.rsilva@sptech.school', 'Descrição automática para o calendário_id 357, assunto 3', current_time()),
-(6, 7, 357, 4, current_timestamp(), 'davi.rsilva@sptech.school', 'Descrição automática para o calendário_id 357, assunto 4', current_time()),
-(5, 6, 358, 3, current_timestamp(), 'davi.rsilva@sptech.school', 'Descrição automática para o calendário_id 358, assunto 3', current_time()),
-(6, 7, 358, 4, current_timestamp(), 'davi.rsilva@sptech.school', 'Descrição automática para o calendário_id 358, assunto 4', current_time()),
-(1, 5, 358, 1, current_timestamp(), 'davi.rsilva@sptech.school', 'Descrição automática para o calendário_id 358, assunto 1', current_time()),
-(6, 7, 359, 4, current_timestamp(), 'davi.rsilva@sptech.school', 'Descrição automática para o calendário_id 359, assunto 4', current_time()),
-(1, 5, 359, 1, current_timestamp(), 'davi.rsilva@sptech.school', 'Descrição automática para o calendário_id 359, assunto 1', current_time()),
-(2, 6, 359, 2, current_timestamp(), 'davi.rsilva@sptech.school', 'Descrição automática para o calendário_id 359, assunto 2', current_time()),
-(1, 5, 360, 1, current_timestamp(), 'davi.rsilva@sptech.school', 'Descrição automática para o calendário_id 360, assunto 1', current_time()),
-(2, 6, 360, 2, current_timestamp(), 'davi.rsilva@sptech.school', 'Descrição automática para o calendário_id 360, assunto 2', current_time()),
-(3, 7, 360, 3, current_timestamp(), 'davi.rsilva@sptech.school', 'Descrição automática para o calendário_id 360, assunto 3', current_time()),
-(2, 6, 361, 2, current_timestamp(), 'davi.rsilva@sptech.school', 'Descrição automática para o calendário_id 361, assunto 2', current_time()),
-(3, 7, 361, 3, current_timestamp(), 'davi.rsilva@sptech.school', 'Descrição automática para o calendário_id 361, assunto 3', current_time()),
-(4, 5, 361, 4, current_timestamp(), 'davi.rsilva@sptech.school', 'Descrição automática para o calendário_id 361, assunto 4', current_time()),
-(3, 7, 362, 3, current_timestamp(), 'davi.rsilva@sptech.school', 'Descrição automática para o calendário_id 362, assunto 3', current_time()),
-(4, 5, 362, 4, current_timestamp(), 'davi.rsilva@sptech.school', 'Descrição automática para o calendário_id 362, assunto 4', current_time()),
-(5, 6, 362, 1, current_timestamp(), 'davi.rsilva@sptech.school', 'Descrição automática para o calendário_id 362, assunto 1', current_time()),
-(4, 5, 363, 4, current_timestamp(), 'davi.rsilva@sptech.school', 'Descrição automática para o calendário_id 363, assunto 4', current_time()),
-(5, 6, 363, 1, current_timestamp(), 'davi.rsilva@sptech.school', 'Descrição automática para o calendário_id 363, assunto 1', current_time()),
-(6, 7, 363, 2, current_timestamp(), 'davi.rsilva@sptech.school', 'Descrição automática para o calendário_id 363, assunto 2', current_time()),
-(5, 6, 364, 1, current_timestamp(), 'davi.rsilva@sptech.school', 'Descrição automática para o calendário_id 364, assunto 1', current_time()),
-(6, 7, 364, 2, current_timestamp(), 'davi.rsilva@sptech.school', 'Descrição automática para o calendário_id 364, assunto 2', current_time()),
-(1, 5, 364, 3, current_timestamp(), 'davi.rsilva@sptech.school', 'Descrição automática para o calendário_id 364, assunto 3', current_time()),
-(6, 7, 365, 2, current_timestamp(), 'davi.rsilva@sptech.school', 'Descrição automática para o calendário_id 365, assunto 2', current_time()),
-(1, 5, 365, 3, current_timestamp(), 'davi.rsilva@sptech.school', 'Descrição automática para o calendário_id 365, assunto 3', current_time()),
-(2, 6, 365, 4, current_timestamp(), 'davi.rsilva@sptech.school', 'Descrição automática para o calendário_id 365, assunto 4', current_time()),
-(1, 5, 366, 3, current_timestamp(), 'davi.rsilva@sptech.school', 'Descrição automática para o calendário_id 366, assunto 3', current_time()),
-(2, 6, 366, 4, current_timestamp(), 'davi.rsilva@sptech.school', 'Descrição automática para o calendário_id 366, assunto 4', current_time()),
-(3, 7, 366, 1, current_timestamp(), 'davi.rsilva@sptech.school', 'Descrição automática para o calendário_id 366, assunto 1', current_time());
+INSERT INTO requisicoes(usuario_id, situacao_id, calendario_id, assunto_requisicao_id, data_criacao, data_ultima_atualizacao,email_modificador, descricao, hora_abertura) VALUES
+(2, 5, 183, 1, current_timestamp(),  current_timestamp(), 'davi.rsilva@sptech.school', 'Pedido de doação de cestas básicas para comunidades carentes', current_time()),
+(3, 6, 185, 2, current_timestamp(),  current_timestamp(), 'davi.rsilva@sptech.school', 'Doação de roupas e cobertores para moradores de rua', current_time()),
+(4, 7, 190, 3, current_timestamp(),  current_timestamp(), 'davi.rsilva@sptech.school', 'Solicitação de kits de primeiros socorros para áreas de difícil acesso', current_time()),
+(5, 5, 192, 4, current_timestamp(),  current_timestamp(), 'davi.rsilva@sptech.school', 'Pedido de materiais diversos para campanhas solidárias', current_time()),
+(6, 6, 197, 1, current_timestamp(),  current_timestamp(), 'davi.rsilva@sptech.school', 'Doação de cestas básicas em áreas afetadas por enchentes', current_time()),
+(2, 7, 200, 2, current_timestamp(),  current_timestamp(), 'davi.rsilva@sptech.school', 'Pedido de doação de roupas para crianças em situação de vulnerabilidade', current_time()),
+(3, 5, 205, 3, current_timestamp(),  current_timestamp(), 'davi.rsilva@sptech.school', 'Solicitação de apoio para campanhas de vacinação comunitária', current_time()),
+(4, 6, 210, 4, current_timestamp(), current_timestamp(),  'davi.rsilva@sptech.school', 'Doação de materiais para oficinas de artesanato em comunidades rurais', current_time()),
+(5, 7, 215, 1, current_timestamp(),  current_timestamp(), 'davi.rsilva@sptech.school', 'Pedido de cestas básicas para famílias em extrema pobreza', current_time()),
+(6, 5, 220, 2, current_timestamp(),  current_timestamp(), 'davi.rsilva@sptech.school', 'Solicitação de doação de vestuário para refugiados', current_time()),
+(2, 6, 225, 3, current_timestamp(),  current_timestamp(), 'davi.rsilva@sptech.school', 'Doação de medicamentos para comunidades afastadas', current_time()),
+(3, 7, 230, 4, current_timestamp(),  current_timestamp(), 'davi.rsilva@sptech.school', 'Pedido de equipamentos para montagem de espaços culturais', current_time()),
+(4, 5, 235, 1, current_timestamp(),  current_timestamp(), 'davi.rsilva@sptech.school', 'Solicitação de cestas básicas para comunidades indígenas', current_time()),
+(5, 6, 240, 2, current_timestamp(),  current_timestamp(), 'davi.rsilva@sptech.school', 'Doação de roupas e calçados para crianças e adolescentes', current_time()),
+(6, 7, 245, 3, current_timestamp(),  current_timestamp(), 'davi.rsilva@sptech.school', 'Pedido de kits de higiene pessoal para abrigos públicos', current_time()),
+(2, 5, 250, 4, current_timestamp(),  current_timestamp(), 'davi.rsilva@sptech.school', 'Solicitação de materiais escolares para crianças de baixa renda', current_time()),
+(3, 6, 255, 1, current_timestamp(),  current_timestamp(), 'davi.rsilva@sptech.school', 'Doação de cestas básicas para famílias em situação de emergência', current_time()),
+(4, 7, 260, 2, current_timestamp(), current_timestamp(),  'davi.rsilva@sptech.school', 'Pedido de doação de roupas para campanhas de inverno', current_time()),
+(5, 5, 265, 3, current_timestamp(),  current_timestamp(), 'davi.rsilva@sptech.school', 'Solicitação de apoio para programas de saúde preventiva', current_time()),
+(6, 6, 270, 4, current_timestamp(),  current_timestamp(), 'davi.rsilva@sptech.school', 'Doação de materiais esportivos para projetos sociais', current_time());
+
+INSERT INTO requisicoes(usuario_id, situacao_id, calendario_id, assunto_requisicao_id, data_criacao, data_ultima_atualizacao,email_modificador, descricao, hora_abertura) VALUES
+(1, 5, 336, 1, current_timestamp(),  current_timestamp(), 'davi.rsilva@sptech.school', 'Descrição automática para o calendário_id 336, assunto 1', current_time()),
+(2, 6, 336, 2, current_timestamp(),  current_timestamp(), 'davi.rsilva@sptech.school', 'Descrição automática para o calendário_id 336, assunto 2', current_time()),
+(3, 7, 336, 3, current_timestamp(),  current_timestamp(), 'davi.rsilva@sptech.school', 'Descrição automática para o calendário_id 336, assunto 3', current_time()),
+(2, 6, 337, 2, current_timestamp(),  current_timestamp(), 'davi.rsilva@sptech.school', 'Descrição automática para o calendário_id 337, assunto 2', current_time()),
+(3, 7, 337, 3, current_timestamp(),  current_timestamp(), 'davi.rsilva@sptech.school', 'Descrição automática para o calendário_id 337, assunto 3', current_time()),
+(4, 5, 337, 4, current_timestamp(),  current_timestamp(), 'davi.rsilva@sptech.school', 'Descrição automática para o calendário_id 337, assunto 4', current_time()),
+(3, 7, 338, 3, current_timestamp(),  current_timestamp(), 'davi.rsilva@sptech.school', 'Descrição automática para o calendário_id 338, assunto 3', current_time()),
+(4, 5, 338, 4, current_timestamp(),  current_timestamp(), 'davi.rsilva@sptech.school', 'Descrição automática para o calendário_id 338, assunto 4', current_time()),
+(5, 6, 338, 1, current_timestamp(),  current_timestamp(), 'davi.rsilva@sptech.school', 'Descrição automática para o calendário_id 338, assunto 1', current_time()),
+(4, 5, 339, 4, current_timestamp(),  current_timestamp(), 'davi.rsilva@sptech.school', 'Descrição automática para o calendário_id 339, assunto 4', current_time()),
+(5, 6, 339, 1, current_timestamp(),  current_timestamp(), 'davi.rsilva@sptech.school', 'Descrição automática para o calendário_id 339, assunto 1', current_time()),
+(6, 7, 339, 2, current_timestamp(),  current_timestamp(), 'davi.rsilva@sptech.school', 'Descrição automática para o calendário_id 339, assunto 2', current_time()),
+(5, 6, 340, 1, current_timestamp(),  current_timestamp(), 'davi.rsilva@sptech.school', 'Descrição automática para o calendário_id 340, assunto 1', current_time()),
+(6, 7, 340, 2, current_timestamp(),  current_timestamp(), 'davi.rsilva@sptech.school', 'Descrição automática para o calendário_id 340, assunto 2', current_time()),
+(1, 5, 340, 3, current_timestamp(),  current_timestamp(), 'davi.rsilva@sptech.school', 'Descrição automática para o calendário_id 340, assunto 3', current_time()),
+(6, 7, 341, 2, current_timestamp(),  current_timestamp(), 'davi.rsilva@sptech.school', 'Descrição automática para o calendário_id 341, assunto 2', current_time()),
+(1, 5, 341, 3, current_timestamp(),  current_timestamp(), 'davi.rsilva@sptech.school', 'Descrição automática para o calendário_id 341, assunto 3', current_time()),
+(2, 6, 341, 4, current_timestamp(),  current_timestamp(), 'davi.rsilva@sptech.school', 'Descrição automática para o calendário_id 341, assunto 4', current_time()),
+(1, 5, 342, 3, current_timestamp(),  current_timestamp(), 'davi.rsilva@sptech.school', 'Descrição automática para o calendário_id 342, assunto 3', current_time()),
+(2, 6, 342, 4, current_timestamp(),  current_timestamp(), 'davi.rsilva@sptech.school', 'Descrição automática para o calendário_id 342, assunto 4', current_time()),
+(3, 7, 342, 1, current_timestamp(),  current_timestamp(), 'davi.rsilva@sptech.school', 'Descrição automática para o calendário_id 342, assunto 1', current_time()),
+(2, 6, 343, 4, current_timestamp(),  current_timestamp(), 'davi.rsilva@sptech.school', 'Descrição automática para o calendário_id 343, assunto 4', current_time()),
+(3, 7, 343, 1, current_timestamp(),  current_timestamp(), 'davi.rsilva@sptech.school', 'Descrição automática para o calendário_id 343, assunto 1', current_time()),
+(4, 5, 343, 2, current_timestamp(),  current_timestamp(), 'davi.rsilva@sptech.school', 'Descrição automática para o calendário_id 343, assunto 2', current_time()),
+(3, 7, 344, 1, current_timestamp(),  current_timestamp(), 'davi.rsilva@sptech.school', 'Descrição automática para o calendário_id 344, assunto 1', current_time()),
+(4, 5, 344, 2, current_timestamp(),  current_timestamp(), 'davi.rsilva@sptech.school', 'Descrição automática para o calendário_id 344, assunto 2', current_time()),
+(5, 6, 344, 3, current_timestamp(),  current_timestamp(), 'davi.rsilva@sptech.school', 'Descrição automática para o calendário_id 344, assunto 3', current_time()),
+(4, 5, 345, 2, current_timestamp(),  current_timestamp(), 'davi.rsilva@sptech.school', 'Descrição automática para o calendário_id 345, assunto 2', current_time()),
+(5, 6, 345, 3, current_timestamp(),  current_timestamp(), 'davi.rsilva@sptech.school', 'Descrição automática para o calendário_id 345, assunto 3', current_time()),
+(6, 7, 345, 4, current_timestamp(),  current_timestamp(), 'davi.rsilva@sptech.school', 'Descrição automática para o calendário_id 345, assunto 4', current_time()),
+(5, 6, 346, 3, current_timestamp(),  current_timestamp(), 'davi.rsilva@sptech.school', 'Descrição automática para o calendário_id 346, assunto 3', current_time()),
+(6, 7, 346, 4, current_timestamp(),  current_timestamp(), 'davi.rsilva@sptech.school', 'Descrição automática para o calendário_id 346, assunto 4', current_time()),
+(1, 5, 346, 1, current_timestamp(),  current_timestamp(), 'davi.rsilva@sptech.school', 'Descrição automática para o calendário_id 346, assunto 1', current_time()),
+(6, 7, 347, 4, current_timestamp(),  current_timestamp(), 'davi.rsilva@sptech.school', 'Descrição automática para o calendário_id 347, assunto 4', current_time()),
+(1, 5, 347, 1, current_timestamp(),  current_timestamp(), 'davi.rsilva@sptech.school', 'Descrição automática para o calendário_id 347, assunto 1', current_time()),
+(2, 6, 347, 2, current_timestamp(),  current_timestamp(), 'davi.rsilva@sptech.school', 'Descrição automática para o calendário_id 347, assunto 2', current_time()),
+(1, 5, 348, 1, current_timestamp(),  current_timestamp(), 'davi.rsilva@sptech.school', 'Descrição automática para o calendário_id 348, assunto 1', current_time()),
+(2, 6, 348, 2, current_timestamp(),  current_timestamp(), 'davi.rsilva@sptech.school', 'Descrição automática para o calendário_id 348, assunto 2', current_time()),
+(3, 7, 348, 3, current_timestamp(),  current_timestamp(), 'davi.rsilva@sptech.school', 'Descrição automática para o calendário_id 348, assunto 3', current_time()),
+(2, 6, 349, 2, current_timestamp(),  current_timestamp(), 'davi.rsilva@sptech.school', 'Descrição automática para o calendário_id 349, assunto 2', current_time()),
+(3, 7, 349, 3, current_timestamp(),  current_timestamp(), 'davi.rsilva@sptech.school', 'Descrição automática para o calendário_id 349, assunto 3', current_time()),
+(4, 5, 349, 4, current_timestamp(),  current_timestamp(), 'davi.rsilva@sptech.school', 'Descrição automática para o calendário_id 349, assunto 4', current_time()),
+(3, 7, 350, 3, current_timestamp(),  current_timestamp(), 'davi.rsilva@sptech.school', 'Descrição automática para o calendário_id 350, assunto 3', current_time()),
+(4, 5, 350, 4, current_timestamp(),  current_timestamp(), 'davi.rsilva@sptech.school', 'Descrição automática para o calendário_id 350, assunto 4', current_time()),
+(5, 6, 350, 1, current_timestamp(),  current_timestamp(), 'davi.rsilva@sptech.school', 'Descrição automática para o calendário_id 350, assunto 1', current_time()),
+(4, 5, 351, 4, current_timestamp(),  current_timestamp(), 'davi.rsilva@sptech.school', 'Descrição automática para o calendário_id 351, assunto 4', current_time()),
+(5, 6, 351, 1, current_timestamp(),  current_timestamp(), 'davi.rsilva@sptech.school', 'Descrição automática para o calendário_id 351, assunto 1', current_time()),
+(6, 7, 351, 2, current_timestamp(),  current_timestamp(), 'davi.rsilva@sptech.school', 'Descrição automática para o calendário_id 351, assunto 2', current_time()),
+(5, 6, 352, 1, current_timestamp(),  current_timestamp(), 'davi.rsilva@sptech.school', 'Descrição automática para o calendário_id 352, assunto 1', current_time()),
+(6, 7, 352, 2, current_timestamp(),  current_timestamp(), 'davi.rsilva@sptech.school', 'Descrição automática para o calendário_id 352, assunto 2', current_time()),
+(1, 5, 352, 3, current_timestamp(),  current_timestamp(), 'davi.rsilva@sptech.school', 'Descrição automática para o calendário_id 352, assunto 3', current_time()),
+(6, 7, 353, 2, current_timestamp(),  current_timestamp(), 'davi.rsilva@sptech.school', 'Descrição automática para o calendário_id 353, assunto 2', current_time()),
+(1, 5, 353, 3, current_timestamp(),  current_timestamp(), 'davi.rsilva@sptech.school', 'Descrição automática para o calendário_id 353, assunto 3', current_time()),
+(2, 6, 353, 4, current_timestamp(),  current_timestamp(), 'davi.rsilva@sptech.school', 'Descrição automática para o calendário_id 353, assunto 4', current_time()),
+(1, 5, 354, 3, current_timestamp(),  current_timestamp(), 'davi.rsilva@sptech.school', 'Descrição automática para o calendário_id 354, assunto 3', current_time()),
+(2, 6, 354, 4, current_timestamp(),  current_timestamp(), 'davi.rsilva@sptech.school', 'Descrição automática para o calendário_id 354, assunto 4', current_time()),
+(3, 7, 354, 1, current_timestamp(),  current_timestamp(), 'davi.rsilva@sptech.school', 'Descrição automática para o calendário_id 354, assunto 1', current_time()),
+(2, 6, 355, 4, current_timestamp(),  current_timestamp(), 'davi.rsilva@sptech.school', 'Descrição automática para o calendário_id 355, assunto 4', current_time()),
+(3, 7, 355, 1, current_timestamp(),  current_timestamp(), 'davi.rsilva@sptech.school', 'Descrição automática para o calendário_id 355, assunto 1', current_time()),
+(4, 5, 355, 2, current_timestamp(),  current_timestamp(), 'davi.rsilva@sptech.school', 'Descrição automática para o calendário_id 355, assunto 2', current_time()),
+(3, 7, 356, 1, current_timestamp(),  current_timestamp(), 'davi.rsilva@sptech.school', 'Descrição automática para o calendário_id 356, assunto 1', current_time()),
+(4, 5, 356, 2, current_timestamp(),  current_timestamp(), 'davi.rsilva@sptech.school', 'Descrição automática para o calendário_id 356, assunto 2', current_time()),
+(5, 6, 356, 3, current_timestamp(),  current_timestamp(), 'davi.rsilva@sptech.school', 'Descrição automática para o calendário_id 356, assunto 3', current_time()),
+(4, 5, 357, 2, current_timestamp(),  current_timestamp(), 'davi.rsilva@sptech.school', 'Descrição automática para o calendário_id 357, assunto 2', current_time()),
+(5, 6, 357, 3, current_timestamp(),  current_timestamp(), 'davi.rsilva@sptech.school', 'Descrição automática para o calendário_id 357, assunto 3', current_time()),
+(6, 7, 357, 4, current_timestamp(),  current_timestamp(), 'davi.rsilva@sptech.school', 'Descrição automática para o calendário_id 357, assunto 4', current_time()),
+(5, 6, 358, 3, current_timestamp(),  current_timestamp(), 'davi.rsilva@sptech.school', 'Descrição automática para o calendário_id 358, assunto 3', current_time()),
+(6, 7, 358, 4, current_timestamp(), current_timestamp(),  'davi.rsilva@sptech.school', 'Descrição automática para o calendário_id 358, assunto 4', current_time()),
+(1, 5, 358, 1, current_timestamp(),  current_timestamp(), 'davi.rsilva@sptech.school', 'Descrição automática para o calendário_id 358, assunto 1', current_time()),
+(6, 7, 359, 4, current_timestamp(),  current_timestamp(), 'davi.rsilva@sptech.school', 'Descrição automática para o calendário_id 359, assunto 4', current_time()),
+(1, 5, 359, 1, current_timestamp(),  current_timestamp(), 'davi.rsilva@sptech.school', 'Descrição automática para o calendário_id 359, assunto 1', current_time()),
+(2, 6, 359, 2, current_timestamp(), current_timestamp(),  'davi.rsilva@sptech.school', 'Descrição automática para o calendário_id 359, assunto 2', current_time()),
+(1, 5, 360, 1, current_timestamp(), current_timestamp(),  'davi.rsilva@sptech.school', 'Descrição automática para o calendário_id 360, assunto 1', current_time()),
+(2, 6, 360, 2, current_timestamp(),  current_timestamp(), 'davi.rsilva@sptech.school', 'Descrição automática para o calendário_id 360, assunto 2', current_time()),
+(3, 7, 360, 3, current_timestamp(),  current_timestamp(), 'davi.rsilva@sptech.school', 'Descrição automática para o calendário_id 360, assunto 3', current_time()),
+(2, 6, 361, 2, current_timestamp(),  current_timestamp(), 'davi.rsilva@sptech.school', 'Descrição automática para o calendário_id 361, assunto 2', current_time()),
+(3, 7, 361, 3, current_timestamp(),  current_timestamp(), 'davi.rsilva@sptech.school', 'Descrição automática para o calendário_id 361, assunto 3', current_time()),
+(4, 5, 361, 4, current_timestamp(),  current_timestamp(), 'davi.rsilva@sptech.school', 'Descrição automática para o calendário_id 361, assunto 4', current_time()),
+(3, 7, 362, 3, current_timestamp(),  current_timestamp(), 'davi.rsilva@sptech.school', 'Descrição automática para o calendário_id 362, assunto 3', current_time()),
+(4, 5, 362, 4, current_timestamp(),  current_timestamp(), 'davi.rsilva@sptech.school', 'Descrição automática para o calendário_id 362, assunto 4', current_time()),
+(5, 6, 362, 1, current_timestamp(),  current_timestamp(), 'davi.rsilva@sptech.school', 'Descrição automática para o calendário_id 362, assunto 1', current_time()),
+(4, 5, 363, 4, current_timestamp(),  current_timestamp(), 'davi.rsilva@sptech.school', 'Descrição automática para o calendário_id 363, assunto 4', current_time()),
+(5, 6, 363, 1, current_timestamp(),  current_timestamp(), 'davi.rsilva@sptech.school', 'Descrição automática para o calendário_id 363, assunto 1', current_time()),
+(6, 7, 363, 2, current_timestamp(),  current_timestamp(), 'davi.rsilva@sptech.school', 'Descrição automática para o calendário_id 363, assunto 2', current_time()),
+(5, 6, 364, 1, current_timestamp(),  current_timestamp(), 'davi.rsilva@sptech.school', 'Descrição automática para o calendário_id 364, assunto 1', current_time()),
+(6, 7, 364, 2, current_timestamp(),  current_timestamp(), 'davi.rsilva@sptech.school', 'Descrição automática para o calendário_id 364, assunto 2', current_time()),
+(1, 5, 364, 3, current_timestamp(),  current_timestamp(), 'davi.rsilva@sptech.school', 'Descrição automática para o calendário_id 364, assunto 3', current_time()),
+(6, 7, 365, 2, current_timestamp(),  current_timestamp(), 'davi.rsilva@sptech.school', 'Descrição automática para o calendário_id 365, assunto 2', current_time()),
+(1, 5, 365, 3, current_timestamp(),  current_timestamp(), 'davi.rsilva@sptech.school', 'Descrição automática para o calendário_id 365, assunto 3', current_time()),
+(2, 6, 365, 4, current_timestamp(), current_timestamp(),  'davi.rsilva@sptech.school', 'Descrição automática para o calendário_id 365, assunto 4', current_time()),
+(1, 5, 366, 3, current_timestamp(),  current_timestamp(), 'davi.rsilva@sptech.school', 'Descrição automática para o calendário_id 366, assunto 3', current_time()),
+(2, 6, 366, 4, current_timestamp(),  current_timestamp(), 'davi.rsilva@sptech.school', 'Descrição automática para o calendário_id 366, assunto 4', current_time()),
+(3, 7, 366, 1, current_timestamp(),  current_timestamp(), 'davi.rsilva@sptech.school', 'Descrição automática para o calendário_id 366, assunto 1', current_time());
 
 INSERT INTO venda VALUES
 (1, 4, 20.00, "juliocesardahi@gmail.com", 32, 2);
+
+SELECT * FROM requisicoes WHERE situacao_id = 5;
