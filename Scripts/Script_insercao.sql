@@ -804,6 +804,7 @@ INSERT INTO situacao (situacao, tipo_situacao_id) VALUES ('Recusada', 2);
 INSERT INTO nivel_acesso(apelido) VALUES 
 ('ADM'),('Voluntário'),('beneficiário');
 
+INSERT INTO endereco (logradouro,numero,cep,bairro_id,situacao_id) VALUES ('Rua da Palmeiras',8,'08473755',24,1);
 INSERT INTO tipo_atividade(tipo) VALUES
 ('Multirão de vacina'),
 ('Entrega de alimentos'),
@@ -811,59 +812,10 @@ INSERT INTO tipo_atividade(tipo) VALUES
 
 INSERT INTO usuario(nome,email,senha,nivel_acesso_id,situacao_id) VALUES ('ADM','davi.rsilva@sptech.school',AES_ENCRYPT('12341234','chave'),1,1);
 
-INSERT INTO endereco (logradouro,numero,cep,bairro_id,situacao_id) VALUES ('Rua da Palmeiras',8,'08473755',24,1);
-
-INSERT INTO endereco(logradouro, numero, cep, bairro_id, situacao_id) 
-VALUES ('Rua das Flores', 123, '12345000', 104, 1);
-
-INSERT INTO endereco(logradouro, numero, cep, bairro_id, situacao_id) 
-VALUES ('Avenida Brasil', 456, '98765000', 89, 1);
-
-INSERT INTO endereco(logradouro, numero, cep, bairro_id, situacao_id) 
-VALUES ('Praça do Sol', 789, '11122000', 35, 1);
-
-INSERT INTO endereco(logradouro, numero, cep, bairro_id, situacao_id) 
-VALUES ('Rua do Parque', 101, '65432000', 67, 1);
-
-SELECT * FROM endereco;
-
-INSERT INTO renda_familiar (renda,situacao_id) VALUES (2.500,1);
-INSERT INTO renda_familiar (renda,situacao_id) VALUES (1.500,1);
-INSERT INTO renda_familiar (renda,situacao_id) VALUES (1.100,1);
-
-INSERT INTO familia (apelido,quantidade_pessoas,renda_familiar_id,situacao_id) 
-VALUES ('Familia Silva', 3, 1, 1);
-
-INSERT INTO familia(apelido, quantidade_pessoas, renda_familiar_id, situacao_id) 
-VALUES ('Familia Martins', 4, 1, 1);
-
-INSERT INTO familia(apelido, quantidade_pessoas, renda_familiar_id, situacao_id) 
-VALUES ('Familia Almeida', 5, 2, 1);
-
-INSERT INTO familia(apelido, quantidade_pessoas, renda_familiar_id, situacao_id) 
-VALUES ('Familia Costa', 3, 2, 1);
-
-INSERT INTO familia(apelido, quantidade_pessoas, renda_familiar_id, situacao_id) 
-VALUES ('Familia Oliveira', 6, 3, 1);
+INSERT INTO usuario(nome,email,senha,nivel_acesso_id) VALUES ('Julio Dahi','juliocesardahi@gmail.com',AES_ENCRYPT('12341234','chave'),2);
 
 INSERT INTO informacoes_adicionais(cpf,data_nascimento,data_criacao,email_modificador,endereco_id,familia_id) VALUES
-('98765431200','2005-01-27',current_timestamp(),'davi.rsilva@sptech.school',1,1);
-
-INSERT INTO informacoes_adicionais(cpf, data_nascimento, data_criacao, email_modificador, endereco_id, familia_id) 
-VALUES 
-('12345678901', '1980-04-15', current_timestamp(), 'luciana.martins@yahoo.com', 2, 2);
-
-INSERT INTO informacoes_adicionais(cpf, data_nascimento, data_criacao, email_modificador, endereco_id, familia_id) 
-VALUES 
-('98765432100', '1990-06-20', current_timestamp(), 'ricardo.almeida@outlook.com', 3, 3);
-
-INSERT INTO informacoes_adicionais(cpf, data_nascimento, data_criacao, email_modificador, endereco_id, familia_id) 
-VALUES 
-('11223344556', '1985-11-12', current_timestamp(), 'patricia.costa@hotmail.com', 4, 4);
-
-INSERT INTO informacoes_adicionais(cpf, data_nascimento, data_criacao, email_modificador, endereco_id, familia_id) 
-VALUES 
-('55667788999', '1995-02-25', current_timestamp(), 'felipe.oliveira@gmail.com', 5, 5);
+('60507631862','2003-07-29',current_timestamp(),'adm@gmail.com',1,1);
 
 INSERT INTO tamanho_roupa (tamanho) VALUES
 ('PP'),
@@ -889,81 +841,50 @@ INSERT INTO dependente(data_nascimento,deficiente,tamanho_roupa_id,tamanho_calca
 ('2000-11-24 10:10:10',0,2,7,1,1),
 ('2000-11-24 10:10:10',0,1,3,1,1);
 
-INSERT INTO dependente(data_nascimento, deficiente, tamanho_roupa_id, tamanho_calcado_id, situacao_id, familia_id) 
-VALUES ('2010-05-12', 0, 2, 5, 1, 2),
-       ('2012-07-23', 0, 1, 4, 1, 2);
-
-INSERT INTO dependente(data_nascimento, deficiente, tamanho_roupa_id, tamanho_calcado_id, situacao_id, familia_id) 
-VALUES ('2015-03-30', 1, 3, 6, 1, 3),
-       ('2018-01-11', 0, 1, 3, 1, 3);
-
-INSERT INTO dependente(data_nascimento, deficiente, tamanho_roupa_id, tamanho_calcado_id, situacao_id, familia_id) 
-VALUES ('2010-09-18', 0, 2, 5, 1, 4);
-
-INSERT INTO dependente(data_nascimento, deficiente, tamanho_roupa_id, tamanho_calcado_id, situacao_id, familia_id) 
-VALUES ('2009-12-25', 1, 4, 7, 1, 5),
-       ('2014-05-06', 0, 2, 4, 1, 5);
-
 INSERT INTO tipo_contato (tipo_contato) VALUES
 ('Email'),
 ('Whatsapp'),
 ('Telegram'),
 ('Ligação');
 
+
 INSERT INTO contato(informacoes_contato,tipo_contato_id,informacoes_adicionais_id,data_criacao,email_modificador) VALUES
 ('642856882',3,1,current_timestamp(),'davi.rsilva@sptech.school');
 
-INSERT INTO usuario(nome,email,senha,nivel_acesso_id,informacoes_adicionais_id,situacao_id) VALUES ('Augusto Silva','teste@gmail.com',AES_ENCRYPT('12341234','chave'),3,1,3);
-
-INSERT INTO usuario(nome, email, senha, nivel_acesso_id, informacoes_adicionais_id, situacao_id) 
-VALUES ('Luciana Martins', 'luciana.martins@yahoo.com', AES_ENCRYPT('senha6543', 'chave'), 3, 2, 1);
-
-INSERT INTO usuario(nome, email, senha, nivel_acesso_id, informacoes_adicionais_id, situacao_id) 
-VALUES ('Ricardo Almeida', 'ricardo.almeida@outlook.com', AES_ENCRYPT('senha5678', 'chave'), 3, 3, 2);
-
-INSERT INTO usuario(nome, email, senha, nivel_acesso_id, informacoes_adicionais_id, situacao_id) 
-VALUES ('Patricia Costa', 'patricia.costa@hotmail.com', AES_ENCRYPT('senha8765', 'chave'), 3, 4, 3);
-
-INSERT INTO usuario(nome, email, senha, nivel_acesso_id, informacoes_adicionais_id, situacao_id) 
-VALUES ('Felipe Oliveira', 'felipe.oliveira@gmail.com', AES_ENCRYPT('senha4321', 'chave'), 3, 5, 1);
-
-INSERT INTO usuario(nome,email,senha,nivel_acesso_id,situacao_id) VALUES ('Julio Dahi','julio.dahi@sptech.school',AES_ENCRYPT('12341234','chave'),2,3);
-INSERT INTO usuario(nome,email,senha,nivel_acesso_id,situacao_id) VALUES ('Banca Sprint','bancasprint@gmail.com',AES_ENCRYPT('@BancaSprint5','chave'),1,3);
-
-INSERT INTO atividade(nome, hora_comeco, hora_final, descricao, tipo_atividade_id, data_criacao, email_modificador) VALUES
-('Mutirão de Natal', '09:00:00', '12:00:00', 'Montagem de kits natalinos para famílias carentes', 1, current_timestamp(), 'davi.rsilva@sptech.school'),
-('Entrega de Roupas de Verão', '10:00:00', '13:00:00', 'Distribuição de roupas leves para a comunidade', 2, current_timestamp(), 'davi.rsilva@sptech.school'),
-('Sopão Especial de Natal', '18:30:00', '21:00:00', 'Distribuição de sopa natalina para moradores de rua', 1, current_timestamp(), 'davi.rsilva@sptech.school'),
-('Ação Saúde na Comunidade', '08:00:00', '15:00:00', 'Atendimento básico de saúde e orientações preventivas', 3, current_timestamp(), 'davi.rsilva@sptech.school'),
-('Distribuição de Cestas Básicas de Natal', '11:00:00', '14:00:00', 'Entrega de cestas básicas com itens extras para o Natal', 1, current_timestamp(), 'davi.rsilva@sptech.school'),
-('Campanha de Agasalho de Emergência', '07:30:00', '10:30:00', 'Doação de casacos e cobertores em locais afetados por chuvas', 2, current_timestamp(), 'davi.rsilva@sptech.school'),
-('Feira de Saúde', '08:00:00', '14:00:00', 'Exames rápidos e distribuição de medicamentos básicos', 3, current_timestamp(), 'davi.rsilva@sptech.school'),
-('Sopão Comunitário', '18:00:00', '20:00:00', 'Entrega de sopa quente e pão para moradores de rua', 1, current_timestamp(), 'davi.rsilva@sptech.school'),
-('Doação de Alimentos Perecíveis', '15:00:00', '18:00:00', 'Distribuição de frutas e verduras frescas para famílias em necessidade', 1, current_timestamp(), 'davi.rsilva@sptech.school'),
-('Distribuição de Roupas de Frio', '09:00:00', '11:30:00', 'Entrega de roupas e agasalhos para famílias em vulnerabilidade', 2, current_timestamp(), 'davi.rsilva@sptech.school'),
-('Entrega de Cestas Emergenciais', '08:00:00', '11:00:00', 'Doação de cestas básicas para regiões atingidas por chuvas', 1, current_timestamp(), 'davi.rsilva@sptech.school'),
-('Ação de Saúde Voluntária', '07:00:00', '13:00:00', 'Consulta de saúde e doação de medicamentos básicos', 3, current_timestamp(), 'davi.rsilva@sptech.school');
+INSERT INTO atividade(nome,hora_comeco,hora_final,descricao,tipo_atividade_id,data_criacao,email_modificador) VALUES
+('Entregua de Cesta básica','15:10:10','16:11:11','Distribuição de Cestas básicas',1,current_timestamp(),'adm@gmail.com'),
+('Sopão','14:10:10','17:11:11','Sopão comunitario para moradores de rua',1,current_timestamp(),'adm@gmail.com'),
+('Campanha do Casaco','13:10:10','18:11:11','Distribuição de sobertores e casacos para moradores de rua',2,current_timestamp(),'adm@gmail.com'),
+('Sopão','12:10:10','19:11:11','Sopão comunitario para moradores de rua',2,current_timestamp(),'adm@gmail.com'),
+('Entregua de Cesta básica','11:10:10','20:11:11','Distribuição de Cestas básicas',3,current_timestamp(),'adm@gmail.com'),
+('Campanha do Casaco','10:10:10','21:11:11','Distribuição de sobertores e casacos para moradores de rua',1,current_timestamp(),'adm@gmail.com'),
+('Campanha do Casaco','08:10:10','23:11:11','Distribuição de sobertores e casacos para moradores de rua',2,current_timestamp(),'adm@gmail.com'),
+('Sopão','07:10:10','00:11:11','Sopão comunitario para moradores de rua',2,current_timestamp(),'adm@gmail.com'),
+('Entregua de Cesta básica','06:10:10','01:11:11','Distribuição de Cestas básicas',3,current_timestamp(),'adm@gmail.com'),
+('Sopão','04:10:10','03:11:11','Sopão comunitario para moradores de rua',1,current_timestamp(),'adm@gmail.com'),
+('Campanha do Casaco','02:10:10','05:11:11','Distribuição de sobertores e casacos para moradores de rua',2,current_timestamp(),'adm@gmail.com'),
+('Entregua de Cesta básica','01:10:10','06:11:11','Distribuição de Cestas básicas',3,current_timestamp(),'adm@gmail.com');
 
 CALL inserir_dias_calendario();
 
 INSERT INTO bairro(nome,cidade_id) VALUES
 ('Parque da Mooca',565);
 
--- INSERT INTO endereco(logradouro,numero,bairro_id) VALUES
--- ('Avenida Paes de Barros',1815,110),
--- ('Rua madre de Deus',NULL,110),
--- ('Rua Valentim Magalhães',34,52);
+INSERT INTO endereco(logradouro,numero,bairro_id) VALUES
+('Avenida Paes de Barros',1815,110),
+('Rua madre de Deus',NULL,110),
+('Rua Valentim Magalhães',34,52);
 
 INSERT INTO reserva_atividade(atividade_id,calendario_id,data_criacao,email_modificador,endereco_id) VALUES
-(1,301,current_timestamp(),'davi.rsilva@sptech.school',2),
-(2,301,current_timestamp(),'davi.rsilva@sptech.school',3),
-(3,302,current_timestamp(),'davi.rsilva@sptech.school',4),
-(4,302,current_timestamp(),'davi.rsilva@sptech.school',4),
-(5,303,current_timestamp(),'davi.rsilva@sptech.school',2),
-(6,303,current_timestamp(),'davi.rsilva@sptech.school',3),
-(7,304,current_timestamp(),'davi.rsilva@sptech.school',3),
-(8,304,current_timestamp(),'davi.rsilva@sptech.school',2),
-(9,305,current_timestamp(),'davi.rsilva@sptech.school',4);
+(1,301,current_timestamp(),'adm@gmail.com',2),
+(2,301,current_timestamp(),'adm@gmail.com',3),
+(3,302,current_timestamp(),'adm@gmail.com',4),
+(4,302,current_timestamp(),'adm@gmail.com',4),
+(5,303,current_timestamp(),'adm@gmail.com',2),
+(6,303,current_timestamp(),'adm@gmail.com',3),
+(7,304,current_timestamp(),'adm@gmail.com',3),
+(8,304,current_timestamp(),'adm@gmail.com',2),
+(9,305,current_timestamp(),'adm@gmail.com',4);
 
 INSERT INTO assunto_requisicao(assunto) VALUES
 ('Cestas'),

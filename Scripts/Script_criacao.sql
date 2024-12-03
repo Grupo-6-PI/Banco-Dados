@@ -42,6 +42,7 @@ CREATE TABLE IF NOT EXISTS endereco (
   logradouro VARCHAR(100) NULL,
   numero INT NULL,
   cep CHAR(15) NULL,
+  cep CHAR(15) NULL,
   bairro_id BIGINT,
 	CONSTRAINT endereco_bairro FOREIGN KEY (bairro_id) REFERENCES bairro(id),
   situacao_id BIGINT,
